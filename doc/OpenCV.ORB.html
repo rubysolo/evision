@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="generator" content="ExDoc v0.27.3">
     <meta name="project" content="Evision v0.1.0-dev">
 
     <title>OpenCV.ORB — Evision v0.1.0-dev</title>
-    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+    <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-51bda36515.js"></script>
+    <script src="dist/sidebar_items-68211e39e6.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+    <script async src="dist/app-38f5da25bdde1981e2f0.js"></script>
 
 
   </head>
@@ -31,16 +31,16 @@
 <div class="main">
 
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
 <section class="sidebar">
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
-      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+      <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
     </button>
     <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
-      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+      <i class="ri-close-line ri-lg" aria-hidden="true" title="Cancel search"></i>
     </button>
     <label class="search-label">
       <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
@@ -53,24 +53,24 @@
   </div>
 
   <div class="sidebar-header">
+
     <div class="sidebar-projectDetails">
-      <a href="OpenCV.html" class="sidebar-projectName">
+      <a href="OpenCV.html" class="sidebar-projectName" translate="no">
 Evision
       </a>
-      <strong class="sidebar-projectVersion">
+      <strong class="sidebar-projectVersion" translate="no">
         v0.1.0-dev
       </strong>
     </div>
+    <ul class="sidebar-listNav">
+      <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
+        <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+    </ul>
   </div>
 
-  <ul class="sidebar-listNav">
-    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
-
-      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
-
-
-  </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
 </section>
@@ -79,206 +79,234 @@ Evision
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-      <h1>
-OpenCV.ORB <small class="app-vsn">(Evision v0.1.0-dev)</small>
-
-          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L1" title="View Source" class="view-source" rel="help">
-            <span class="icon-code" aria-hidden="true"></span>
-            <span class="sr-only">View Source</span>
-          </a>
-
-      </h1>
+<h1>
+<button class="settings display-settings">
+  <i class="ri-settings-3-line"></i>
+  <span class="sr-only">Settings</span>
+</button>
 
 
+    <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L1" title="View Source" class="view-source" rel="help">
+      <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+      <span class="sr-only">View Source</span>
+    </a>
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
+  <span translate="no">OpenCV.ORB</span> 
+  <small class="app-vsn" translate="no">(Evision v0.1.0-dev)</small>
+
+</h1>
+
+
+
+  <section id="summary" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#summary">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
+      Summary
+    </h1>
 
   <div class="summary-cv summary">
     <h2>
       <a href="#cv">cv</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create/0">create()</a>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/0" translate="no">create()</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/1" translate="no">create(opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>The ORB constructor</p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getdefaultname/1" translate="no">getdefaultname(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getedgethreshold/1" translate="no">getedgethreshold(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getfastthreshold/1" translate="no">getfastthreshold(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getfirstlevel/1" translate="no">getfirstlevel(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getmaxfeatures/1" translate="no">getmaxfeatures(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getnlevels/1" translate="no">getnlevels(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getpatchsize/1" translate="no">getpatchsize(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getscalefactor/1" translate="no">getscalefactor(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getscoretype/1" translate="no">getscoretype(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getwta_k/1" translate="no">getwta_k(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setedgethreshold/2" translate="no">setedgethreshold(self, edgeThreshold)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setfastthreshold/2" translate="no">setfastthreshold(self, fastThreshold)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setfirstlevel/2" translate="no">setfirstlevel(self, firstLevel)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setmaxfeatures/2" translate="no">setmaxfeatures(self, maxFeatures)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setnlevels/2" translate="no">setnlevels(self, nlevels)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setpatchsize/2" translate="no">setpatchsize(self, patchSize)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setscalefactor/2" translate="no">setscalefactor(self, scaleFactor)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setscoretype/2" translate="no">setscoretype(self, scoreType)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setwta_k/2" translate="no">setwta_k(self, wta_k)</a>
+
+        </div>
+
+      </div>
 
   </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create/1">create(opts)</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>The ORB constructor</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getdefaultname/1">getdefaultname(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getedgethreshold/1">getedgethreshold(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getfastthreshold/1">getfastthreshold(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getfirstlevel/1">getfirstlevel(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getmaxfeatures/1">getmaxfeatures(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getnlevels/1">getnlevels(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getpatchsize/1">getpatchsize(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getscalefactor/1">getscalefactor(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getscoretype/1">getscoretype(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getwta_k/1">getwta_k(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setedgethreshold/2">setedgethreshold(self, edgeThreshold)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setfastthreshold/2">setfastthreshold(self, fastThreshold)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setfirstlevel/2">setfirstlevel(self, firstLevel)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setmaxfeatures/2">setmaxfeatures(self, maxFeatures)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setnlevels/2">setnlevels(self, nlevels)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setpatchsize/2">setpatchsize(self, patchSize)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setscalefactor/2">setscalefactor(self, scaleFactor)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setscoretype/2">setscoretype(self, scoreType)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setwta_k/2">setwta_k(self, wta_k)</a>
-
-  </div>
-
-</div>
-
-  </div>
-
-        </section>
+  </section>
 
 
-        <section id="cv" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#cv">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
+  <section id="cv" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#cv">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
 cv
-          </h1>
-          <div class="cv-list">
+    </h1>
+    <div class="cv-list">
 <section class="detail" id="create/0">
 
   <div class="detail-header">
     <a href="#create/0" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">create()</h1>
+    <h1 class="signature" translate="no">create()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L54" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -294,13 +322,13 @@ cv
 
   <div class="detail-header">
     <a href="#create/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">create(opts)</h1>
+    <h1 class="signature" translate="no">create(opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L48" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -328,20 +356,20 @@ cv
   (the score is written to KeyPoint::score and is used to retain best nfeatures features);
   FAST_SCORE is alternative value of the parameter that produces slightly less stable keypoints,
   but it is a little faster to compute.</li><li><strong>patchSize</strong>.
-  pyramid layers the perceived image area covered by a feature will be larger.</li><li><strong>fastThreshold</strong>.</li><li><strong>nfeatures</strong> : int</li><li><strong>scaleFactor</strong> : float</li><li><strong>nlevels</strong> : int</li><li><strong>edgeThreshold</strong> : int</li><li><strong>firstLevel</strong> : int</li><li><strong>wTA_K</strong> : int</li><li><strong>scoreType</strong> : ORB_ScoreType</li><li><strong>patchSize</strong> : int</li><li><strong>fastThreshold</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">create</span><span class="p" data-group-id="9516107059-1">(</span><span class="p" data-group-id="9516107059-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">nfeatures</span><span class="p" data-group-id="9516107059-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="9516107059-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">nlevels</span><span class="p" data-group-id="9516107059-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">edgeThreshold</span><span class="p" data-group-id="9516107059-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">firstLevel</span><span class="p" data-group-id="9516107059-7">[</span><span class="p">,</span><span class="w"> </span><span class="nc">WTA_K</span><span class="p" data-group-id="9516107059-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">scoreType</span><span class="p" data-group-id="9516107059-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">patchSize</span><span class="p" data-group-id="9516107059-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">fastThreshold</span><span class="p" data-group-id="9516107059-10">]</span><span class="p" data-group-id="9516107059-9">]</span><span class="p" data-group-id="9516107059-8">]</span><span class="p" data-group-id="9516107059-7">]</span><span class="p" data-group-id="9516107059-6">]</span><span class="p" data-group-id="9516107059-5">]</span><span class="p" data-group-id="9516107059-4">]</span><span class="p" data-group-id="9516107059-3">]</span><span class="p" data-group-id="9516107059-2">]</span><span class="p" data-group-id="9516107059-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  pyramid layers the perceived image area covered by a feature will be larger.</li><li><strong>fastThreshold</strong>.</li><li><strong>nfeatures</strong> : int</li><li><strong>scaleFactor</strong> : float</li><li><strong>nlevels</strong> : int</li><li><strong>edgeThreshold</strong> : int</li><li><strong>firstLevel</strong> : int</li><li><strong>wTA_K</strong> : int</li><li><strong>scoreType</strong> : ORB_ScoreType</li><li><strong>patchSize</strong> : int</li><li><strong>fastThreshold</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="5716334452-1">(</span><span class="p" data-group-id="5716334452-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">nfeatures</span><span class="p" data-group-id="5716334452-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="5716334452-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">nlevels</span><span class="p" data-group-id="5716334452-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">edgeThreshold</span><span class="p" data-group-id="5716334452-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">firstLevel</span><span class="p" data-group-id="5716334452-7">[</span><span class="p">,</span><span class="w"> </span><span class="nc">WTA_K</span><span class="p" data-group-id="5716334452-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">scoreType</span><span class="p" data-group-id="5716334452-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">patchSize</span><span class="p" data-group-id="5716334452-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">fastThreshold</span><span class="p" data-group-id="5716334452-10">]</span><span class="p" data-group-id="5716334452-9">]</span><span class="p" data-group-id="5716334452-8">]</span><span class="p" data-group-id="5716334452-7">]</span><span class="p" data-group-id="5716334452-6">]</span><span class="p" data-group-id="5716334452-5">]</span><span class="p" data-group-id="5716334452-4">]</span><span class="p" data-group-id="5716334452-3">]</span><span class="p" data-group-id="5716334452-2">]</span><span class="p" data-group-id="5716334452-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getdefaultname/1">
 
   <div class="detail-header">
     <a href="#getdefaultname/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getdefaultname(self)</h1>
+    <h1 class="signature" translate="no">getdefaultname(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L60" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -357,13 +385,13 @@ cv
 
   <div class="detail-header">
     <a href="#getedgethreshold/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getedgethreshold(self)</h1>
+    <h1 class="signature" translate="no">getedgethreshold(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L66" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -379,13 +407,13 @@ cv
 
   <div class="detail-header">
     <a href="#getfastthreshold/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getfastthreshold(self)</h1>
+    <h1 class="signature" translate="no">getfastthreshold(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L72" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -401,13 +429,13 @@ cv
 
   <div class="detail-header">
     <a href="#getfirstlevel/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getfirstlevel(self)</h1>
+    <h1 class="signature" translate="no">getfirstlevel(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L78" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -423,13 +451,13 @@ cv
 
   <div class="detail-header">
     <a href="#getmaxfeatures/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getmaxfeatures(self)</h1>
+    <h1 class="signature" translate="no">getmaxfeatures(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L84" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -445,13 +473,13 @@ cv
 
   <div class="detail-header">
     <a href="#getnlevels/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getnlevels(self)</h1>
+    <h1 class="signature" translate="no">getnlevels(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L90" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -467,13 +495,13 @@ cv
 
   <div class="detail-header">
     <a href="#getpatchsize/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getpatchsize(self)</h1>
+    <h1 class="signature" translate="no">getpatchsize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L96" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -489,13 +517,13 @@ cv
 
   <div class="detail-header">
     <a href="#getscalefactor/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getscalefactor(self)</h1>
+    <h1 class="signature" translate="no">getscalefactor(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L102" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -511,13 +539,13 @@ cv
 
   <div class="detail-header">
     <a href="#getscoretype/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getscoretype(self)</h1>
+    <h1 class="signature" translate="no">getscoretype(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L108" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -533,13 +561,13 @@ cv
 
   <div class="detail-header">
     <a href="#getwta_k/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getwta_k(self)</h1>
+    <h1 class="signature" translate="no">getwta_k(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L114" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -555,13 +583,13 @@ cv
 
   <div class="detail-header">
     <a href="#setedgethreshold/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setedgethreshold(self, edgeThreshold)</h1>
+    <h1 class="signature" translate="no">setedgethreshold(self, edgeThreshold)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L120" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -577,13 +605,13 @@ cv
 
   <div class="detail-header">
     <a href="#setfastthreshold/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setfastthreshold(self, fastThreshold)</h1>
+    <h1 class="signature" translate="no">setfastthreshold(self, fastThreshold)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L128" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -599,13 +627,13 @@ cv
 
   <div class="detail-header">
     <a href="#setfirstlevel/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setfirstlevel(self, firstLevel)</h1>
+    <h1 class="signature" translate="no">setfirstlevel(self, firstLevel)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L136" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -621,13 +649,13 @@ cv
 
   <div class="detail-header">
     <a href="#setmaxfeatures/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setmaxfeatures(self, maxFeatures)</h1>
+    <h1 class="signature" translate="no">setmaxfeatures(self, maxFeatures)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L144" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -643,13 +671,13 @@ cv
 
   <div class="detail-header">
     <a href="#setnlevels/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setnlevels(self, nlevels)</h1>
+    <h1 class="signature" translate="no">setnlevels(self, nlevels)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L152" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -665,13 +693,13 @@ cv
 
   <div class="detail-header">
     <a href="#setpatchsize/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setpatchsize(self, patchSize)</h1>
+    <h1 class="signature" translate="no">setpatchsize(self, patchSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L160" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -687,13 +715,13 @@ cv
 
   <div class="detail-header">
     <a href="#setscalefactor/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setscalefactor(self, scaleFactor)</h1>
+    <h1 class="signature" translate="no">setscalefactor(self, scaleFactor)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L168" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -709,13 +737,13 @@ cv
 
   <div class="detail-header">
     <a href="#setscoretype/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setscoretype(self, scoreType)</h1>
+    <h1 class="signature" translate="no">setscoretype(self, scoreType)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L176" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -731,13 +759,13 @@ cv
 
   <div class="detail-header">
     <a href="#setwta_k/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setwta_k(self, wta_k)</h1>
+    <h1 class="signature" translate="no">setwta_k(self, wta_k)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_orb.ex#L183" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -750,48 +778,31 @@ cv
   </section>
 </section>
 
-          </div>
-        </section>
+    </div>
+  </section>
 
       <footer class="footer">
 
+          <p>
+            On Hex.pm:
+
+            <span class="line">
+              <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+              <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+                <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_orb.ex">(current file)</a>
+
+            </span>
+
+            <button class="line footer-button display-quick-switch">
+              Search
+            </button>
+          </p>
+
         <p>
-          Find it on Hex:
-          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
-          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
-
-            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_orb.ex">(current file)</a>
-
-        </p>
-
-        <p>
-          <span class="line">
-            Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
-          </span>
-          <span class="line">
-            Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-          </span>
-        </p>
-        <p>
-
-            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
-
-          <button class="line footer-button display-shortcuts-help">
-            Display keyboard shortcuts
-          </button>
-          <button class="line footer-button night-mode-toggle">
-            Toggle night mode
-          </button>
-          <button class="line footer-button display-quick-switch">
-            Go to a HexDocs package
-          </button>
-          <button class="line footer-button tooltips-toggle">
-            <span class="tooltips-option-disable">Disable tooltips</span>
-            <span class="tooltips-option-enable">Enable tooltips</span>
-          </button>
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.27.3) for the
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
         </p>
       </footer>
     </div>

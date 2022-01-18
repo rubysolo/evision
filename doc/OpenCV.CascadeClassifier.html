@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="generator" content="ExDoc v0.27.3">
     <meta name="project" content="Evision v0.1.0-dev">
 
     <title>OpenCV.CascadeClassifier — Evision v0.1.0-dev</title>
-    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+    <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-51bda36515.js"></script>
+    <script src="dist/sidebar_items-68211e39e6.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+    <script async src="dist/app-38f5da25bdde1981e2f0.js"></script>
 
 
   </head>
@@ -31,16 +31,16 @@
 <div class="main">
 
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
 <section class="sidebar">
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
-      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+      <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
     </button>
     <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
-      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+      <i class="ri-close-line ri-lg" aria-hidden="true" title="Cancel search"></i>
     </button>
     <label class="search-label">
       <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
@@ -53,24 +53,24 @@
   </div>
 
   <div class="sidebar-header">
+
     <div class="sidebar-projectDetails">
-      <a href="OpenCV.html" class="sidebar-projectName">
+      <a href="OpenCV.html" class="sidebar-projectName" translate="no">
 Evision
       </a>
-      <strong class="sidebar-projectVersion">
+      <strong class="sidebar-projectVersion" translate="no">
         v0.1.0-dev
       </strong>
     </div>
+    <ul class="sidebar-listNav">
+      <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
+        <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+    </ul>
   </div>
 
-  <ul class="sidebar-listNav">
-    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
-
-      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
-
-
-  </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
 </section>
@@ -79,169 +79,191 @@ Evision
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-      <h1>
-OpenCV.CascadeClassifier <small class="app-vsn">(Evision v0.1.0-dev)</small>
-
-          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L1" title="View Source" class="view-source" rel="help">
-            <span class="icon-code" aria-hidden="true"></span>
-            <span class="sr-only">View Source</span>
-          </a>
-
-      </h1>
+<h1>
+<button class="settings display-settings">
+  <i class="ri-settings-3-line"></i>
+  <span class="sr-only">Settings</span>
+</button>
 
 
+    <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L1" title="View Source" class="view-source" rel="help">
+      <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+      <span class="sr-only">View Source</span>
+    </a>
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
+  <span translate="no">OpenCV.CascadeClassifier</span> 
+  <small class="app-vsn" translate="no">(Evision v0.1.0-dev)</small>
+
+</h1>
+
+
+
+  <section id="summary" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#summary">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
+      Summary
+    </h1>
 
   <div class="summary-cv summary">
     <h2>
       <a href="#cv">cv</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#cascadeclassifier/0">cascadeclassifier()</a>
 
-  </div>
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#cascadeclassifier/0" translate="no">cascadeclassifier()</a>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#cascadeclassifier/1">cascadeclassifier(filename)</a>
+        </div>
 
-  </div>
+      </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#convert/2">convert(oldcascade, newcascade)</a>
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#cascadeclassifier/1" translate="no">cascadeclassifier(filename)</a>
 
-  </div>
+        </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale/2">detectmultiscale(self, image)</a>
+      </div>
 
-  </div>
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#convert/2" translate="no">convert(oldcascade, newcascade)</a>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale/3">detectmultiscale(self, image, opts)</a>
+        </div>
 
-  </div>
+      </div>
 
-    <div class="summary-synopsis"><p>Detects objects of different sizes in the input image. The detected objects are returned as a list
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale/2" translate="no">detectmultiscale(self, image)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale/3" translate="no">detectmultiscale(self, image, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Detects objects of different sizes in the input image. The detected objects are returned as a list
   of rectangles.</p></div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale2/2">detectmultiscale2(self, image)</a>
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale2/2" translate="no">detectmultiscale2(self, image)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale2/3" translate="no">detectmultiscale2(self, image, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Has overloading in C++</p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale3/2" translate="no">detectmultiscale3(self, image)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#detectmultiscale3/3" translate="no">detectmultiscale3(self, image, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Has overloading in C++</p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#empty/1" translate="no">empty(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getfeaturetype/1" translate="no">getfeaturetype(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getoriginalwindowsize/1" translate="no">getoriginalwindowsize(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#isoldformatcascade/1" translate="no">isoldformatcascade(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#load/2" translate="no">load(self, filename)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#read/2" translate="no">read(self, node)</a>
+
+        </div>
+
+      </div>
 
   </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale2/3">detectmultiscale2(self, image, opts)</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>Has overloading in C++</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale3/2">detectmultiscale3(self, image)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#detectmultiscale3/3">detectmultiscale3(self, image, opts)</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>Has overloading in C++</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#empty/1">empty(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getfeaturetype/1">getfeaturetype(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getoriginalwindowsize/1">getoriginalwindowsize(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#isoldformatcascade/1">isoldformatcascade(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#load/2">load(self, filename)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#read/2">read(self, node)</a>
-
-  </div>
-
-</div>
-
-  </div>
-
-        </section>
+  </section>
 
 
-        <section id="cv" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#cv">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
+  <section id="cv" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#cv">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
 cv
-          </h1>
-          <div class="cv-list">
+    </h1>
+    <div class="cv-list">
 <section class="detail" id="cascadeclassifier/0">
 
   <div class="detail-header">
     <a href="#cascadeclassifier/0" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">cascadeclassifier()</h1>
+    <h1 class="signature" translate="no">cascadeclassifier()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L11" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -257,13 +279,13 @@ cv
 
   <div class="detail-header">
     <a href="#cascadeclassifier/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">cascadeclassifier(filename)</h1>
+    <h1 class="signature" translate="no">cascadeclassifier(filename)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L3" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -279,13 +301,13 @@ cv
 
   <div class="detail-header">
     <a href="#convert/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">convert(oldcascade, newcascade)</h1>
+    <h1 class="signature" translate="no">convert(oldcascade, newcascade)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L17" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -301,13 +323,13 @@ cv
 
   <div class="detail-header">
     <a href="#detectmultiscale/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale(self, image)</h1>
+    <h1 class="signature" translate="no">detectmultiscale(self, image)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L61" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -323,13 +345,13 @@ cv
 
   <div class="detail-header">
     <a href="#detectmultiscale/3" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale(self, image, opts)</h1>
+    <h1 class="signature" translate="no">detectmultiscale(self, image, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L54" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -345,20 +367,20 @@ cv
   cvHaarDetectObjects. It is not used for a new cascade.</li><li><strong>minSize</strong>.</li><li><strong>maxSize</strong>.
 The function is parallelized with the TBB library.
 <strong>Note</strong>: <ul><li>  (Python) A face detection example using cascade classifiers can be found at
-opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectMultiScale</span><span class="p" data-group-id="1007941358-1">(</span><span class="n">image</span><span class="p" data-group-id="1007941358-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="1007941358-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="1007941358-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="1007941358-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="1007941358-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="1007941358-6">]</span><span class="p" data-group-id="1007941358-5">]</span><span class="p" data-group-id="1007941358-4">]</span><span class="p" data-group-id="1007941358-3">]</span><span class="p" data-group-id="1007941358-2">]</span><span class="p" data-group-id="1007941358-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span></code></pre>
+opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectMultiScale</span><span class="p" data-group-id="6213679072-1">(</span><span class="n">image</span><span class="p" data-group-id="6213679072-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="6213679072-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="6213679072-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="6213679072-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="6213679072-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="6213679072-6">]</span><span class="p" data-group-id="6213679072-5">]</span><span class="p" data-group-id="6213679072-4">]</span><span class="p" data-group-id="6213679072-3">]</span><span class="p" data-group-id="6213679072-2">]</span><span class="p" data-group-id="6213679072-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span></code></pre>
   </section>
 </section>
 <section class="detail" id="detectmultiscale2/2">
 
   <div class="detail-header">
     <a href="#detectmultiscale2/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale2(self, image)</h1>
+    <h1 class="signature" translate="no">detectmultiscale2(self, image)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L113" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -374,13 +396,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#detectmultiscale2/3" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale2(self, image, opts)</h1>
+    <h1 class="signature" translate="no">detectmultiscale2(self, image, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L106" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -394,20 +416,20 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
   of detections is the number of neighboring positively classified rectangles that were joined
   together to form the object.</li><li><strong>scaleFactor</strong>.</li><li><strong>minNeighbors</strong>.
   to retain it.</li><li><strong>flags</strong>.
-  cvHaarDetectObjects. It is not used for a new cascade.</li><li><strong>minSize</strong>.</li><li><strong>maxSize</strong>.</li><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectMultiScale2</span><span class="p" data-group-id="2050104104-1">(</span><span class="n">image</span><span class="p" data-group-id="2050104104-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="2050104104-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="2050104104-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="2050104104-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="2050104104-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="2050104104-6">]</span><span class="p" data-group-id="2050104104-5">]</span><span class="p" data-group-id="2050104104-4">]</span><span class="p" data-group-id="2050104104-3">]</span><span class="p" data-group-id="2050104104-2">]</span><span class="p" data-group-id="2050104104-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span><span class="p">,</span><span class="w"> </span><span class="n">numDetections</span></code></pre>
+  cvHaarDetectObjects. It is not used for a new cascade.</li><li><strong>minSize</strong>.</li><li><strong>maxSize</strong>.</li><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectMultiScale2</span><span class="p" data-group-id="9825731609-1">(</span><span class="n">image</span><span class="p" data-group-id="9825731609-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="9825731609-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="9825731609-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="9825731609-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="9825731609-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="9825731609-6">]</span><span class="p" data-group-id="9825731609-5">]</span><span class="p" data-group-id="9825731609-4">]</span><span class="p" data-group-id="9825731609-3">]</span><span class="p" data-group-id="9825731609-2">]</span><span class="p" data-group-id="9825731609-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span><span class="p">,</span><span class="w"> </span><span class="n">numDetections</span></code></pre>
   </section>
 </section>
 <section class="detail" id="detectmultiscale3/2">
 
   <div class="detail-header">
     <a href="#detectmultiscale3/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale3(self, image)</h1>
+    <h1 class="signature" translate="no">detectmultiscale3(self, image)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L167" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -423,13 +445,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#detectmultiscale3/3" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">detectmultiscale3(self, image, opts)</h1>
+    <h1 class="signature" translate="no">detectmultiscale3(self, image, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L160" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -442,26 +464,26 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
   For this, one needs to set <code class="inline">outputRejectLevels</code> on true and provide the <code class="inline">rejectLevels</code> and <code class="inline">levelWeights</code> parameter.
   For each resulting detection, <code class="inline">levelWeights</code> will then contain the certainty of classification at the final stage.
   This value can then be used to separate strong from weaker classifications.
-  A code sample on how to use it efficiently can be found below:</p><pre><code class="makeup elixir"><span class="nc">Mat</span><span class="w"> </span><span class="n">img</span><span class="p">;</span><span class="w">
+  A code sample on how to use it efficiently can be found below:</p><pre><code class="makeup elixir" translate="no"><span class="nc">Mat</span><span class="w"> </span><span class="n">img</span><span class="p">;</span><span class="w">
 </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">weights</span><span class="p">;</span><span class="w">
 </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">levels</span><span class="p">;</span><span class="w">
 </span><span class="n">vector</span><span class="o">&lt;</span><span class="nc">Rect</span><span class="o">&gt;</span><span class="w"> </span><span class="n">detections</span><span class="p">;</span><span class="w">
-</span><span class="nc">CascadeClassifier</span><span class="w"> </span><span class="n">model</span><span class="p" data-group-id="0978996024-1">(</span><span class="s">&quot;/path/to/your/model.xml&quot;</span><span class="p" data-group-id="0978996024-1">)</span><span class="p">;</span><span class="w">
-</span><span class="n">model</span><span class="o">.</span><span class="n">detectMultiScale</span><span class="p" data-group-id="0978996024-2">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">detections</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="p">,</span><span class="w"> </span><span class="n">weights</span><span class="p">,</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nc">Size</span><span class="p" data-group-id="0978996024-3">(</span><span class="p" data-group-id="0978996024-3">)</span><span class="p">,</span><span class="w"> </span><span class="nc">Size</span><span class="p" data-group-id="0978996024-4">(</span><span class="p" data-group-id="0978996024-4">)</span><span class="p">,</span><span class="w"> </span><span class="no">true</span><span class="p" data-group-id="0978996024-2">)</span><span class="p">;</span><span class="w">
-</span><span class="n">cerr</span><span class="w"> </span><span class="p" data-group-id="0978996024-5">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Detection &quot;</span><span class="w"> </span><span class="p" data-group-id="0978996024-6">&lt;&lt;</span><span class="w"> </span><span class="n">detections</span><span class="p" data-group-id="0978996024-7">[</span><span class="mi">0</span><span class="p" data-group-id="0978996024-7">]</span><span class="w"> </span><span class="p" data-group-id="0978996024-8">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; with weight &quot;</span><span class="w"> </span><span class="p" data-group-id="0978996024-9">&lt;&lt;</span><span class="w"> </span><span class="n">weights</span><span class="p" data-group-id="0978996024-10">[</span><span class="mi">0</span><span class="p" data-group-id="0978996024-10">]</span><span class="w"> </span><span class="p" data-group-id="0978996024-11">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span></code></pre><ul><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li><li><strong>outputRejectLevels</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectMultiScale3</span><span class="p" data-group-id="0611163618-1">(</span><span class="n">image</span><span class="p" data-group-id="0611163618-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="0611163618-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="0611163618-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="0611163618-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="0611163618-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="0611163618-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">outputRejectLevels</span><span class="p" data-group-id="0611163618-7">]</span><span class="p" data-group-id="0611163618-6">]</span><span class="p" data-group-id="0611163618-5">]</span><span class="p" data-group-id="0611163618-4">]</span><span class="p" data-group-id="0611163618-3">]</span><span class="p" data-group-id="0611163618-2">]</span><span class="p" data-group-id="0611163618-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span><span class="p">,</span><span class="w"> </span><span class="n">rejectLevels</span><span class="p">,</span><span class="w"> </span><span class="n">levelWeights</span></code></pre>
+</span><span class="nc">CascadeClassifier</span><span class="w"> </span><span class="n">model</span><span class="p" data-group-id="0093390129-1">(</span><span class="s">&quot;/path/to/your/model.xml&quot;</span><span class="p" data-group-id="0093390129-1">)</span><span class="p">;</span><span class="w">
+</span><span class="n">model</span><span class="o">.</span><span class="n">detectMultiScale</span><span class="p" data-group-id="0093390129-2">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">detections</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="p">,</span><span class="w"> </span><span class="n">weights</span><span class="p">,</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nc">Size</span><span class="p" data-group-id="0093390129-3">(</span><span class="p" data-group-id="0093390129-3">)</span><span class="p">,</span><span class="w"> </span><span class="nc">Size</span><span class="p" data-group-id="0093390129-4">(</span><span class="p" data-group-id="0093390129-4">)</span><span class="p">,</span><span class="w"> </span><span class="no">true</span><span class="p" data-group-id="0093390129-2">)</span><span class="p">;</span><span class="w">
+</span><span class="n">cerr</span><span class="w"> </span><span class="p" data-group-id="0093390129-5">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Detection &quot;</span><span class="w"> </span><span class="p" data-group-id="0093390129-6">&lt;&lt;</span><span class="w"> </span><span class="n">detections</span><span class="p" data-group-id="0093390129-7">[</span><span class="mi">0</span><span class="p" data-group-id="0093390129-7">]</span><span class="w"> </span><span class="p" data-group-id="0093390129-8">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; with weight &quot;</span><span class="w"> </span><span class="p" data-group-id="0093390129-9">&lt;&lt;</span><span class="w"> </span><span class="n">weights</span><span class="p" data-group-id="0093390129-10">[</span><span class="mi">0</span><span class="p" data-group-id="0093390129-10">]</span><span class="w"> </span><span class="p" data-group-id="0093390129-11">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span></code></pre><ul><li><strong>scaleFactor</strong> : double</li><li><strong>minNeighbors</strong> : int</li><li><strong>flags</strong> : int</li><li><strong>minSize</strong> : Size</li><li><strong>maxSize</strong> : Size</li><li><strong>outputRejectLevels</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectMultiScale3</span><span class="p" data-group-id="8515019389-1">(</span><span class="n">image</span><span class="p" data-group-id="8515019389-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">scaleFactor</span><span class="p" data-group-id="8515019389-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">minNeighbors</span><span class="p" data-group-id="8515019389-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="8515019389-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">minSize</span><span class="p" data-group-id="8515019389-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">maxSize</span><span class="p" data-group-id="8515019389-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">outputRejectLevels</span><span class="p" data-group-id="8515019389-7">]</span><span class="p" data-group-id="8515019389-6">]</span><span class="p" data-group-id="8515019389-5">]</span><span class="p" data-group-id="8515019389-4">]</span><span class="p" data-group-id="8515019389-3">]</span><span class="p" data-group-id="8515019389-2">]</span><span class="p" data-group-id="8515019389-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">objects</span><span class="p">,</span><span class="w"> </span><span class="n">rejectLevels</span><span class="p">,</span><span class="w"> </span><span class="n">levelWeights</span></code></pre>
   </section>
 </section>
 <section class="detail" id="empty/1">
 
   <div class="detail-header">
     <a href="#empty/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">empty(self)</h1>
+    <h1 class="signature" translate="no">empty(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L186" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -477,13 +499,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#getfeaturetype/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getfeaturetype(self)</h1>
+    <h1 class="signature" translate="no">getfeaturetype(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L192" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -499,13 +521,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#getoriginalwindowsize/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getoriginalwindowsize(self)</h1>
+    <h1 class="signature" translate="no">getoriginalwindowsize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L198" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -521,13 +543,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#isoldformatcascade/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">isoldformatcascade(self)</h1>
+    <h1 class="signature" translate="no">isoldformatcascade(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L204" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -543,13 +565,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#load/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">load(self, filename)</h1>
+    <h1 class="signature" translate="no">load(self, filename)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L210" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -565,13 +587,13 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
 
   <div class="detail-header">
     <a href="#read/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">read(self, node)</h1>
+    <h1 class="signature" translate="no">read(self, node)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_cascadeclassifier.ex#L218" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -584,48 +606,31 @@ opencv_source_code/samples/python/facedetect.py</li></ul></li><li><strong>scaleF
   </section>
 </section>
 
-          </div>
-        </section>
+    </div>
+  </section>
 
       <footer class="footer">
 
+          <p>
+            On Hex.pm:
+
+            <span class="line">
+              <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+              <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+                <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_cascadeclassifier.ex">(current file)</a>
+
+            </span>
+
+            <button class="line footer-button display-quick-switch">
+              Search
+            </button>
+          </p>
+
         <p>
-          Find it on Hex:
-          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
-          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
-
-            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_cascadeclassifier.ex">(current file)</a>
-
-        </p>
-
-        <p>
-          <span class="line">
-            Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
-          </span>
-          <span class="line">
-            Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-          </span>
-        </p>
-        <p>
-
-            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
-
-          <button class="line footer-button display-shortcuts-help">
-            Display keyboard shortcuts
-          </button>
-          <button class="line footer-button night-mode-toggle">
-            Toggle night mode
-          </button>
-          <button class="line footer-button display-quick-switch">
-            Go to a HexDocs package
-          </button>
-          <button class="line footer-button tooltips-toggle">
-            <span class="tooltips-option-disable">Disable tooltips</span>
-            <span class="tooltips-option-enable">Enable tooltips</span>
-          </button>
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.27.3) for the
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
         </p>
       </footer>
     </div>

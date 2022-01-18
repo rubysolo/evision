@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="generator" content="ExDoc v0.27.3">
     <meta name="project" content="Evision v0.1.0-dev">
 
     <title>OpenCV.StereoMatcher — Evision v0.1.0-dev</title>
-    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+    <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-51bda36515.js"></script>
+    <script src="dist/sidebar_items-68211e39e6.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+    <script async src="dist/app-38f5da25bdde1981e2f0.js"></script>
 
 
   </head>
@@ -31,16 +31,16 @@
 <div class="main">
 
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
 <section class="sidebar">
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
-      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+      <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
     </button>
     <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
-      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+      <i class="ri-close-line ri-lg" aria-hidden="true" title="Cancel search"></i>
     </button>
     <label class="search-label">
       <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
@@ -53,24 +53,24 @@
   </div>
 
   <div class="sidebar-header">
+
     <div class="sidebar-projectDetails">
-      <a href="OpenCV.html" class="sidebar-projectName">
+      <a href="OpenCV.html" class="sidebar-projectName" translate="no">
 Evision
       </a>
-      <strong class="sidebar-projectVersion">
+      <strong class="sidebar-projectVersion" translate="no">
         v0.1.0-dev
       </strong>
     </div>
+    <ul class="sidebar-listNav">
+      <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
+        <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+    </ul>
   </div>
 
-  <ul class="sidebar-listNav">
-    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
-
-      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
-
-
-  </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
 </section>
@@ -79,157 +79,178 @@ Evision
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-      <h1>
-OpenCV.StereoMatcher <small class="app-vsn">(Evision v0.1.0-dev)</small>
-
-          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L1" title="View Source" class="view-source" rel="help">
-            <span class="icon-code" aria-hidden="true"></span>
-            <span class="sr-only">View Source</span>
-          </a>
-
-      </h1>
+<h1>
+<button class="settings display-settings">
+  <i class="ri-settings-3-line"></i>
+  <span class="sr-only">Settings</span>
+</button>
 
 
+    <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L1" title="View Source" class="view-source" rel="help">
+      <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+      <span class="sr-only">View Source</span>
+    </a>
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
+  <span translate="no">OpenCV.StereoMatcher</span> 
+  <small class="app-vsn" translate="no">(Evision v0.1.0-dev)</small>
+
+</h1>
+
+
+
+  <section id="summary" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#summary">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
+      Summary
+    </h1>
 
   <div class="summary-cv summary">
     <h2>
       <a href="#cv">cv</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#compute/3">compute(self, left, right)</a>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#compute/3" translate="no">compute(self, left, right)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#compute/4" translate="no">compute(self, left, right, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Computes disparity map for the specified stereo pair</p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getblocksize/1" translate="no">getblocksize(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getdisp12maxdiff/1" translate="no">getdisp12maxdiff(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getmindisparity/1" translate="no">getmindisparity(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getnumdisparities/1" translate="no">getnumdisparities(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getspecklerange/1" translate="no">getspecklerange(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getspecklewindowsize/1" translate="no">getspecklewindowsize(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setblocksize/2" translate="no">setblocksize(self, blockSize)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setdisp12maxdiff/2" translate="no">setdisp12maxdiff(self, disp12MaxDiff)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setmindisparity/2" translate="no">setmindisparity(self, minDisparity)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setnumdisparities/2" translate="no">setnumdisparities(self, numDisparities)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setspecklerange/2" translate="no">setspecklerange(self, speckleRange)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setspecklewindowsize/2" translate="no">setspecklewindowsize(self, speckleWindowSize)</a>
+
+        </div>
+
+      </div>
 
   </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#compute/4">compute(self, left, right, opts)</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>Computes disparity map for the specified stereo pair</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getblocksize/1">getblocksize(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getdisp12maxdiff/1">getdisp12maxdiff(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getmindisparity/1">getmindisparity(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getnumdisparities/1">getnumdisparities(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getspecklerange/1">getspecklerange(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getspecklewindowsize/1">getspecklewindowsize(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setblocksize/2">setblocksize(self, blockSize)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setdisp12maxdiff/2">setdisp12maxdiff(self, disp12MaxDiff)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setmindisparity/2">setmindisparity(self, minDisparity)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setnumdisparities/2">setnumdisparities(self, numDisparities)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setspecklerange/2">setspecklerange(self, speckleRange)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setspecklewindowsize/2">setspecklewindowsize(self, speckleWindowSize)</a>
-
-  </div>
-
-</div>
-
-  </div>
-
-        </section>
+  </section>
 
 
-        <section id="cv" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#cv">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
+  <section id="cv" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#cv">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
 cv
-          </h1>
-          <div class="cv-list">
+    </h1>
+    <div class="cv-list">
 <section class="detail" id="compute/3">
 
   <div class="detail-header">
     <a href="#compute/3" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">compute(self, left, right)</h1>
+    <h1 class="signature" translate="no">compute(self, left, right)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L25" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -245,13 +266,13 @@ cv
 
   <div class="detail-header">
     <a href="#compute/4" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">compute(self, left, right, opts)</h1>
+    <h1 class="signature" translate="no">compute(self, left, right, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L17" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -262,20 +283,20 @@ cv
 
 <p>Computes disparity map for the specified stereo pair</p><ul><li><strong>left</strong>.</li><li><strong>right</strong>.</li><li><strong>disparity</strong>.
   like StereoBM or StereoSGBM compute 16-bit fixed-point disparity map (where each disparity value
-  has 4 fractional bits), whereas other algorithms output 32-bit floating-point disparity map.</li><li><strong>disparity</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">compute</span><span class="p" data-group-id="3305175553-1">(</span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="p" data-group-id="3305175553-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">disparity</span><span class="p" data-group-id="3305175553-2">]</span><span class="p" data-group-id="3305175553-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">disparity</span></code></pre>
+  has 4 fractional bits), whereas other algorithms output 32-bit floating-point disparity map.</li><li><strong>disparity</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">compute</span><span class="p" data-group-id="1088731890-1">(</span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="p" data-group-id="1088731890-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">disparity</span><span class="p" data-group-id="1088731890-2">]</span><span class="p" data-group-id="1088731890-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">disparity</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getblocksize/1">
 
   <div class="detail-header">
     <a href="#getblocksize/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getblocksize(self)</h1>
+    <h1 class="signature" translate="no">getblocksize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L40" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -291,13 +312,13 @@ cv
 
   <div class="detail-header">
     <a href="#getdisp12maxdiff/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getdisp12maxdiff(self)</h1>
+    <h1 class="signature" translate="no">getdisp12maxdiff(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L46" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -313,13 +334,13 @@ cv
 
   <div class="detail-header">
     <a href="#getmindisparity/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getmindisparity(self)</h1>
+    <h1 class="signature" translate="no">getmindisparity(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L52" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -335,13 +356,13 @@ cv
 
   <div class="detail-header">
     <a href="#getnumdisparities/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getnumdisparities(self)</h1>
+    <h1 class="signature" translate="no">getnumdisparities(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L58" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -357,13 +378,13 @@ cv
 
   <div class="detail-header">
     <a href="#getspecklerange/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getspecklerange(self)</h1>
+    <h1 class="signature" translate="no">getspecklerange(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L64" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -379,13 +400,13 @@ cv
 
   <div class="detail-header">
     <a href="#getspecklewindowsize/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getspecklewindowsize(self)</h1>
+    <h1 class="signature" translate="no">getspecklewindowsize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L70" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -401,13 +422,13 @@ cv
 
   <div class="detail-header">
     <a href="#setblocksize/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setblocksize(self, blockSize)</h1>
+    <h1 class="signature" translate="no">setblocksize(self, blockSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L76" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -423,13 +444,13 @@ cv
 
   <div class="detail-header">
     <a href="#setdisp12maxdiff/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setdisp12maxdiff(self, disp12MaxDiff)</h1>
+    <h1 class="signature" translate="no">setdisp12maxdiff(self, disp12MaxDiff)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L84" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -445,13 +466,13 @@ cv
 
   <div class="detail-header">
     <a href="#setmindisparity/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setmindisparity(self, minDisparity)</h1>
+    <h1 class="signature" translate="no">setmindisparity(self, minDisparity)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L92" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -467,13 +488,13 @@ cv
 
   <div class="detail-header">
     <a href="#setnumdisparities/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setnumdisparities(self, numDisparities)</h1>
+    <h1 class="signature" translate="no">setnumdisparities(self, numDisparities)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L100" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -489,13 +510,13 @@ cv
 
   <div class="detail-header">
     <a href="#setspecklerange/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setspecklerange(self, speckleRange)</h1>
+    <h1 class="signature" translate="no">setspecklerange(self, speckleRange)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L108" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -511,13 +532,13 @@ cv
 
   <div class="detail-header">
     <a href="#setspecklewindowsize/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setspecklewindowsize(self, speckleWindowSize)</h1>
+    <h1 class="signature" translate="no">setspecklewindowsize(self, speckleWindowSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereomatcher.ex#L116" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -530,48 +551,31 @@ cv
   </section>
 </section>
 
-          </div>
-        </section>
+    </div>
+  </section>
 
       <footer class="footer">
 
+          <p>
+            On Hex.pm:
+
+            <span class="line">
+              <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+              <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+                <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_stereomatcher.ex">(current file)</a>
+
+            </span>
+
+            <button class="line footer-button display-quick-switch">
+              Search
+            </button>
+          </p>
+
         <p>
-          Find it on Hex:
-          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
-          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
-
-            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_stereomatcher.ex">(current file)</a>
-
-        </p>
-
-        <p>
-          <span class="line">
-            Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
-          </span>
-          <span class="line">
-            Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-          </span>
-        </p>
-        <p>
-
-            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
-
-          <button class="line footer-button display-shortcuts-help">
-            Display keyboard shortcuts
-          </button>
-          <button class="line footer-button night-mode-toggle">
-            Toggle night mode
-          </button>
-          <button class="line footer-button display-quick-switch">
-            Go to a HexDocs package
-          </button>
-          <button class="line footer-button tooltips-toggle">
-            <span class="tooltips-option-disable">Disable tooltips</span>
-            <span class="tooltips-option-enable">Enable tooltips</span>
-          </button>
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.27.3) for the
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
         </p>
       </footer>
     </div>

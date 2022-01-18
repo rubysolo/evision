@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="generator" content="ExDoc v0.27.3">
     <meta name="project" content="Evision v0.1.0-dev">
 
     <title>OpenCV.FarnebackOpticalFlow — Evision v0.1.0-dev</title>
-    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+    <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-51bda36515.js"></script>
+    <script src="dist/sidebar_items-68211e39e6.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+    <script async src="dist/app-38f5da25bdde1981e2f0.js"></script>
 
 
   </head>
@@ -31,16 +31,16 @@
 <div class="main">
 
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
 <section class="sidebar">
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
-      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+      <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
     </button>
     <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
-      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+      <i class="ri-close-line ri-lg" aria-hidden="true" title="Cancel search"></i>
     </button>
     <label class="search-label">
       <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
@@ -53,24 +53,24 @@
   </div>
 
   <div class="sidebar-header">
+
     <div class="sidebar-projectDetails">
-      <a href="OpenCV.html" class="sidebar-projectName">
+      <a href="OpenCV.html" class="sidebar-projectName" translate="no">
 Evision
       </a>
-      <strong class="sidebar-projectVersion">
+      <strong class="sidebar-projectVersion" translate="no">
         v0.1.0-dev
       </strong>
     </div>
+    <ul class="sidebar-listNav">
+      <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
+        <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+    </ul>
   </div>
 
-  <ul class="sidebar-listNav">
-    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
-
-      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
-
-
-  </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
 </section>
@@ -79,185 +79,210 @@ Evision
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-      <h1>
-OpenCV.FarnebackOpticalFlow <small class="app-vsn">(Evision v0.1.0-dev)</small>
-
-          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L1" title="View Source" class="view-source" rel="help">
-            <span class="icon-code" aria-hidden="true"></span>
-            <span class="sr-only">View Source</span>
-          </a>
-
-      </h1>
+<h1>
+<button class="settings display-settings">
+  <i class="ri-settings-3-line"></i>
+  <span class="sr-only">Settings</span>
+</button>
 
 
+    <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L1" title="View Source" class="view-source" rel="help">
+      <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+      <span class="sr-only">View Source</span>
+    </a>
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
+  <span translate="no">OpenCV.FarnebackOpticalFlow</span> 
+  <small class="app-vsn" translate="no">(Evision v0.1.0-dev)</small>
+
+</h1>
+
+
+
+  <section id="summary" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#summary">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
+      Summary
+    </h1>
 
   <div class="summary-cv summary">
     <h2>
       <a href="#cv">cv</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create/0">create()</a>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/0" translate="no">create()</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/1" translate="no">create(opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><ul><li><strong>numLevels</strong> : int</li><li><strong>pyrScale</strong> : double</li><li><strong>fastPyramids</strong> : bool</li><li><strong>winSize</strong> : int</li><li><strong>numIters</strong> : int</li><li><strong>polyN</strong> : int</li><li><strong>polySigma</strong> : double</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getfastpyramids/1" translate="no">getfastpyramids(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getflags/1" translate="no">getflags(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getnumiters/1" translate="no">getnumiters(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getnumlevels/1" translate="no">getnumlevels(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getpolyn/1" translate="no">getpolyn(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getpolysigma/1" translate="no">getpolysigma(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getpyrscale/1" translate="no">getpyrscale(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#getwinsize/1" translate="no">getwinsize(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setfastpyramids/2" translate="no">setfastpyramids(self, fastPyramids)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setflags/2" translate="no">setflags(self, flags)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setnumiters/2" translate="no">setnumiters(self, numIters)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setnumlevels/2" translate="no">setnumlevels(self, numLevels)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setpolyn/2" translate="no">setpolyn(self, polyN)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setpolysigma/2" translate="no">setpolysigma(self, polySigma)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setpyrscale/2" translate="no">setpyrscale(self, pyrScale)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#setwinsize/2" translate="no">setwinsize(self, winSize)</a>
+
+        </div>
+
+      </div>
 
   </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create/1">create(opts)</a>
-
-  </div>
-
-    <div class="summary-synopsis"><ul><li><strong>numLevels</strong> : int</li><li><strong>pyrScale</strong> : double</li><li><strong>fastPyramids</strong> : bool</li><li><strong>winSize</strong> : int</li><li><strong>numIters</strong> : int</li><li><strong>polyN</strong> : int</li><li><strong>polySigma</strong> : double</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getfastpyramids/1">getfastpyramids(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getflags/1">getflags(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getnumiters/1">getnumiters(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getnumlevels/1">getnumlevels(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getpolyn/1">getpolyn(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getpolysigma/1">getpolysigma(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getpyrscale/1">getpyrscale(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#getwinsize/1">getwinsize(self)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setfastpyramids/2">setfastpyramids(self, fastPyramids)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setflags/2">setflags(self, flags)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setnumiters/2">setnumiters(self, numIters)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setnumlevels/2">setnumlevels(self, numLevels)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setpolyn/2">setpolyn(self, polyN)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setpolysigma/2">setpolysigma(self, polySigma)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setpyrscale/2">setpyrscale(self, pyrScale)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#setwinsize/2">setwinsize(self, winSize)</a>
-
-  </div>
-
-</div>
-
-  </div>
-
-        </section>
+  </section>
 
 
-        <section id="cv" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#cv">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
+  <section id="cv" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#cv">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
 cv
-          </h1>
-          <div class="cv-list">
+    </h1>
+    <div class="cv-list">
 <section class="detail" id="create/0">
 
   <div class="detail-header">
     <a href="#create/0" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">create()</h1>
+    <h1 class="signature" translate="no">create()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L24" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -273,13 +298,13 @@ cv
 
   <div class="detail-header">
     <a href="#create/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">create(opts)</h1>
+    <h1 class="signature" translate="no">create(opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L18" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -288,20 +313,20 @@ cv
 
   <section class="docstring">
 
-<ul><li><strong>numLevels</strong> : int</li><li><strong>pyrScale</strong> : double</li><li><strong>fastPyramids</strong> : bool</li><li><strong>winSize</strong> : int</li><li><strong>numIters</strong> : int</li><li><strong>polyN</strong> : int</li><li><strong>polySigma</strong> : double</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">create</span><span class="p" data-group-id="6640241519-1">(</span><span class="p" data-group-id="6640241519-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numLevels</span><span class="p" data-group-id="6640241519-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">pyrScale</span><span class="p" data-group-id="6640241519-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">fastPyramids</span><span class="p" data-group-id="6640241519-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">winSize</span><span class="p" data-group-id="6640241519-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">numIters</span><span class="p" data-group-id="6640241519-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">polyN</span><span class="p" data-group-id="6640241519-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">polySigma</span><span class="p" data-group-id="6640241519-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="6640241519-9">]</span><span class="p" data-group-id="6640241519-8">]</span><span class="p" data-group-id="6640241519-7">]</span><span class="p" data-group-id="6640241519-6">]</span><span class="p" data-group-id="6640241519-5">]</span><span class="p" data-group-id="6640241519-4">]</span><span class="p" data-group-id="6640241519-3">]</span><span class="p" data-group-id="6640241519-2">]</span><span class="p" data-group-id="6640241519-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+<ul><li><strong>numLevels</strong> : int</li><li><strong>pyrScale</strong> : double</li><li><strong>fastPyramids</strong> : bool</li><li><strong>winSize</strong> : int</li><li><strong>numIters</strong> : int</li><li><strong>polyN</strong> : int</li><li><strong>polySigma</strong> : double</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="6384508359-1">(</span><span class="p" data-group-id="6384508359-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numLevels</span><span class="p" data-group-id="6384508359-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">pyrScale</span><span class="p" data-group-id="6384508359-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">fastPyramids</span><span class="p" data-group-id="6384508359-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">winSize</span><span class="p" data-group-id="6384508359-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">numIters</span><span class="p" data-group-id="6384508359-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">polyN</span><span class="p" data-group-id="6384508359-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">polySigma</span><span class="p" data-group-id="6384508359-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="6384508359-9">]</span><span class="p" data-group-id="6384508359-8">]</span><span class="p" data-group-id="6384508359-7">]</span><span class="p" data-group-id="6384508359-6">]</span><span class="p" data-group-id="6384508359-5">]</span><span class="p" data-group-id="6384508359-4">]</span><span class="p" data-group-id="6384508359-3">]</span><span class="p" data-group-id="6384508359-2">]</span><span class="p" data-group-id="6384508359-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getfastpyramids/1">
 
   <div class="detail-header">
     <a href="#getfastpyramids/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getfastpyramids(self)</h1>
+    <h1 class="signature" translate="no">getfastpyramids(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L30" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -317,13 +342,13 @@ cv
 
   <div class="detail-header">
     <a href="#getflags/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getflags(self)</h1>
+    <h1 class="signature" translate="no">getflags(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L36" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -339,13 +364,13 @@ cv
 
   <div class="detail-header">
     <a href="#getnumiters/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getnumiters(self)</h1>
+    <h1 class="signature" translate="no">getnumiters(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L42" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -361,13 +386,13 @@ cv
 
   <div class="detail-header">
     <a href="#getnumlevels/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getnumlevels(self)</h1>
+    <h1 class="signature" translate="no">getnumlevels(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L48" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -383,13 +408,13 @@ cv
 
   <div class="detail-header">
     <a href="#getpolyn/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getpolyn(self)</h1>
+    <h1 class="signature" translate="no">getpolyn(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L54" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -405,13 +430,13 @@ cv
 
   <div class="detail-header">
     <a href="#getpolysigma/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getpolysigma(self)</h1>
+    <h1 class="signature" translate="no">getpolysigma(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L60" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -427,13 +452,13 @@ cv
 
   <div class="detail-header">
     <a href="#getpyrscale/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getpyrscale(self)</h1>
+    <h1 class="signature" translate="no">getpyrscale(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L66" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -449,13 +474,13 @@ cv
 
   <div class="detail-header">
     <a href="#getwinsize/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">getwinsize(self)</h1>
+    <h1 class="signature" translate="no">getwinsize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L72" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -471,13 +496,13 @@ cv
 
   <div class="detail-header">
     <a href="#setfastpyramids/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setfastpyramids(self, fastPyramids)</h1>
+    <h1 class="signature" translate="no">setfastpyramids(self, fastPyramids)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L78" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -493,13 +518,13 @@ cv
 
   <div class="detail-header">
     <a href="#setflags/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setflags(self, flags)</h1>
+    <h1 class="signature" translate="no">setflags(self, flags)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L86" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -515,13 +540,13 @@ cv
 
   <div class="detail-header">
     <a href="#setnumiters/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setnumiters(self, numIters)</h1>
+    <h1 class="signature" translate="no">setnumiters(self, numIters)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L94" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -537,13 +562,13 @@ cv
 
   <div class="detail-header">
     <a href="#setnumlevels/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setnumlevels(self, numLevels)</h1>
+    <h1 class="signature" translate="no">setnumlevels(self, numLevels)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L102" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -559,13 +584,13 @@ cv
 
   <div class="detail-header">
     <a href="#setpolyn/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setpolyn(self, polyN)</h1>
+    <h1 class="signature" translate="no">setpolyn(self, polyN)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L110" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -581,13 +606,13 @@ cv
 
   <div class="detail-header">
     <a href="#setpolysigma/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setpolysigma(self, polySigma)</h1>
+    <h1 class="signature" translate="no">setpolysigma(self, polySigma)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L118" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -603,13 +628,13 @@ cv
 
   <div class="detail-header">
     <a href="#setpyrscale/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setpyrscale(self, pyrScale)</h1>
+    <h1 class="signature" translate="no">setpyrscale(self, pyrScale)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L126" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -625,13 +650,13 @@ cv
 
   <div class="detail-header">
     <a href="#setwinsize/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">setwinsize(self, winSize)</h1>
+    <h1 class="signature" translate="no">setwinsize(self, winSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_farnebackopticalflow.ex#L134" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -644,48 +669,31 @@ cv
   </section>
 </section>
 
-          </div>
-        </section>
+    </div>
+  </section>
 
       <footer class="footer">
 
+          <p>
+            On Hex.pm:
+
+            <span class="line">
+              <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+              <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+                <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_farnebackopticalflow.ex">(current file)</a>
+
+            </span>
+
+            <button class="line footer-button display-quick-switch">
+              Search
+            </button>
+          </p>
+
         <p>
-          Find it on Hex:
-          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
-          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
-
-            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_farnebackopticalflow.ex">(current file)</a>
-
-        </p>
-
-        <p>
-          <span class="line">
-            Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
-          </span>
-          <span class="line">
-            Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-          </span>
-        </p>
-        <p>
-
-            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
-
-          <button class="line footer-button display-shortcuts-help">
-            Display keyboard shortcuts
-          </button>
-          <button class="line footer-button night-mode-toggle">
-            Toggle night mode
-          </button>
-          <button class="line footer-button display-quick-switch">
-            Go to a HexDocs package
-          </button>
-          <button class="line footer-button tooltips-toggle">
-            <span class="tooltips-option-disable">Disable tooltips</span>
-            <span class="tooltips-option-enable">Enable tooltips</span>
-          </button>
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.27.3) for the
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
         </p>
       </footer>
     </div>
