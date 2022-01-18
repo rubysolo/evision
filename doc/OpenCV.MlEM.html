@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="project" content="Evision v0.1.0-dev">
+
+    <title>OpenCV.MlEM — Evision v0.1.0-dev</title>
+    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+
+    <script src="dist/sidebar_items-51bda36515.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="OpenCV.html" class="sidebar-projectName">
+Evision
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0-dev
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+OpenCV.MlEM <small class="app-vsn">(Evision v0.1.0-dev)</small>
+
+          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-cv-ml summary">
+    <h2>
+      <a href="#cv-ml">cv.ml</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create/0">create()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getclustersnumber/1">getclustersnumber(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getcovariancematrixtype/1">getcovariancematrixtype(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getcovs/1">getcovs(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getmeans/1">getmeans(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gettermcriteria/1">gettermcriteria(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getweights/1">getweights(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#load/1">load(filepath)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#load/2">load(filepath, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Loads and creates a serialized EM from a file
+   Use EM::save to serialize and store an EM to disk.
+   Load the EM from this file again, by calling this function with the path to the file.
+   Optionally specify the node for the file containing the classifier</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#predict/2">predict(self, samples)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#predict/3">predict(self, samples, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns posterior probabilities for the provided samples</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#predict2/2">predict2(self, sample)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#predict2/3">predict2(self, sample, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns a likelihood logarithm value and an index of the most probable mixture component
+  for the given sample.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setclustersnumber/2">setclustersnumber(self, val)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setcovariancematrixtype/2">setcovariancematrixtype(self, val)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#settermcriteria/2">settermcriteria(self, val)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#traine/3">traine(self, samples, means0)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#traine/4">traine(self, samples, means0, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Expectation step. You need to provide initial means \f$a_k\f$ of
+  mixture components. Optionally you can pass initial weights \f$\pi_k\f$ and covariance matrices
+  \f$S_k\f$ of mixture components.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trainem/2">trainem(self, samples)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trainem/3">trainem(self, samples, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Expectation step. Initial values of the model parameters will be
+  estimated by the k-means algorithm.
+  Unlike many of the ML models, %EM is an unsupervised learning algorithm and it does not take
+  responses (class labels or function values) as input. Instead, it computes the <em>Maximum
+  Likelihood Estimate</em> of the Gaussian mixture parameters from an input sample set, stores all the
+  parameters inside the structure: \f$p_{i,k}\f$ in probs, \f$a_k\f$ in means , \f$S_k\f$ in
+  covs[k], \f$\pi_k\f$ in weights , and optionally computes the output &quot;class label&quot; for each
+  sample: \f$\texttt{labels}_i=\texttt{arg max}_k(p_{i,k}), i=1..N\f$ (indices of the most
+  probable mixture component for each sample).
+  The trained model can be used further for prediction, just like any other classifier. The
+  trained model is similar to the NormalBayesClassifier.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trainm/3">trainm(self, samples, probs0)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trainm/4">trainm(self, samples, probs0, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Maximization step. You need to provide initial probabilities
+  \f$p_{i,k}\f$ to use this option.</p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="cv-ml" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#cv-ml">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+cv.ml
+          </h1>
+          <div class="cv-ml-list">
+<section class="detail" id="create/0">
+
+  <div class="detail-header">
+    <a href="#create/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L3" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getclustersnumber/1">
+
+  <div class="detail-header">
+    <a href="#getclustersnumber/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getclustersnumber(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L9" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getcovariancematrixtype/1">
+
+  <div class="detail-header">
+    <a href="#getcovariancematrixtype/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getcovariancematrixtype(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L15" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getcovs/1">
+
+  <div class="detail-header">
+    <a href="#getcovs/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getcovs(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L21" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getmeans/1">
+
+  <div class="detail-header">
+    <a href="#getmeans/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getmeans(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L27" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="gettermcriteria/1">
+
+  <div class="detail-header">
+    <a href="#gettermcriteria/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gettermcriteria(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L33" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getweights/1">
+
+  <div class="detail-header">
+    <a href="#getweights/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getweights(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L39" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="load/1">
+
+  <div class="detail-header">
+    <a href="#load/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">load(filepath)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L67" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="load/2">
+
+  <div class="detail-header">
+    <a href="#load/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">load(filepath, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L59" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Loads and creates a serialized EM from a file
+   Use EM::save to serialize and store an EM to disk.
+   Load the EM from this file again, by calling this function with the path to the file.
+   Optionally specify the node for the file containing the classifier</p><ul><li><strong>filepath</strong>.</li><li><strong>nodeName</strong>.</li><li><strong>nodeName</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">load</span><span class="p" data-group-id="7166750250-1">(</span><span class="n">filepath</span><span class="p" data-group-id="7166750250-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">nodeName</span><span class="p" data-group-id="7166750250-2">]</span><span class="p" data-group-id="7166750250-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="predict/2">
+
+  <div class="detail-header">
+    <a href="#predict/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">predict(self, samples)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L96" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="predict/3">
+
+  <div class="detail-header">
+    <a href="#predict/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">predict(self, samples, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L89" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns posterior probabilities for the provided samples</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.
+  posterior probabilities for each sample from the input</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">predict</span><span class="p" data-group-id="7365697480-1">(</span><span class="n">samples</span><span class="p" data-group-id="7365697480-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="7365697480-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="7365697480-3">]</span><span class="p" data-group-id="7365697480-2">]</span><span class="p" data-group-id="7365697480-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">results</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="predict2/2">
+
+  <div class="detail-header">
+    <a href="#predict2/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">predict2(self, sample)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L135" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="predict2/3">
+
+  <div class="detail-header">
+    <a href="#predict2/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">predict2(self, sample, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L128" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns a likelihood logarithm value and an index of the most probable mixture component
+  for the given sample.</p><ul><li><strong>sample</strong>.
+  \f$1 \times dims\f$ or \f$dims \times 1\f$ size.</li><li><strong>probs</strong>.
+  given the sample. It has \f$1 \times nclusters\f$ size and CV_64FC1 type.
+The method returns a two-element double vector. Zero element is a likelihood logarithm value for
+the sample. First element is an index of the most probable mixture component for the given
+sample.</li><li><strong>probs</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">predict2</span><span class="p" data-group-id="2772564104-1">(</span><span class="n">sample</span><span class="p" data-group-id="2772564104-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="p" data-group-id="2772564104-2">]</span><span class="p" data-group-id="2772564104-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="setclustersnumber/2">
+
+  <div class="detail-header">
+    <a href="#setclustersnumber/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">setclustersnumber(self, val)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L149" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="setcovariancematrixtype/2">
+
+  <div class="detail-header">
+    <a href="#setcovariancematrixtype/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">setcovariancematrixtype(self, val)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L157" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="settermcriteria/2">
+
+  <div class="detail-header">
+    <a href="#settermcriteria/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">settermcriteria(self, val)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L165" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="traine/3">
+
+  <div class="detail-header">
+    <a href="#traine/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">traine(self, samples, means0)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L216" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="traine/4">
+
+  <div class="detail-header">
+    <a href="#traine/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">traine(self, samples, means0, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L208" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Expectation step. You need to provide initial means \f$a_k\f$ of
+  mixture components. Optionally you can pass initial weights \f$\pi_k\f$ and covariance matrices
+  \f$S_k\f$ of mixture components.</p><ul><li><strong>samples</strong>.
+  one-channel matrix, each row of which is a sample. If the matrix does not have CV_64F type
+  it will be converted to the inner matrix of such type for the further computing.</li><li><strong>means0</strong>.
+  \f$nclusters \times dims\f$ size. If the matrix does not have CV_64F type it will be
+  converted to the inner matrix of such type for the further computing.</li><li><strong>covs0</strong>.
+  covariance matrices is a one-channel matrix of \f$dims \times dims\f$ size. If the matrices
+  do not have CV_64F type they will be converted to the inner matrices of such type for the
+  further computing.</li><li><strong>weights0</strong>.
+  floating-point matrix with \f$1 \times nclusters\f$ or \f$nclusters \times 1\f$ size.</li><li><strong>logLikelihoods</strong>.
+  each sample. It has \f$nsamples \times 1\f$ size and CV_64FC1 type.</li><li><strong>labels</strong>.
+  \f$\texttt{labels}_i=\texttt{arg max}_k(p_{i,k}), i=1..N\f$ (indices of the most probable
+  mixture component for each sample). It has \f$nsamples \times 1\f$ size and CV_32SC1 type.</li><li><strong>probs</strong>.
+  mixture component given the each sample. It has \f$nsamples \times nclusters\f$ size and
+  CV_64FC1 type.</li><li><strong>covs0</strong> : UMat</li><li><strong>weights0</strong> : UMat</li><li><strong>logLikelihoods</strong> : UMat</li><li><strong>labels</strong> : UMat</li><li><strong>probs</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">trainE</span><span class="p" data-group-id="5165419954-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">means0</span><span class="p" data-group-id="5165419954-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">covs0</span><span class="p" data-group-id="5165419954-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">weights0</span><span class="p" data-group-id="5165419954-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p" data-group-id="5165419954-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p" data-group-id="5165419954-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="p" data-group-id="5165419954-6">]</span><span class="p" data-group-id="5165419954-5">]</span><span class="p" data-group-id="5165419954-4">]</span><span class="p" data-group-id="5165419954-3">]</span><span class="p" data-group-id="5165419954-2">]</span><span class="p" data-group-id="5165419954-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="trainem/2">
+
+  <div class="detail-header">
+    <a href="#trainem/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">trainem(self, samples)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L275" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="trainem/3">
+
+  <div class="detail-header">
+    <a href="#trainem/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">trainem(self, samples, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L268" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Expectation step. Initial values of the model parameters will be
+  estimated by the k-means algorithm.
+  Unlike many of the ML models, %EM is an unsupervised learning algorithm and it does not take
+  responses (class labels or function values) as input. Instead, it computes the <em>Maximum
+  Likelihood Estimate</em> of the Gaussian mixture parameters from an input sample set, stores all the
+  parameters inside the structure: \f$p_{i,k}\f$ in probs, \f$a_k\f$ in means , \f$S_k\f$ in
+  covs[k], \f$\pi_k\f$ in weights , and optionally computes the output &quot;class label&quot; for each
+  sample: \f$\texttt{labels}_i=\texttt{arg max}_k(p_{i,k}), i=1..N\f$ (indices of the most
+  probable mixture component for each sample).
+  The trained model can be used further for prediction, just like any other classifier. The
+  trained model is similar to the NormalBayesClassifier.</p><ul><li><strong>samples</strong>.
+  one-channel matrix, each row of which is a sample. If the matrix does not have CV_64F type
+  it will be converted to the inner matrix of such type for the further computing.</li><li><strong>logLikelihoods</strong>.
+  each sample. It has \f$nsamples \times 1\f$ size and CV_64FC1 type.</li><li><strong>labels</strong>.
+  \f$\texttt{labels}_i=\texttt{arg max}_k(p_{i,k}), i=1..N\f$ (indices of the most probable
+  mixture component for each sample). It has \f$nsamples \times 1\f$ size and CV_32SC1 type.</li><li><strong>probs</strong>.
+  mixture component given the each sample. It has \f$nsamples \times nclusters\f$ size and
+  CV_64FC1 type.</li><li><strong>logLikelihoods</strong> : UMat</li><li><strong>labels</strong> : UMat</li><li><strong>probs</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">trainEM</span><span class="p" data-group-id="9816973164-1">(</span><span class="n">samples</span><span class="p" data-group-id="9816973164-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p" data-group-id="9816973164-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p" data-group-id="9816973164-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="p" data-group-id="9816973164-4">]</span><span class="p" data-group-id="9816973164-3">]</span><span class="p" data-group-id="9816973164-2">]</span><span class="p" data-group-id="9816973164-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="trainm/3">
+
+  <div class="detail-header">
+    <a href="#trainm/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">trainm(self, samples, probs0)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L324" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="trainm/4">
+
+  <div class="detail-header">
+    <a href="#trainm/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">trainm(self, samples, probs0, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_em.ex#L316" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Estimate the Gaussian mixture parameters from a samples set.
+  This variation starts with Maximization step. You need to provide initial probabilities
+  \f$p_{i,k}\f$ to use this option.</p><ul><li><strong>samples</strong>.
+  one-channel matrix, each row of which is a sample. If the matrix does not have CV_64F type
+  it will be converted to the inner matrix of such type for the further computing.</li><li><strong>probs0</strong>.</li><li><strong>logLikelihoods</strong>.
+  each sample. It has \f$nsamples \times 1\f$ size and CV_64FC1 type.</li><li><strong>labels</strong>.
+  \f$\texttt{labels}_i=\texttt{arg max}_k(p_{i,k}), i=1..N\f$ (indices of the most probable
+  mixture component for each sample). It has \f$nsamples \times 1\f$ size and CV_32SC1 type.</li><li><strong>probs</strong>.
+  mixture component given the each sample. It has \f$nsamples \times nclusters\f$ size and
+  CV_64FC1 type.</li><li><strong>logLikelihoods</strong> : UMat</li><li><strong>labels</strong> : UMat</li><li><strong>probs</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">trainM</span><span class="p" data-group-id="3622076387-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">probs0</span><span class="p" data-group-id="3622076387-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p" data-group-id="3622076387-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p" data-group-id="3622076387-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="p" data-group-id="3622076387-4">]</span><span class="p" data-group-id="3622076387-3">]</span><span class="p" data-group-id="3622076387-2">]</span><span class="p" data-group-id="3622076387-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">logLikelihoods</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span></code></pre>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+
+        <p>
+          Find it on Hex:
+          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_ml_em.ex">(current file)</a>
+
+        </p>
+
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [["\\f$", "\\f$"]],
+            displayMath: [["\\f[", "\\f]"]],
+            skipTags: ["script", "noscript", "style", "textarea"],
+            processEnvironments: false
+        },
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+    });
+    //<![CDATA[
+    MathJax.Hub.Config(
+    {
+        TeX: {
+            Macros: {
+                matTT: ["\\[ \\left|\\begin{array}{ccc} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{array}\\right| \\]", 9],
+                fork: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ \\end{array} \\right.", 4],
+                forkthree: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ \\end{array} \\right.", 6],
+                forkfour: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ #7 & \\mbox{#8}\\\\ \\end{array} \\right.", 8],
+                vecthree: ["\\begin{bmatrix} #1\\\\ #2\\\\ #3 \\end{bmatrix}", 3],
+                vecthreethree: ["\\begin{bmatrix} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{bmatrix}", 9],
+                cameramatrix: ["#1 = \\begin{bmatrix} f_x & 0 & c_x\\\\ 0 & f_y & c_y\\\\ 0 & 0 & 1 \\end{bmatrix}", 1],
+                distcoeffs: ["(k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \\tau_x, \\tau_y]]]]) \\text{ of 4, 5, 8, 12 or 14 elements}"],
+                distcoeffsfisheye: ["(k_1, k_2, k_3, k_4)"],
+                hdotsfor: ["\\dots", 1],
+                mathbbm: ["\\mathbb{#1}", 1],
+                bordermatrix: ["\\matrix{#1}", 1]
+            }
+        }
+    }
+    );
+    //]]>
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+    
+  </body>
+</html>

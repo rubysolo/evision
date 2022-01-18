@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="project" content="Evision v0.1.0-dev">
+
+    <title>OpenCV.CirclesGridFinderParameters — Evision v0.1.0-dev</title>
+    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+
+    <script src="dist/sidebar_items-51bda36515.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="OpenCV.html" class="sidebar-projectName">
+Evision
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0-dev
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+OpenCV.CirclesGridFinderParameters <small class="app-vsn">(Evision v0.1.0-dev)</small>
+
+          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-cv summary">
+    <h2>
+      <a href="#cv">cv</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#circlesgridfinderparameters/0">circlesgridfinderparameters()</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#convexhullfactor/1">convexhullfactor(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#densityneighborhoodsize/1">densityneighborhoodsize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edgegain/1">edgegain(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edgepenalty/1">edgepenalty(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#existingvertexgain/1">existingvertexgain(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#keypointscale/1">keypointscale(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#kmeansattempts/1">kmeansattempts(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#maxrectifieddistance/1">maxrectifieddistance(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mindensity/1">mindensity(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mindistancetoaddkeypoint/1">mindistancetoaddkeypoint(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mingraphconfidence/1">mingraphconfidence(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#minrngedgeswitchdist/1">minrngedgeswitchdist(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_convexhullfactor/2">set_convexhullfactor(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_densityneighborhoodsize/2">set_densityneighborhoodsize(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_edgegain/2">set_edgegain(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_edgepenalty/2">set_edgepenalty(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_existingvertexgain/2">set_existingvertexgain(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_keypointscale/2">set_keypointscale(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_kmeansattempts/2">set_kmeansattempts(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_maxrectifieddistance/2">set_maxrectifieddistance(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_mindensity/2">set_mindensity(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_mindistancetoaddkeypoint/2">set_mindistancetoaddkeypoint(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_mingraphconfidence/2">set_mingraphconfidence(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_minrngedgeswitchdist/2">set_minrngedgeswitchdist(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_squaresize/2">set_squaresize(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_vertexgain/2">set_vertexgain(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_vertexpenalty/2">set_vertexpenalty(self, opts)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#squaresize/1">squaresize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#vertexgain/1">vertexgain(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#vertexpenalty/1">vertexpenalty(self)</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="cv" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#cv">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+cv
+          </h1>
+          <div class="cv-list">
+<section class="detail" id="circlesgridfinderparameters/0">
+
+  <div class="detail-header">
+    <a href="#circlesgridfinderparameters/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">circlesgridfinderparameters()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L3" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="convexhullfactor/1">
+
+  <div class="detail-header">
+    <a href="#convexhullfactor/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">convexhullfactor(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L8" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="densityneighborhoodsize/1">
+
+  <div class="detail-header">
+    <a href="#densityneighborhoodsize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">densityneighborhoodsize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L14" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="edgegain/1">
+
+  <div class="detail-header">
+    <a href="#edgegain/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">edgegain(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L20" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="edgepenalty/1">
+
+  <div class="detail-header">
+    <a href="#edgepenalty/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">edgepenalty(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L26" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="existingvertexgain/1">
+
+  <div class="detail-header">
+    <a href="#existingvertexgain/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">existingvertexgain(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L32" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="keypointscale/1">
+
+  <div class="detail-header">
+    <a href="#keypointscale/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">keypointscale(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L38" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="kmeansattempts/1">
+
+  <div class="detail-header">
+    <a href="#kmeansattempts/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">kmeansattempts(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L44" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="maxrectifieddistance/1">
+
+  <div class="detail-header">
+    <a href="#maxrectifieddistance/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">maxrectifieddistance(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L50" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="mindensity/1">
+
+  <div class="detail-header">
+    <a href="#mindensity/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">mindensity(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L56" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="mindistancetoaddkeypoint/1">
+
+  <div class="detail-header">
+    <a href="#mindistancetoaddkeypoint/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">mindistancetoaddkeypoint(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L62" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="mingraphconfidence/1">
+
+  <div class="detail-header">
+    <a href="#mingraphconfidence/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">mingraphconfidence(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L68" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="minrngedgeswitchdist/1">
+
+  <div class="detail-header">
+    <a href="#minrngedgeswitchdist/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">minrngedgeswitchdist(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L74" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_convexhullfactor/2">
+
+  <div class="detail-header">
+    <a href="#set_convexhullfactor/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_convexhullfactor(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L11" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_densityneighborhoodsize/2">
+
+  <div class="detail-header">
+    <a href="#set_densityneighborhoodsize/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_densityneighborhoodsize(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L17" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_edgegain/2">
+
+  <div class="detail-header">
+    <a href="#set_edgegain/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_edgegain(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L23" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_edgepenalty/2">
+
+  <div class="detail-header">
+    <a href="#set_edgepenalty/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_edgepenalty(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L29" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_existingvertexgain/2">
+
+  <div class="detail-header">
+    <a href="#set_existingvertexgain/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_existingvertexgain(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L35" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_keypointscale/2">
+
+  <div class="detail-header">
+    <a href="#set_keypointscale/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_keypointscale(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L41" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_kmeansattempts/2">
+
+  <div class="detail-header">
+    <a href="#set_kmeansattempts/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_kmeansattempts(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L47" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_maxrectifieddistance/2">
+
+  <div class="detail-header">
+    <a href="#set_maxrectifieddistance/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_maxrectifieddistance(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L53" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_mindensity/2">
+
+  <div class="detail-header">
+    <a href="#set_mindensity/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_mindensity(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L59" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_mindistancetoaddkeypoint/2">
+
+  <div class="detail-header">
+    <a href="#set_mindistancetoaddkeypoint/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_mindistancetoaddkeypoint(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L65" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_mingraphconfidence/2">
+
+  <div class="detail-header">
+    <a href="#set_mingraphconfidence/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_mingraphconfidence(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L71" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_minrngedgeswitchdist/2">
+
+  <div class="detail-header">
+    <a href="#set_minrngedgeswitchdist/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_minrngedgeswitchdist(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L77" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_squaresize/2">
+
+  <div class="detail-header">
+    <a href="#set_squaresize/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_squaresize(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L83" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_vertexgain/2">
+
+  <div class="detail-header">
+    <a href="#set_vertexgain/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_vertexgain(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L89" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_vertexpenalty/2">
+
+  <div class="detail-header">
+    <a href="#set_vertexpenalty/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_vertexpenalty(self, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L95" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="squaresize/1">
+
+  <div class="detail-header">
+    <a href="#squaresize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">squaresize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L80" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="vertexgain/1">
+
+  <div class="detail-header">
+    <a href="#vertexgain/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">vertexgain(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L86" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="vertexpenalty/1">
+
+  <div class="detail-header">
+    <a href="#vertexpenalty/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">vertexpenalty(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_circlesgridfinderparameters.ex#L92" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+
+        <p>
+          Find it on Hex:
+          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_circlesgridfinderparameters.ex">(current file)</a>
+
+        </p>
+
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [["\\f$", "\\f$"]],
+            displayMath: [["\\f[", "\\f]"]],
+            skipTags: ["script", "noscript", "style", "textarea"],
+            processEnvironments: false
+        },
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+    });
+    //<![CDATA[
+    MathJax.Hub.Config(
+    {
+        TeX: {
+            Macros: {
+                matTT: ["\\[ \\left|\\begin{array}{ccc} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{array}\\right| \\]", 9],
+                fork: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ \\end{array} \\right.", 4],
+                forkthree: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ \\end{array} \\right.", 6],
+                forkfour: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ #7 & \\mbox{#8}\\\\ \\end{array} \\right.", 8],
+                vecthree: ["\\begin{bmatrix} #1\\\\ #2\\\\ #3 \\end{bmatrix}", 3],
+                vecthreethree: ["\\begin{bmatrix} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{bmatrix}", 9],
+                cameramatrix: ["#1 = \\begin{bmatrix} f_x & 0 & c_x\\\\ 0 & f_y & c_y\\\\ 0 & 0 & 1 \\end{bmatrix}", 1],
+                distcoeffs: ["(k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \\tau_x, \\tau_y]]]]) \\text{ of 4, 5, 8, 12 or 14 elements}"],
+                distcoeffsfisheye: ["(k_1, k_2, k_3, k_4)"],
+                hdotsfor: ["\\dots", 1],
+                mathbbm: ["\\mathbb{#1}", 1],
+                bordermatrix: ["\\matrix{#1}", 1]
+            }
+        }
+    }
+    );
+    //]]>
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+    
+  </body>
+</html>

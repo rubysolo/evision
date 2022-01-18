@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="project" content="Evision v0.1.0-dev">
+
+    <title>OpenCV.HOGDescriptor — Evision v0.1.0-dev</title>
+    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+
+    <script src="dist/sidebar_items-51bda36515.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="OpenCV.html" class="sidebar-projectName">
+Evision
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0-dev
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+OpenCV.HOGDescriptor <small class="app-vsn">(Evision v0.1.0-dev)</small>
+
+          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-cv summary">
+    <h2>
+      <a href="#cv">cv</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#checkdetectorsize/1">checkdetectorsize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#compute/2">compute(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#compute/3">compute(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Computes HOG descriptors of given image.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#computegradient/4">computegradient(self, img, grad, angleOfs)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#computegradient/5">computegradient(self, img, grad, angleOfs, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Computes gradients and quantized gradient orientations.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detect/2">detect(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detect/3">detect(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Performs object detection without a multi-scale window.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectmultiscale/2">detectmultiscale(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectmultiscale/3">detectmultiscale(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Detects objects of different sizes in the input image. The detected objects are returned as a list
+  of rectangles.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getdaimlerpeopledetector/0">getdaimlerpeopledetector()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getdefaultpeopledetector/0">getdefaultpeopledetector()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getdescriptorsize/1">getdescriptorsize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getwinsigma/1">getwinsigma(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hogdescriptor/0">hogdescriptor()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hogdescriptor/1">hogdescriptor(filename)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hogdescriptor/5">hogdescriptor(winSize, blockSize, blockStride, cellSize, nbins)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hogdescriptor/6">hogdescriptor(winSize, blockSize, blockStride, cellSize, nbins, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Has overloading in C++</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#load/2">load(self, filename)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#load/3">load(self, filename, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>loads HOGDescriptor parameters and coefficients for the linear SVM classifier from a file.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#save/2">save(self, filename)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#save/3">save(self, filename, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>saves HOGDescriptor parameters and coefficients for the linear SVM classifier to a file</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setsvmdetector/2">setsvmdetector(self, svmdetector)</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#blocksize/1">blocksize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#blockstride/1">blockstride(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#cellsize/1">cellsize(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#derivaperture/1">derivaperture(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gammacorrection/1">gammacorrection(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#histogramnormtype/1">histogramnormtype(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#l2hysthreshold/1">l2hysthreshold(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#nbins/1">nbins(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#nlevels/1">nlevels(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#signedgradient/1">signedgradient(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#svmdetector/1">svmdetector(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#winsigma/1">winsigma(self)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#winsize/1">winsize(self)</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="cv" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#cv">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+cv
+          </h1>
+          <div class="cv-list">
+<section class="detail" id="checkdetectorsize/1">
+
+  <div class="detail-header">
+    <a href="#checkdetectorsize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">checkdetectorsize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L69" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="compute/2">
+
+  <div class="detail-header">
+    <a href="#compute/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">compute(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L98" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="compute/3">
+
+  <div class="detail-header">
+    <a href="#compute/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">compute(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L91" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Computes HOG descriptors of given image.</p><ul><li><strong>img</strong>.</li><li><strong>descriptors</strong>.</li><li><strong>winStride</strong>.</li><li><strong>padding</strong> : Padding</li><li><strong>locations</strong>.</li><li><strong>winStride</strong> : Size</li><li><strong>padding</strong> : Size</li><li><strong>locations</strong> : vector_Point</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">compute</span><span class="p" data-group-id="0182450147-1">(</span><span class="n">img</span><span class="p" data-group-id="0182450147-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">winStride</span><span class="p" data-group-id="0182450147-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">padding</span><span class="p" data-group-id="0182450147-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">locations</span><span class="p" data-group-id="0182450147-4">]</span><span class="p" data-group-id="0182450147-3">]</span><span class="p" data-group-id="0182450147-2">]</span><span class="p" data-group-id="0182450147-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">descriptors</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="computegradient/4">
+
+  <div class="detail-header">
+    <a href="#computegradient/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">computegradient(self, img, grad, angleOfs)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L138" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="computegradient/5">
+
+  <div class="detail-header">
+    <a href="#computegradient/5" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">computegradient(self, img, grad, angleOfs, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L129" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Computes gradients and quantized gradient orientations.</p><ul><li><strong>img</strong>.</li><li><strong>grad</strong>.</li><li><strong>angleOfs</strong>.</li><li><strong>paddingTL</strong>.</li><li><strong>paddingBR</strong>.</li><li><strong>paddingTL</strong> : Size</li><li><strong>paddingBR</strong> : Size</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">computeGradient</span><span class="p" data-group-id="1774092786-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">grad</span><span class="p">,</span><span class="w"> </span><span class="n">angleOfs</span><span class="p" data-group-id="1774092786-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">paddingTL</span><span class="p" data-group-id="1774092786-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">paddingBR</span><span class="p" data-group-id="1774092786-3">]</span><span class="p" data-group-id="1774092786-2">]</span><span class="p" data-group-id="1774092786-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">grad</span><span class="p">,</span><span class="w"> </span><span class="n">angleOfs</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detect/2">
+
+  <div class="detail-header">
+    <a href="#detect/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detect(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L183" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detect/3">
+
+  <div class="detail-header">
+    <a href="#detect/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detect(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L176" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Performs object detection without a multi-scale window.</p><ul><li><strong>img</strong>.</li><li><strong>foundLocations</strong>.</li><li><strong>weights</strong>.</li><li><strong>hitThreshold</strong>.
+  Usually it is 0 and should be specified in the detector coefficients (as the last free coefficient).
+  But if the free coefficient is omitted (which is allowed), you can specify it manually here.</li><li><strong>winStride</strong>.</li><li><strong>padding</strong> : Padding</li><li><strong>searchLocations</strong>.</li><li><strong>hitThreshold</strong> : double</li><li><strong>winStride</strong> : Size</li><li><strong>padding</strong> : Size</li><li><strong>searchLocations</strong> : vector_Point</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detect</span><span class="p" data-group-id="7290299410-1">(</span><span class="n">img</span><span class="p" data-group-id="7290299410-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">hitThreshold</span><span class="p" data-group-id="7290299410-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">winStride</span><span class="p" data-group-id="7290299410-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">padding</span><span class="p" data-group-id="7290299410-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">searchLocations</span><span class="p" data-group-id="7290299410-5">]</span><span class="p" data-group-id="7290299410-4">]</span><span class="p" data-group-id="7290299410-3">]</span><span class="p" data-group-id="7290299410-2">]</span><span class="p" data-group-id="7290299410-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">foundLocations</span><span class="p">,</span><span class="w"> </span><span class="n">weights</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detectmultiscale/2">
+
+  <div class="detail-header">
+    <a href="#detectmultiscale/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectmultiscale(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L233" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detectmultiscale/3">
+
+  <div class="detail-header">
+    <a href="#detectmultiscale/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectmultiscale(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L226" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Detects objects of different sizes in the input image. The detected objects are returned as a list
+  of rectangles.</p><ul><li><strong>img</strong>.</li><li><strong>foundLocations</strong>.</li><li><strong>foundWeights</strong>.</li><li><strong>hitThreshold</strong>.
+  Usually it is 0 and should be specified in the detector coefficients (as the last free coefficient).
+  But if the free coefficient is omitted (which is allowed), you can specify it manually here.</li><li><strong>winStride</strong>.</li><li><strong>padding</strong> : Padding</li><li><strong>scale</strong>.</li><li><strong>finalThreshold</strong>.</li><li><strong>useMeanshiftGrouping</strong>.</li><li><strong>hitThreshold</strong> : double</li><li><strong>winStride</strong> : Size</li><li><strong>padding</strong> : Size</li><li><strong>scale</strong> : double</li><li><strong>finalThreshold</strong> : double</li><li><strong>useMeanshiftGrouping</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectMultiScale</span><span class="p" data-group-id="7107020166-1">(</span><span class="n">img</span><span class="p" data-group-id="7107020166-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">hitThreshold</span><span class="p" data-group-id="7107020166-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">winStride</span><span class="p" data-group-id="7107020166-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">padding</span><span class="p" data-group-id="7107020166-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="p" data-group-id="7107020166-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">finalThreshold</span><span class="p" data-group-id="7107020166-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">useMeanshiftGrouping</span><span class="p" data-group-id="7107020166-7">]</span><span class="p" data-group-id="7107020166-6">]</span><span class="p" data-group-id="7107020166-5">]</span><span class="p" data-group-id="7107020166-4">]</span><span class="p" data-group-id="7107020166-3">]</span><span class="p" data-group-id="7107020166-2">]</span><span class="p" data-group-id="7107020166-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">foundLocations</span><span class="p">,</span><span class="w"> </span><span class="n">foundWeights</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="getdaimlerpeopledetector/0">
+
+  <div class="detail-header">
+    <a href="#getdaimlerpeopledetector/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getdaimlerpeopledetector()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L252" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getdefaultpeopledetector/0">
+
+  <div class="detail-header">
+    <a href="#getdefaultpeopledetector/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getdefaultpeopledetector()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L258" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getdescriptorsize/1">
+
+  <div class="detail-header">
+    <a href="#getdescriptorsize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getdescriptorsize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L264" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getwinsigma/1">
+
+  <div class="detail-header">
+    <a href="#getwinsigma/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">getwinsigma(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L270" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="hogdescriptor/0">
+
+  <div class="detail-header">
+    <a href="#hogdescriptor/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hogdescriptor()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L63" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="hogdescriptor/1">
+
+  <div class="detail-header">
+    <a href="#hogdescriptor/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hogdescriptor(filename)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L55" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="hogdescriptor/5">
+
+  <div class="detail-header">
+    <a href="#hogdescriptor/5" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hogdescriptor(winSize, blockSize, blockStride, cellSize, nbins)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L43" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="hogdescriptor/6">
+
+  <div class="detail-header">
+    <a href="#hogdescriptor/6" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hogdescriptor(winSize, blockSize, blockStride, cellSize, nbins, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L31" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Has overloading in C++</p><ul><li><strong>winSize</strong>.</li><li><strong>blockSize</strong>.</li><li><strong>blockStride</strong>.</li><li><strong>cellSize</strong>.</li><li><strong>nbins</strong>.</li><li><strong>derivAperture</strong>.</li><li><strong>winSigma</strong>.</li><li><strong>histogramNormType</strong>.</li><li><strong>l2HysThreshold</strong>.</li><li><strong>gammaCorrection</strong>.</li><li><strong>nlevels</strong>.</li><li><strong>signedGradient</strong>.</li><li><strong>derivAperture</strong> : int</li><li><strong>winSigma</strong> : double</li><li><strong>histogramNormType</strong> : HOGDescriptor_HistogramNormType</li><li><strong>l2HysThreshold</strong> : double</li><li><strong>gammaCorrection</strong> : bool</li><li><strong>nlevels</strong> : int</li><li><strong>signedGradient</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="nc">HOGDescriptor</span><span class="p" data-group-id="3308840390-1">(</span><span class="c">_winSize</span><span class="p">,</span><span class="w"> </span><span class="c">_blockSize</span><span class="p">,</span><span class="w"> </span><span class="c">_blockStride</span><span class="p">,</span><span class="w"> </span><span class="c">_cellSize</span><span class="p">,</span><span class="w"> </span><span class="c">_nbins</span><span class="p" data-group-id="3308840390-2">[</span><span class="p">,</span><span class="w"> </span><span class="c">_derivAperture</span><span class="p" data-group-id="3308840390-3">[</span><span class="p">,</span><span class="w"> </span><span class="c">_winSigma</span><span class="p" data-group-id="3308840390-4">[</span><span class="p">,</span><span class="w"> </span><span class="c">_histogramNormType</span><span class="p" data-group-id="3308840390-5">[</span><span class="p">,</span><span class="w"> </span><span class="c">_L2HysThreshold</span><span class="p" data-group-id="3308840390-6">[</span><span class="p">,</span><span class="w"> </span><span class="c">_gammaCorrection</span><span class="p" data-group-id="3308840390-7">[</span><span class="p">,</span><span class="w"> </span><span class="c">_nlevels</span><span class="p" data-group-id="3308840390-8">[</span><span class="p">,</span><span class="w"> </span><span class="c">_signedGradient</span><span class="p" data-group-id="3308840390-8">]</span><span class="p" data-group-id="3308840390-7">]</span><span class="p" data-group-id="3308840390-6">]</span><span class="p" data-group-id="3308840390-5">]</span><span class="p" data-group-id="3308840390-4">]</span><span class="p" data-group-id="3308840390-3">]</span><span class="p" data-group-id="3308840390-2">]</span><span class="p" data-group-id="3308840390-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">HOGDescriptor</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="load/2">
+
+  <div class="detail-header">
+    <a href="#load/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">load(self, filename)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L295" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="load/3">
+
+  <div class="detail-header">
+    <a href="#load/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">load(self, filename, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L287" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>loads HOGDescriptor parameters and coefficients for the linear SVM classifier from a file.</p><ul><li><strong>filename</strong>.</li><li><strong>objname</strong>.</li><li><strong>objname</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">load</span><span class="p" data-group-id="4499007746-1">(</span><span class="n">filename</span><span class="p" data-group-id="4499007746-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">objname</span><span class="p" data-group-id="4499007746-2">]</span><span class="p" data-group-id="4499007746-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="save/2">
+
+  <div class="detail-header">
+    <a href="#save/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">save(self, filename)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L322" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="save/3">
+
+  <div class="detail-header">
+    <a href="#save/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">save(self, filename, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L314" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>saves HOGDescriptor parameters and coefficients for the linear SVM classifier to a file</p><ul><li><strong>filename</strong>.</li><li><strong>objname</strong>.</li><li><strong>objname</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">save</span><span class="p" data-group-id="3078739479-1">(</span><span class="n">filename</span><span class="p" data-group-id="3078739479-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">objname</span><span class="p" data-group-id="3078739479-2">]</span><span class="p" data-group-id="3078739479-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="setsvmdetector/2">
+
+  <div class="detail-header">
+    <a href="#setsvmdetector/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">setsvmdetector(self, svmdetector)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L330" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="blocksize/1">
+
+  <div class="detail-header">
+    <a href="#blocksize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">blocksize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L342" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="blockstride/1">
+
+  <div class="detail-header">
+    <a href="#blockstride/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">blockstride(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L345" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="cellsize/1">
+
+  <div class="detail-header">
+    <a href="#cellsize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">cellsize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L348" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="derivaperture/1">
+
+  <div class="detail-header">
+    <a href="#derivaperture/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">derivaperture(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L351" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="gammacorrection/1">
+
+  <div class="detail-header">
+    <a href="#gammacorrection/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gammacorrection(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L354" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="histogramnormtype/1">
+
+  <div class="detail-header">
+    <a href="#histogramnormtype/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">histogramnormtype(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L357" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="l2hysthreshold/1">
+
+  <div class="detail-header">
+    <a href="#l2hysthreshold/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">l2hysthreshold(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L339" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="nbins/1">
+
+  <div class="detail-header">
+    <a href="#nbins/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">nbins(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L360" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="nlevels/1">
+
+  <div class="detail-header">
+    <a href="#nlevels/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">nlevels(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L363" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="signedgradient/1">
+
+  <div class="detail-header">
+    <a href="#signedgradient/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">signedgradient(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L366" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="svmdetector/1">
+
+  <div class="detail-header">
+    <a href="#svmdetector/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">svmdetector(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L369" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="winsigma/1">
+
+  <div class="detail-header">
+    <a href="#winsigma/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">winsigma(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L372" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="winsize/1">
+
+  <div class="detail-header">
+    <a href="#winsize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">winsize(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_hogdescriptor.ex#L375" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+
+        <p>
+          Find it on Hex:
+          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_hogdescriptor.ex">(current file)</a>
+
+        </p>
+
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [["\\f$", "\\f$"]],
+            displayMath: [["\\f[", "\\f]"]],
+            skipTags: ["script", "noscript", "style", "textarea"],
+            processEnvironments: false
+        },
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+    });
+    //<![CDATA[
+    MathJax.Hub.Config(
+    {
+        TeX: {
+            Macros: {
+                matTT: ["\\[ \\left|\\begin{array}{ccc} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{array}\\right| \\]", 9],
+                fork: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ \\end{array} \\right.", 4],
+                forkthree: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ \\end{array} \\right.", 6],
+                forkfour: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ #7 & \\mbox{#8}\\\\ \\end{array} \\right.", 8],
+                vecthree: ["\\begin{bmatrix} #1\\\\ #2\\\\ #3 \\end{bmatrix}", 3],
+                vecthreethree: ["\\begin{bmatrix} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{bmatrix}", 9],
+                cameramatrix: ["#1 = \\begin{bmatrix} f_x & 0 & c_x\\\\ 0 & f_y & c_y\\\\ 0 & 0 & 1 \\end{bmatrix}", 1],
+                distcoeffs: ["(k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \\tau_x, \\tau_y]]]]) \\text{ of 4, 5, 8, 12 or 14 elements}"],
+                distcoeffsfisheye: ["(k_1, k_2, k_3, k_4)"],
+                hdotsfor: ["\\dots", 1],
+                mathbbm: ["\\mathbb{#1}", 1],
+                bordermatrix: ["\\matrix{#1}", 1]
+            }
+        }
+    }
+    );
+    //]]>
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+    
+  </body>
+</html>

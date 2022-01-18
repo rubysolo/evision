@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.5">
+    <meta name="project" content="Evision v0.1.0-dev">
+
+    <title>OpenCV.QRCodeDetector — Evision v0.1.0-dev</title>
+    <link rel="stylesheet" href="dist/elixir-d1506dba1db7cdc5483e.css" />
+
+    <script src="dist/sidebar_items-51bda36515.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-7b632b26f13d5e0d20e1.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="OpenCV.html" class="sidebar-projectName">
+Evision
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0-dev
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+OpenCV.QRCodeDetector <small class="app-vsn">(Evision v0.1.0-dev)</small>
+
+          <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-cv summary">
+    <h2>
+      <a href="#cv">cv</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decode/3">decode(self, img, points)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decode/4">decode(self, img, points, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Decodes QR code in image once it's found by the detect() method.
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decodecurved/3">decodecurved(self, img, points)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decodecurved/4">decodecurved(self, img, points, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Decodes QR code on a curved surface in image once it's found by the detect() method.
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decodemulti/3">decodemulti(self, img, points)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#decodemulti/4">decodemulti(self, img, points, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Decodes QR codes in image once it's found by the detect() method.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detect/2">detect(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detect/3">detect(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Detects QR code in image and returns the quadrangle containing the code.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecode/2">detectanddecode(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecode/3">detectanddecode(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Both detects and decodes QR code</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecodecurved/2">detectanddecodecurved(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecodecurved/3">detectanddecodecurved(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Both detects and decodes QR code on a curved surface</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecodemulti/2">detectanddecodemulti(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectanddecodemulti/3">detectanddecodemulti(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Both detects and decodes QR codes</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectmulti/2">detectmulti(self, img)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detectmulti/3">detectmulti(self, img, opts)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Detects QR codes in image and returns the vector of the quadrangles containing the codes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#qrcodedetector/0">qrcodedetector()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setepsx/2">setepsx(self, epsX)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setepsy/2">setepsy(self, epsY)</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="cv" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#cv">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+cv
+          </h1>
+          <div class="cv-list">
+<section class="detail" id="decode/3">
+
+  <div class="detail-header">
+    <a href="#decode/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decode(self, img, points)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L30" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="decode/4">
+
+  <div class="detail-header">
+    <a href="#decode/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decode(self, img, points, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L22" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Decodes QR code in image once it's found by the detect() method.
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">decode</span><span class="p" data-group-id="3852471144-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="3852471144-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="3852471144-2">]</span><span class="p" data-group-id="3852471144-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="decodecurved/3">
+
+  <div class="detail-header">
+    <a href="#decodecurved/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decodecurved(self, img, points)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L66" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="decodecurved/4">
+
+  <div class="detail-header">
+    <a href="#decodecurved/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decodecurved(self, img, points, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L58" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Decodes QR code on a curved surface in image once it's found by the detect() method.
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">decodeCurved</span><span class="p" data-group-id="2615056040-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="2615056040-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="2615056040-2">]</span><span class="p" data-group-id="2615056040-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="decodemulti/3">
+
+  <div class="detail-header">
+    <a href="#decodemulti/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decodemulti(self, img, points)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L102" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="decodemulti/4">
+
+  <div class="detail-header">
+    <a href="#decodemulti/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">decodemulti(self, img, points, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L94" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Decodes QR codes in image once it's found by the detect() method.</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">decodeMulti</span><span class="p" data-group-id="8568436695-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="8568436695-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="8568436695-2">]</span><span class="p" data-group-id="8568436695-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detect/2">
+
+  <div class="detail-header">
+    <a href="#detect/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detect(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L135" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detect/3">
+
+  <div class="detail-header">
+    <a href="#detect/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detect(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L128" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Detects QR code in image and returns the quadrangle containing the code.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detect</span><span class="p" data-group-id="4311155892-1">(</span><span class="n">img</span><span class="p" data-group-id="4311155892-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="4311155892-2">]</span><span class="p" data-group-id="4311155892-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detectanddecode/2">
+
+  <div class="detail-header">
+    <a href="#detectanddecode/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecode(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L169" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detectanddecode/3">
+
+  <div class="detail-header">
+    <a href="#detectanddecode/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecode(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L162" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Both detects and decodes QR code</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectAndDecode</span><span class="p" data-group-id="8221154775-1">(</span><span class="n">img</span><span class="p" data-group-id="8221154775-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="8221154775-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="8221154775-3">]</span><span class="p" data-group-id="8221154775-2">]</span><span class="p" data-group-id="8221154775-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detectanddecodecurved/2">
+
+  <div class="detail-header">
+    <a href="#detectanddecodecurved/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecodecurved(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L204" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detectanddecodecurved/3">
+
+  <div class="detail-header">
+    <a href="#detectanddecodecurved/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecodecurved(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L197" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Both detects and decodes QR code on a curved surface</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectAndDecodeCurved</span><span class="p" data-group-id="9488451555-1">(</span><span class="n">img</span><span class="p" data-group-id="9488451555-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="9488451555-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="9488451555-3">]</span><span class="p" data-group-id="9488451555-2">]</span><span class="p" data-group-id="9488451555-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detectanddecodemulti/2">
+
+  <div class="detail-header">
+    <a href="#detectanddecodemulti/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecodemulti(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L240" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detectanddecodemulti/3">
+
+  <div class="detail-header">
+    <a href="#detectanddecodemulti/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectanddecodemulti(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L233" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Both detects and decodes QR codes</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectAndDecodeMulti</span><span class="p" data-group-id="1510637194-1">(</span><span class="n">img</span><span class="p" data-group-id="1510637194-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="1510637194-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="1510637194-3">]</span><span class="p" data-group-id="1510637194-2">]</span><span class="p" data-group-id="1510637194-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="detectmulti/2">
+
+  <div class="detail-header">
+    <a href="#detectmulti/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectmulti(self, img)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L273" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="detectmulti/3">
+
+  <div class="detail-header">
+    <a href="#detectmulti/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">detectmulti(self, img, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L266" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Detects QR codes in image and returns the vector of the quadrangles containing the codes.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir"><span class="n">detectMulti</span><span class="p" data-group-id="8788168654-1">(</span><span class="n">img</span><span class="p" data-group-id="8788168654-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="8788168654-2">]</span><span class="p" data-group-id="8788168654-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="qrcodedetector/0">
+
+  <div class="detail-header">
+    <a href="#qrcodedetector/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">qrcodedetector()</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L3" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="setepsx/2">
+
+  <div class="detail-header">
+    <a href="#setepsx/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">setepsx(self, epsX)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L287" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="setepsy/2">
+
+  <div class="detail-header">
+    <a href="#setepsy/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">setepsy(self, epsY)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L295" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+
+        <p>
+          Find it on Hex:
+          <a href="https://hex.pm/packages/evision/0.1.0-dev" class="line footer-hex-package">Package</a>
+          <a href="https://preview.hex.pm/preview/evision/0.1.0-dev" class="line">Preview</a>
+
+            <a href="https://preview.hex.pm/preview/evision/0.1.0-dev/show/lib/generated/opencv_qrcodedetector.ex">(current file)</a>
+
+        </p>
+
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.5) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [["\\f$", "\\f$"]],
+            displayMath: [["\\f[", "\\f]"]],
+            skipTags: ["script", "noscript", "style", "textarea"],
+            processEnvironments: false
+        },
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+    });
+    //<![CDATA[
+    MathJax.Hub.Config(
+    {
+        TeX: {
+            Macros: {
+                matTT: ["\\[ \\left|\\begin{array}{ccc} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{array}\\right| \\]", 9],
+                fork: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ \\end{array} \\right.", 4],
+                forkthree: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ \\end{array} \\right.", 6],
+                forkfour: ["\\left\\{ \\begin{array}{l l} #1 & \\mbox{#2}\\\\ #3 & \\mbox{#4}\\\\ #5 & \\mbox{#6}\\\\ #7 & \\mbox{#8}\\\\ \\end{array} \\right.", 8],
+                vecthree: ["\\begin{bmatrix} #1\\\\ #2\\\\ #3 \\end{bmatrix}", 3],
+                vecthreethree: ["\\begin{bmatrix} #1 & #2 & #3\\\\ #4 & #5 & #6\\\\ #7 & #8 & #9 \\end{bmatrix}", 9],
+                cameramatrix: ["#1 = \\begin{bmatrix} f_x & 0 & c_x\\\\ 0 & f_y & c_y\\\\ 0 & 0 & 1 \\end{bmatrix}", 1],
+                distcoeffs: ["(k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \\tau_x, \\tau_y]]]]) \\text{ of 4, 5, 8, 12 or 14 elements}"],
+                distcoeffsfisheye: ["(k_1, k_2, k_3, k_4)"],
+                hdotsfor: ["\\dots", 1],
+                mathbbm: ["\\mathbb{#1}", 1],
+                bordermatrix: ["\\matrix{#1}", 1]
+            }
+        }
+    }
+    );
+    //]]>
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+    
+  </body>
+</html>
