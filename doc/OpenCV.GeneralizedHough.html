@@ -10,7 +10,7 @@
     <title>OpenCV.GeneralizedHough — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getcannyhighthresh/1" translate="no">getcannyhighthresh(self)</a>
+          <a href="#getCannyHighThresh/1" translate="no">getCannyHighThresh(self)</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getcannylowthresh/1" translate="no">getcannylowthresh(self)</a>
+          <a href="#getCannyLowThresh/1" translate="no">getCannyLowThresh(self)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdp/1" translate="no">getdp(self)</a>
+          <a href="#getDp/1" translate="no">getDp(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmaxbuffersize/1" translate="no">getmaxbuffersize(self)</a>
+          <a href="#getMaxBufferSize/1" translate="no">getMaxBufferSize(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmindist/1" translate="no">getmindist(self)</a>
+          <a href="#getMinDist/1" translate="no">getMinDist(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setcannyhighthresh/2" translate="no">setcannyhighthresh(self, cannyHighThresh)</a>
+          <a href="#setCannyHighThresh/2" translate="no">setCannyHighThresh(self, cannyHighThresh)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setcannylowthresh/2" translate="no">setcannylowthresh(self, cannyLowThresh)</a>
+          <a href="#setCannyLowThresh/2" translate="no">setCannyLowThresh(self, cannyLowThresh)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdp/2" translate="no">setdp(self, dp)</a>
+          <a href="#setDp/2" translate="no">setDp(self, dp)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmaxbuffersize/2" translate="no">setmaxbuffersize(self, maxBufferSize)</a>
+          <a href="#setMaxBufferSize/2" translate="no">setMaxBufferSize(self, maxBufferSize)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmindist/2" translate="no">setmindist(self, minDist)</a>
+          <a href="#setMinDist/2" translate="no">setMinDist(self, minDist)</a>
 
         </div>
 
@@ -212,7 +212,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#settemplate/4" translate="no">settemplate(self, edges, dx, dy)</a>
+          <a href="#setTemplate/4" translate="no">setTemplate(self, edges, dx, dy)</a>
 
         </div>
 
@@ -220,7 +220,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#settemplate/5" translate="no">settemplate(self, edges, dx, dy, opts)</a>
+          <a href="#setTemplate/5" translate="no">setTemplate(self, edges, dx, dy, opts)</a>
 
         </div>
 
@@ -283,17 +283,17 @@ cv
 
   <section class="docstring">
 
-<ul><li><strong>positions</strong> : UMat</li><li><strong>votes</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="5555942087-1">(</span><span class="n">edges</span><span class="p">,</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="n">dy</span><span class="p" data-group-id="5555942087-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">positions</span><span class="p" data-group-id="5555942087-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">votes</span><span class="p" data-group-id="5555942087-3">]</span><span class="p" data-group-id="5555942087-2">]</span><span class="p" data-group-id="5555942087-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">positions</span><span class="p">,</span><span class="w"> </span><span class="n">votes</span></code></pre>
+<ul><li><strong>positions</strong> : UMat</li><li><strong>votes</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="4365240041-1">(</span><span class="n">edges</span><span class="p">,</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="n">dy</span><span class="p" data-group-id="4365240041-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">positions</span><span class="p" data-group-id="4365240041-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">votes</span><span class="p" data-group-id="4365240041-3">]</span><span class="p" data-group-id="4365240041-2">]</span><span class="p" data-group-id="4365240041-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">positions</span><span class="p">,</span><span class="w"> </span><span class="n">votes</span></code></pre>
   </section>
 </section>
-<section class="detail" id="getcannyhighthresh/1">
+<section class="detail" id="getCannyHighThresh/1">
 
   <div class="detail-header">
-    <a href="#getcannyhighthresh/1" class="detail-link" title="Link to this function">
+    <a href="#getCannyHighThresh/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getcannyhighthresh(self)</h1>
+    <h1 class="signature" translate="no">getCannyHighThresh(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L54" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -308,14 +308,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getcannylowthresh/1">
+<section class="detail" id="getCannyLowThresh/1">
 
   <div class="detail-header">
-    <a href="#getcannylowthresh/1" class="detail-link" title="Link to this function">
+    <a href="#getCannyLowThresh/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getcannylowthresh(self)</h1>
+    <h1 class="signature" translate="no">getCannyLowThresh(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L60" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -330,14 +330,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdp/1">
+<section class="detail" id="getDp/1">
 
   <div class="detail-header">
-    <a href="#getdp/1" class="detail-link" title="Link to this function">
+    <a href="#getDp/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdp(self)</h1>
+    <h1 class="signature" translate="no">getDp(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L66" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -352,14 +352,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getmaxbuffersize/1">
+<section class="detail" id="getMaxBufferSize/1">
 
   <div class="detail-header">
-    <a href="#getmaxbuffersize/1" class="detail-link" title="Link to this function">
+    <a href="#getMaxBufferSize/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmaxbuffersize(self)</h1>
+    <h1 class="signature" translate="no">getMaxBufferSize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L72" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -374,14 +374,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getmindist/1">
+<section class="detail" id="getMinDist/1">
 
   <div class="detail-header">
-    <a href="#getmindist/1" class="detail-link" title="Link to this function">
+    <a href="#getMinDist/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmindist(self)</h1>
+    <h1 class="signature" translate="no">getMinDist(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L78" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -396,14 +396,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setcannyhighthresh/2">
+<section class="detail" id="setCannyHighThresh/2">
 
   <div class="detail-header">
-    <a href="#setcannyhighthresh/2" class="detail-link" title="Link to this function">
+    <a href="#setCannyHighThresh/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setcannyhighthresh(self, cannyHighThresh)</h1>
+    <h1 class="signature" translate="no">setCannyHighThresh(self, cannyHighThresh)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L84" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -418,14 +418,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setcannylowthresh/2">
+<section class="detail" id="setCannyLowThresh/2">
 
   <div class="detail-header">
-    <a href="#setcannylowthresh/2" class="detail-link" title="Link to this function">
+    <a href="#setCannyLowThresh/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setcannylowthresh(self, cannyLowThresh)</h1>
+    <h1 class="signature" translate="no">setCannyLowThresh(self, cannyLowThresh)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L92" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -440,14 +440,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdp/2">
+<section class="detail" id="setDp/2">
 
   <div class="detail-header">
-    <a href="#setdp/2" class="detail-link" title="Link to this function">
+    <a href="#setDp/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdp(self, dp)</h1>
+    <h1 class="signature" translate="no">setDp(self, dp)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L100" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -462,14 +462,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setmaxbuffersize/2">
+<section class="detail" id="setMaxBufferSize/2">
 
   <div class="detail-header">
-    <a href="#setmaxbuffersize/2" class="detail-link" title="Link to this function">
+    <a href="#setMaxBufferSize/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmaxbuffersize(self, maxBufferSize)</h1>
+    <h1 class="signature" translate="no">setMaxBufferSize(self, maxBufferSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L108" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -484,14 +484,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setmindist/2">
+<section class="detail" id="setMinDist/2">
 
   <div class="detail-header">
-    <a href="#setmindist/2" class="detail-link" title="Link to this function">
+    <a href="#setMinDist/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmindist(self, minDist)</h1>
+    <h1 class="signature" translate="no">setMinDist(self, minDist)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L116" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -506,14 +506,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="settemplate/4">
+<section class="detail" id="setTemplate/4">
 
   <div class="detail-header">
-    <a href="#settemplate/4" class="detail-link" title="Link to this function">
+    <a href="#setTemplate/4" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">settemplate(self, edges, dx, dy)</h1>
+    <h1 class="signature" translate="no">setTemplate(self, edges, dx, dy)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L141" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -528,14 +528,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="settemplate/5">
+<section class="detail" id="setTemplate/5">
 
   <div class="detail-header">
-    <a href="#settemplate/5" class="detail-link" title="Link to this function">
+    <a href="#setTemplate/5" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">settemplate(self, edges, dx, dy, opts)</h1>
+    <h1 class="signature" translate="no">setTemplate(self, edges, dx, dy, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_generalizedhough.ex#L132" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -547,7 +547,7 @@ cv
 
   <section class="docstring">
 
-<ul><li><strong>templCenter</strong> : Point</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTemplate</span><span class="p" data-group-id="6505458306-1">(</span><span class="n">edges</span><span class="p">,</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="n">dy</span><span class="p" data-group-id="6505458306-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">templCenter</span><span class="p" data-group-id="6505458306-2">]</span><span class="p" data-group-id="6505458306-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+<ul><li><strong>templCenter</strong> : Point</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTemplate</span><span class="p" data-group-id="6657471981-1">(</span><span class="n">edges</span><span class="p">,</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="n">dy</span><span class="p" data-group-id="6657471981-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">templCenter</span><span class="p" data-group-id="6657471981-2">]</span><span class="p" data-group-id="6657471981-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
   </section>
 </section>
 

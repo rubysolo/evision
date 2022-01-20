@@ -10,7 +10,7 @@
     <title>OpenCV.GFTTDetector — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getblocksize/1" translate="no">getblocksize(self)</a>
+          <a href="#getBlockSize/1" translate="no">getBlockSize(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdefaultname/1" translate="no">getdefaultname(self)</a>
+          <a href="#getDefaultName/1" translate="no">getDefaultName(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getharrisdetector/1" translate="no">getharrisdetector(self)</a>
+          <a href="#getHarrisDetector/1" translate="no">getHarrisDetector(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getk/1" translate="no">getk(self)</a>
+          <a href="#getK/1" translate="no">getK(self)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmaxfeatures/1" translate="no">getmaxfeatures(self)</a>
+          <a href="#getMaxFeatures/1" translate="no">getMaxFeatures(self)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmindistance/1" translate="no">getmindistance(self)</a>
+          <a href="#getMinDistance/1" translate="no">getMinDistance(self)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getqualitylevel/1" translate="no">getqualitylevel(self)</a>
+          <a href="#getQualityLevel/1" translate="no">getQualityLevel(self)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setblocksize/2" translate="no">setblocksize(self, blockSize)</a>
+          <a href="#setBlockSize/2" translate="no">setBlockSize(self, blockSize)</a>
 
         </div>
 
@@ -212,7 +212,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setharrisdetector/2" translate="no">setharrisdetector(self, val)</a>
+          <a href="#setHarrisDetector/2" translate="no">setHarrisDetector(self, val)</a>
 
         </div>
 
@@ -220,7 +220,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setk/2" translate="no">setk(self, k)</a>
+          <a href="#setK/2" translate="no">setK(self, k)</a>
 
         </div>
 
@@ -228,7 +228,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmaxfeatures/2" translate="no">setmaxfeatures(self, maxFeatures)</a>
+          <a href="#setMaxFeatures/2" translate="no">setMaxFeatures(self, maxFeatures)</a>
 
         </div>
 
@@ -236,7 +236,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmindistance/2" translate="no">setmindistance(self, minDistance)</a>
+          <a href="#setMinDistance/2" translate="no">setMinDistance(self, minDistance)</a>
 
         </div>
 
@@ -244,7 +244,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setqualitylevel/2" translate="no">setqualitylevel(self, qlevel)</a>
+          <a href="#setQualityLevel/2" translate="no">setQualityLevel(self, qlevel)</a>
 
         </div>
 
@@ -349,17 +349,17 @@ cv
 
   <section class="docstring">
 
-<ul><li><strong>useHarrisDetector</strong> : bool</li><li><strong>k</strong> : double</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="9313367399-1">(</span><span class="n">maxCorners</span><span class="p">,</span><span class="w"> </span><span class="n">qualityLevel</span><span class="p">,</span><span class="w"> </span><span class="n">minDistance</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p">,</span><span class="w"> </span><span class="n">gradiantSize</span><span class="p" data-group-id="9313367399-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">useHarrisDetector</span><span class="p" data-group-id="9313367399-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p" data-group-id="9313367399-3">]</span><span class="p" data-group-id="9313367399-2">]</span><span class="p" data-group-id="9313367399-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+<ul><li><strong>useHarrisDetector</strong> : bool</li><li><strong>k</strong> : double</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="5106245245-1">(</span><span class="n">maxCorners</span><span class="p">,</span><span class="w"> </span><span class="n">qualityLevel</span><span class="p">,</span><span class="w"> </span><span class="n">minDistance</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p">,</span><span class="w"> </span><span class="n">gradiantSize</span><span class="p" data-group-id="5106245245-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">useHarrisDetector</span><span class="p" data-group-id="5106245245-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p" data-group-id="5106245245-3">]</span><span class="p" data-group-id="5106245245-2">]</span><span class="p" data-group-id="5106245245-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
-<section class="detail" id="getblocksize/1">
+<section class="detail" id="getBlockSize/1">
 
   <div class="detail-header">
-    <a href="#getblocksize/1" class="detail-link" title="Link to this function">
+    <a href="#getBlockSize/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getblocksize(self)</h1>
+    <h1 class="signature" translate="no">getBlockSize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L58" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -374,14 +374,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdefaultname/1">
+<section class="detail" id="getDefaultName/1">
 
   <div class="detail-header">
-    <a href="#getdefaultname/1" class="detail-link" title="Link to this function">
+    <a href="#getDefaultName/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdefaultname(self)</h1>
+    <h1 class="signature" translate="no">getDefaultName(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L64" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -396,14 +396,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getharrisdetector/1">
+<section class="detail" id="getHarrisDetector/1">
 
   <div class="detail-header">
-    <a href="#getharrisdetector/1" class="detail-link" title="Link to this function">
+    <a href="#getHarrisDetector/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getharrisdetector(self)</h1>
+    <h1 class="signature" translate="no">getHarrisDetector(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L70" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -418,14 +418,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getk/1">
+<section class="detail" id="getK/1">
 
   <div class="detail-header">
-    <a href="#getk/1" class="detail-link" title="Link to this function">
+    <a href="#getK/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getk(self)</h1>
+    <h1 class="signature" translate="no">getK(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L76" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -440,14 +440,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getmaxfeatures/1">
+<section class="detail" id="getMaxFeatures/1">
 
   <div class="detail-header">
-    <a href="#getmaxfeatures/1" class="detail-link" title="Link to this function">
+    <a href="#getMaxFeatures/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmaxfeatures(self)</h1>
+    <h1 class="signature" translate="no">getMaxFeatures(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L82" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -462,14 +462,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getmindistance/1">
+<section class="detail" id="getMinDistance/1">
 
   <div class="detail-header">
-    <a href="#getmindistance/1" class="detail-link" title="Link to this function">
+    <a href="#getMinDistance/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmindistance(self)</h1>
+    <h1 class="signature" translate="no">getMinDistance(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L88" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -484,14 +484,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getqualitylevel/1">
+<section class="detail" id="getQualityLevel/1">
 
   <div class="detail-header">
-    <a href="#getqualitylevel/1" class="detail-link" title="Link to this function">
+    <a href="#getQualityLevel/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getqualitylevel(self)</h1>
+    <h1 class="signature" translate="no">getQualityLevel(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L94" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -506,14 +506,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setblocksize/2">
+<section class="detail" id="setBlockSize/2">
 
   <div class="detail-header">
-    <a href="#setblocksize/2" class="detail-link" title="Link to this function">
+    <a href="#setBlockSize/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setblocksize(self, blockSize)</h1>
+    <h1 class="signature" translate="no">setBlockSize(self, blockSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L100" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -528,14 +528,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setharrisdetector/2">
+<section class="detail" id="setHarrisDetector/2">
 
   <div class="detail-header">
-    <a href="#setharrisdetector/2" class="detail-link" title="Link to this function">
+    <a href="#setHarrisDetector/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setharrisdetector(self, val)</h1>
+    <h1 class="signature" translate="no">setHarrisDetector(self, val)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L108" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -550,14 +550,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setk/2">
+<section class="detail" id="setK/2">
 
   <div class="detail-header">
-    <a href="#setk/2" class="detail-link" title="Link to this function">
+    <a href="#setK/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setk(self, k)</h1>
+    <h1 class="signature" translate="no">setK(self, k)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L116" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -572,14 +572,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setmaxfeatures/2">
+<section class="detail" id="setMaxFeatures/2">
 
   <div class="detail-header">
-    <a href="#setmaxfeatures/2" class="detail-link" title="Link to this function">
+    <a href="#setMaxFeatures/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmaxfeatures(self, maxFeatures)</h1>
+    <h1 class="signature" translate="no">setMaxFeatures(self, maxFeatures)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L124" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -594,14 +594,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setmindistance/2">
+<section class="detail" id="setMinDistance/2">
 
   <div class="detail-header">
-    <a href="#setmindistance/2" class="detail-link" title="Link to this function">
+    <a href="#setMinDistance/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmindistance(self, minDistance)</h1>
+    <h1 class="signature" translate="no">setMinDistance(self, minDistance)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L132" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -616,14 +616,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setqualitylevel/2">
+<section class="detail" id="setQualityLevel/2">
 
   <div class="detail-header">
-    <a href="#setqualitylevel/2" class="detail-link" title="Link to this function">
+    <a href="#setQualityLevel/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setqualitylevel(self, qlevel)</h1>
+    <h1 class="signature" translate="no">setQualityLevel(self, qlevel)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_gfttdetector.ex#L140" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>

@@ -10,7 +10,7 @@
     <title>OpenCV.DMatch — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -114,7 +114,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#dmatch/0" translate="no">dmatch()</a>
+          <a href="#dMatcher/0" translate="no">dMatcher()</a>
 
         </div>
 
@@ -122,7 +122,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#dmatch/3" translate="no">dmatch(queryIdx, trainIdx, distance)</a>
+          <a href="#dMatcher/3" translate="no">dMatcher(queryIdx, trainIdx, distance)</a>
 
         </div>
 
@@ -130,7 +130,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#dmatch/4" translate="no">dmatch(queryIdx, trainIdx, imgIdx, distance)</a>
+          <a href="#dMatcher/4" translate="no">dMatcher(queryIdx, trainIdx, imgIdx, distance)</a>
 
         </div>
 
@@ -145,7 +145,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#distance/1" translate="no">distance(self)</a>
+          <a href="#get_distance/1" translate="no">get_distance(self)</a>
 
         </div>
 
@@ -153,7 +153,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#imgidx/1" translate="no">imgidx(self)</a>
+          <a href="#get_imgIdx/1" translate="no">get_imgIdx(self)</a>
 
         </div>
 
@@ -161,7 +161,15 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#queryidx/1" translate="no">queryidx(self)</a>
+          <a href="#get_queryIdx/1" translate="no">get_queryIdx(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#get_trainIdx/1" translate="no">get_trainIdx(self)</a>
 
         </div>
 
@@ -177,7 +185,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#set_imgidx/2" translate="no">set_imgidx(self, opts)</a>
+          <a href="#set_imgIdx/2" translate="no">set_imgIdx(self, opts)</a>
 
         </div>
 
@@ -185,7 +193,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#set_queryidx/2" translate="no">set_queryidx(self, opts)</a>
+          <a href="#set_queryIdx/2" translate="no">set_queryIdx(self, opts)</a>
 
         </div>
 
@@ -193,15 +201,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#set_trainidx/2" translate="no">set_trainidx(self, opts)</a>
-
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#trainidx/1" translate="no">trainidx(self)</a>
+          <a href="#set_trainIdx/2" translate="no">set_trainIdx(self, opts)</a>
 
         </div>
 
@@ -221,14 +221,14 @@ Evision
 cv
     </h1>
     <div class="cv-list">
-<section class="detail" id="dmatch/0">
+<section class="detail" id="dMatcher/0">
 
   <div class="detail-header">
-    <a href="#dmatch/0" class="detail-link" title="Link to this function">
+    <a href="#dMatcher/0" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">dmatch()</h1>
+    <h1 class="signature" translate="no">dMatcher()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L24" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -243,14 +243,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="dmatch/3">
+<section class="detail" id="dMatcher/3">
 
   <div class="detail-header">
-    <a href="#dmatch/3" class="detail-link" title="Link to this function">
+    <a href="#dMatcher/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">dmatch(queryIdx, trainIdx, distance)</h1>
+    <h1 class="signature" translate="no">dMatcher(queryIdx, trainIdx, distance)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L14" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -265,14 +265,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="dmatch/4">
+<section class="detail" id="dMatcher/4">
 
   <div class="detail-header">
-    <a href="#dmatch/4" class="detail-link" title="Link to this function">
+    <a href="#dMatcher/4" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">dmatch(queryIdx, trainIdx, imgIdx, distance)</h1>
+    <h1 class="signature" translate="no">dMatcher(queryIdx, trainIdx, imgIdx, distance)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L3" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -300,14 +300,14 @@ cv
 Functions
     </h1>
     <div class="functions-list">
-<section class="detail" id="distance/1">
+<section class="detail" id="get_distance/1">
 
   <div class="detail-header">
-    <a href="#distance/1" class="detail-link" title="Link to this function">
+    <a href="#get_distance/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">distance(self)</h1>
+    <h1 class="signature" translate="no">get_distance(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L29" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -322,14 +322,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="imgidx/1">
+<section class="detail" id="get_imgIdx/1">
 
   <div class="detail-header">
-    <a href="#imgidx/1" class="detail-link" title="Link to this function">
+    <a href="#get_imgIdx/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">imgidx(self)</h1>
+    <h1 class="signature" translate="no">get_imgIdx(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L35" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -344,16 +344,38 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="queryidx/1">
+<section class="detail" id="get_queryIdx/1">
 
   <div class="detail-header">
-    <a href="#queryidx/1" class="detail-link" title="Link to this function">
+    <a href="#get_queryIdx/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">queryidx(self)</h1>
+    <h1 class="signature" translate="no">get_queryIdx(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L41" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_trainIdx/1">
+
+  <div class="detail-header">
+    <a href="#get_trainIdx/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">get_trainIdx(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L47" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -388,14 +410,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="set_imgidx/2">
+<section class="detail" id="set_imgIdx/2">
 
   <div class="detail-header">
-    <a href="#set_imgidx/2" class="detail-link" title="Link to this function">
+    <a href="#set_imgIdx/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">set_imgidx(self, opts)</h1>
+    <h1 class="signature" translate="no">set_imgIdx(self, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L38" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -410,14 +432,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="set_queryidx/2">
+<section class="detail" id="set_queryIdx/2">
 
   <div class="detail-header">
-    <a href="#set_queryidx/2" class="detail-link" title="Link to this function">
+    <a href="#set_queryIdx/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">set_queryidx(self, opts)</h1>
+    <h1 class="signature" translate="no">set_queryIdx(self, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L44" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -432,38 +454,16 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="set_trainidx/2">
+<section class="detail" id="set_trainIdx/2">
 
   <div class="detail-header">
-    <a href="#set_trainidx/2" class="detail-link" title="Link to this function">
+    <a href="#set_trainIdx/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">set_trainidx(self, opts)</h1>
+    <h1 class="signature" translate="no">set_trainIdx(self, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L50" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="trainidx/1">
-
-  <div class="detail-header">
-    <a href="#trainidx/1" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">trainidx(self)</h1>
-
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_dmatch.ex#L47" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>

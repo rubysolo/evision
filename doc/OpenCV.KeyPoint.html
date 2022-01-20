@@ -10,7 +10,7 @@
     <title>OpenCV.KeyPoint — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#keypoint/0" translate="no">keypoint()</a>
+          <a href="#keyPoint/0" translate="no">keyPoint()</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#keypoint/3" translate="no">keypoint(x, y, size)</a>
+          <a href="#keyPoint/3" translate="no">keyPoint(x, y, size)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#keypoint/4" translate="no">keypoint(x, y, size, opts)</a>
+          <a href="#keyPoint/4" translate="no">keyPoint(x, y, size, opts)</a>
 
         </div>
 
@@ -173,7 +173,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#angle/1" translate="no">angle(self)</a>
+          <a href="#get_angle/1" translate="no">get_angle(self)</a>
 
         </div>
 
@@ -181,7 +181,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#class_id/1" translate="no">class_id(self)</a>
+          <a href="#get_class_id/1" translate="no">get_class_id(self)</a>
 
         </div>
 
@@ -189,7 +189,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#octave/1" translate="no">octave(self)</a>
+          <a href="#get_octave/1" translate="no">get_octave(self)</a>
 
         </div>
 
@@ -197,7 +197,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#pt/1" translate="no">pt(self)</a>
+          <a href="#get_pt/1" translate="no">get_pt(self)</a>
 
         </div>
 
@@ -205,7 +205,15 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#response/1" translate="no">response(self)</a>
+          <a href="#get_response/1" translate="no">get_response(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#get_size/1" translate="no">get_size(self)</a>
 
         </div>
 
@@ -254,14 +262,6 @@ Evision
       <div class="summary-row">
         <div class="summary-signature">
           <a href="#set_size/2" translate="no">set_size(self, opts)</a>
-
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#size/1" translate="no">size(self)</a>
 
         </div>
 
@@ -322,17 +322,17 @@ cv
 
   <section class="docstring">
 
-<p>Has overloading in C++</p><ul><li><strong>points2f</strong>.</li><li><strong>keypoints</strong>.</li><li><strong>size</strong>.</li><li><strong>response</strong>.</li><li><strong>octave</strong>.</li><li><strong>class_id</strong>.</li><li><strong>size</strong> : float</li><li><strong>response</strong> : float</li><li><strong>octave</strong> : int</li><li><strong>class_id</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">convert</span><span class="p" data-group-id="8427809746-1">(</span><span class="n">points2f</span><span class="p" data-group-id="8427809746-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p" data-group-id="8427809746-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">response</span><span class="p" data-group-id="8427809746-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">octave</span><span class="p" data-group-id="8427809746-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">class_id</span><span class="p" data-group-id="8427809746-5">]</span><span class="p" data-group-id="8427809746-4">]</span><span class="p" data-group-id="8427809746-3">]</span><span class="p" data-group-id="8427809746-2">]</span><span class="p" data-group-id="8427809746-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span></code></pre>
+<p>Has overloading in C++</p><ul><li><strong>points2f</strong>.</li><li><strong>keypoints</strong>.</li><li><strong>size</strong>.</li><li><strong>response</strong>.</li><li><strong>octave</strong>.</li><li><strong>class_id</strong>.</li><li><strong>size</strong> : float</li><li><strong>response</strong> : float</li><li><strong>octave</strong> : int</li><li><strong>class_id</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">convert</span><span class="p" data-group-id="6868581775-1">(</span><span class="n">points2f</span><span class="p" data-group-id="6868581775-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p" data-group-id="6868581775-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">response</span><span class="p" data-group-id="6868581775-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">octave</span><span class="p" data-group-id="6868581775-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">class_id</span><span class="p" data-group-id="6868581775-5">]</span><span class="p" data-group-id="6868581775-4">]</span><span class="p" data-group-id="6868581775-3">]</span><span class="p" data-group-id="6868581775-2">]</span><span class="p" data-group-id="6868581775-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span></code></pre>
   </section>
 </section>
-<section class="detail" id="keypoint/0">
+<section class="detail" id="keyPoint/0">
 
   <div class="detail-header">
-    <a href="#keypoint/0" class="detail-link" title="Link to this function">
+    <a href="#keyPoint/0" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">keypoint()</h1>
+    <h1 class="signature" translate="no">keyPoint()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L41" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -347,14 +347,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="keypoint/3">
+<section class="detail" id="keyPoint/3">
 
   <div class="detail-header">
-    <a href="#keypoint/3" class="detail-link" title="Link to this function">
+    <a href="#keyPoint/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">keypoint(x, y, size)</h1>
+    <h1 class="signature" translate="no">keyPoint(x, y, size)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L31" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -369,14 +369,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="keypoint/4">
+<section class="detail" id="keyPoint/4">
 
   <div class="detail-header">
-    <a href="#keypoint/4" class="detail-link" title="Link to this function">
+    <a href="#keyPoint/4" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">keypoint(x, y, size, opts)</h1>
+    <h1 class="signature" translate="no">keyPoint(x, y, size, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L21" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -388,7 +388,7 @@ cv
 
   <section class="docstring">
 
-<ul><li><strong>x</strong>.</li><li><strong>y</strong>.</li><li><strong>size</strong>.</li><li><strong>angle</strong>.</li><li><strong>response</strong>.</li><li><strong>octave</strong>.</li><li><strong>class_id</strong>.</li><li><strong>angle</strong> : float</li><li><strong>response</strong> : float</li><li><strong>octave</strong> : int</li><li><strong>class_id</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">KeyPoint</span><span class="p" data-group-id="1470218413-1">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p" data-group-id="1470218413-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p" data-group-id="1470218413-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">response</span><span class="p" data-group-id="1470218413-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">octave</span><span class="p" data-group-id="1470218413-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">class_id</span><span class="p" data-group-id="1470218413-5">]</span><span class="p" data-group-id="1470218413-4">]</span><span class="p" data-group-id="1470218413-3">]</span><span class="p" data-group-id="1470218413-2">]</span><span class="p" data-group-id="1470218413-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">KeyPoint</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
+<ul><li><strong>x</strong>.</li><li><strong>y</strong>.</li><li><strong>size</strong>.</li><li><strong>angle</strong>.</li><li><strong>response</strong>.</li><li><strong>octave</strong>.</li><li><strong>class_id</strong>.</li><li><strong>angle</strong> : float</li><li><strong>response</strong> : float</li><li><strong>octave</strong> : int</li><li><strong>class_id</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">KeyPoint</span><span class="p" data-group-id="1573850694-1">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p" data-group-id="1573850694-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p" data-group-id="1573850694-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">response</span><span class="p" data-group-id="1573850694-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">octave</span><span class="p" data-group-id="1573850694-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">class_id</span><span class="p" data-group-id="1573850694-5">]</span><span class="p" data-group-id="1573850694-4">]</span><span class="p" data-group-id="1573850694-3">]</span><span class="p" data-group-id="1573850694-2">]</span><span class="p" data-group-id="1573850694-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">KeyPoint</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
   </section>
 </section>
 <section class="detail" id="overlap/2">
@@ -426,14 +426,14 @@ cv
 Functions
     </h1>
     <div class="functions-list">
-<section class="detail" id="angle/1">
+<section class="detail" id="get_angle/1">
 
   <div class="detail-header">
-    <a href="#angle/1" class="detail-link" title="Link to this function">
+    <a href="#get_angle/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">angle(self)</h1>
+    <h1 class="signature" translate="no">get_angle(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L96" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -448,14 +448,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="class_id/1">
+<section class="detail" id="get_class_id/1">
 
   <div class="detail-header">
-    <a href="#class_id/1" class="detail-link" title="Link to this function">
+    <a href="#get_class_id/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">class_id(self)</h1>
+    <h1 class="signature" translate="no">get_class_id(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L102" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -470,14 +470,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="octave/1">
+<section class="detail" id="get_octave/1">
 
   <div class="detail-header">
-    <a href="#octave/1" class="detail-link" title="Link to this function">
+    <a href="#get_octave/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">octave(self)</h1>
+    <h1 class="signature" translate="no">get_octave(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L108" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -492,14 +492,14 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="pt/1">
+<section class="detail" id="get_pt/1">
 
   <div class="detail-header">
-    <a href="#pt/1" class="detail-link" title="Link to this function">
+    <a href="#get_pt/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">pt(self)</h1>
+    <h1 class="signature" translate="no">get_pt(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L114" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -514,16 +514,38 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="response/1">
+<section class="detail" id="get_response/1">
 
   <div class="detail-header">
-    <a href="#response/1" class="detail-link" title="Link to this function">
+    <a href="#get_response/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">response(self)</h1>
+    <h1 class="signature" translate="no">get_response(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L120" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_size/1">
+
+  <div class="detail-header">
+    <a href="#get_size/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">get_size(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L126" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -656,28 +678,6 @@ Functions
     <h1 class="signature" translate="no">set_size(self, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L129" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="size/1">
-
-  <div class="detail-header">
-    <a href="#size/1" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">size(self)</h1>
-
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_keypoint.ex#L126" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>

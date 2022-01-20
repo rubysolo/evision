@@ -10,7 +10,7 @@
     <title>OpenCV.QRCodeDetector — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -133,7 +133,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#decodecurved/3" translate="no">decodecurved(self, img, points)</a>
+          <a href="#decodeCurved/3" translate="no">decodeCurved(self, img, points)</a>
 
         </div>
 
@@ -141,7 +141,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#decodecurved/4" translate="no">decodecurved(self, img, points, opts)</a>
+          <a href="#decodeCurved/4" translate="no">decodeCurved(self, img, points, opts)</a>
 
         </div>
 
@@ -152,7 +152,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#decodemulti/3" translate="no">decodemulti(self, img, points)</a>
+          <a href="#decodeMulti/3" translate="no">decodeMulti(self, img, points)</a>
 
         </div>
 
@@ -160,7 +160,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#decodemulti/4" translate="no">decodemulti(self, img, points, opts)</a>
+          <a href="#decodeMulti/4" translate="no">decodeMulti(self, img, points, opts)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecode/2" translate="no">detectanddecode(self, img)</a>
+          <a href="#detectAndDecode/2" translate="no">detectAndDecode(self, img)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecode/3" translate="no">detectanddecode(self, img, opts)</a>
+          <a href="#detectAndDecode/3" translate="no">detectAndDecode(self, img, opts)</a>
 
         </div>
 
@@ -206,7 +206,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecodecurved/2" translate="no">detectanddecodecurved(self, img)</a>
+          <a href="#detectAndDecodeCurved/2" translate="no">detectAndDecodeCurved(self, img)</a>
 
         </div>
 
@@ -214,7 +214,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecodecurved/3" translate="no">detectanddecodecurved(self, img, opts)</a>
+          <a href="#detectAndDecodeCurved/3" translate="no">detectAndDecodeCurved(self, img, opts)</a>
 
         </div>
 
@@ -224,7 +224,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecodemulti/2" translate="no">detectanddecodemulti(self, img)</a>
+          <a href="#detectAndDecodeMulti/2" translate="no">detectAndDecodeMulti(self, img)</a>
 
         </div>
 
@@ -232,7 +232,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectanddecodemulti/3" translate="no">detectanddecodemulti(self, img, opts)</a>
+          <a href="#detectAndDecodeMulti/3" translate="no">detectAndDecodeMulti(self, img, opts)</a>
 
         </div>
 
@@ -242,7 +242,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectmulti/2" translate="no">detectmulti(self, img)</a>
+          <a href="#detectMulti/2" translate="no">detectMulti(self, img)</a>
 
         </div>
 
@@ -250,7 +250,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectmulti/3" translate="no">detectmulti(self, img, opts)</a>
+          <a href="#detectMulti/3" translate="no">detectMulti(self, img, opts)</a>
 
         </div>
 
@@ -260,7 +260,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#qrcodedetector/0" translate="no">qrcodedetector()</a>
+          <a href="#qrCodeDetector/0" translate="no">qrCodeDetector()</a>
 
         </div>
 
@@ -268,7 +268,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setepsx/2" translate="no">setepsx(self, epsX)</a>
+          <a href="#setEpsX/2" translate="no">setEpsX(self, epsX)</a>
 
         </div>
 
@@ -276,7 +276,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setepsy/2" translate="no">setepsy(self, epsY)</a>
+          <a href="#setEpsY/2" translate="no">setEpsY(self, epsY)</a>
 
         </div>
 
@@ -338,17 +338,17 @@ cv
   <section class="docstring">
 
 <p>Decodes QR code in image once it's found by the detect() method.
-  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decode</span><span class="p" data-group-id="6496868966-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="6496868966-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="6496868966-2">]</span><span class="p" data-group-id="6496868966-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decode</span><span class="p" data-group-id="6482041451-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="6482041451-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="6482041451-2">]</span><span class="p" data-group-id="6482041451-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
-<section class="detail" id="decodecurved/3">
+<section class="detail" id="decodeCurved/3">
 
   <div class="detail-header">
-    <a href="#decodecurved/3" class="detail-link" title="Link to this function">
+    <a href="#decodeCurved/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">decodecurved(self, img, points)</h1>
+    <h1 class="signature" translate="no">decodeCurved(self, img, points)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L66" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -363,14 +363,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="decodecurved/4">
+<section class="detail" id="decodeCurved/4">
 
   <div class="detail-header">
-    <a href="#decodecurved/4" class="detail-link" title="Link to this function">
+    <a href="#decodeCurved/4" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">decodecurved(self, img, points, opts)</h1>
+    <h1 class="signature" translate="no">decodeCurved(self, img, points, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L58" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -383,17 +383,17 @@ cv
   <section class="docstring">
 
 <p>Decodes QR code on a curved surface in image once it's found by the detect() method.
-  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decodeCurved</span><span class="p" data-group-id="6731986985-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="6731986985-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="6731986985-2">]</span><span class="p" data-group-id="6731986985-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+  Returns UTF8-encoded output string or empty string if the code cannot be decoded.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decodeCurved</span><span class="p" data-group-id="1058798617-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="1058798617-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="1058798617-2">]</span><span class="p" data-group-id="1058798617-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
-<section class="detail" id="decodemulti/3">
+<section class="detail" id="decodeMulti/3">
 
   <div class="detail-header">
-    <a href="#decodemulti/3" class="detail-link" title="Link to this function">
+    <a href="#decodeMulti/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">decodemulti(self, img, points)</h1>
+    <h1 class="signature" translate="no">decodeMulti(self, img, points)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L102" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -408,14 +408,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="decodemulti/4">
+<section class="detail" id="decodeMulti/4">
 
   <div class="detail-header">
-    <a href="#decodemulti/4" class="detail-link" title="Link to this function">
+    <a href="#decodeMulti/4" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">decodemulti(self, img, points, opts)</h1>
+    <h1 class="signature" translate="no">decodeMulti(self, img, points, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L94" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -427,7 +427,7 @@ cv
 
   <section class="docstring">
 
-<p>Decodes QR codes in image once it's found by the detect() method.</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decodeMulti</span><span class="p" data-group-id="3838001179-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="3838001179-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="3838001179-2">]</span><span class="p" data-group-id="3838001179-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+<p>Decodes QR codes in image once it's found by the detect() method.</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">decodeMulti</span><span class="p" data-group-id="6700561229-1">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="6700561229-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="6700561229-2">]</span><span class="p" data-group-id="6700561229-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
 <section class="detail" id="detect/2">
@@ -471,17 +471,17 @@ cv
 
   <section class="docstring">
 
-<p>Detects QR code in image and returns the quadrangle containing the code.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="7145111476-1">(</span><span class="n">img</span><span class="p" data-group-id="7145111476-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="7145111476-2">]</span><span class="p" data-group-id="7145111476-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
+<p>Detects QR code in image and returns the quadrangle containing the code.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="6135345007-1">(</span><span class="n">img</span><span class="p" data-group-id="6135345007-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="6135345007-2">]</span><span class="p" data-group-id="6135345007-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
   </section>
 </section>
-<section class="detail" id="detectanddecode/2">
+<section class="detail" id="detectAndDecode/2">
 
   <div class="detail-header">
-    <a href="#detectanddecode/2" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecode/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecode(self, img)</h1>
+    <h1 class="signature" translate="no">detectAndDecode(self, img)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L169" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -496,14 +496,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="detectanddecode/3">
+<section class="detail" id="detectAndDecode/3">
 
   <div class="detail-header">
-    <a href="#detectanddecode/3" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecode/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecode(self, img, opts)</h1>
+    <h1 class="signature" translate="no">detectAndDecode(self, img, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L162" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -515,17 +515,17 @@ cv
 
   <section class="docstring">
 
-<p>Both detects and decodes QR code</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecode</span><span class="p" data-group-id="4346334338-1">(</span><span class="n">img</span><span class="p" data-group-id="4346334338-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="4346334338-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="4346334338-3">]</span><span class="p" data-group-id="4346334338-2">]</span><span class="p" data-group-id="4346334338-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+<p>Both detects and decodes QR code</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecode</span><span class="p" data-group-id="8479284336-1">(</span><span class="n">img</span><span class="p" data-group-id="8479284336-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="8479284336-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="8479284336-3">]</span><span class="p" data-group-id="8479284336-2">]</span><span class="p" data-group-id="8479284336-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
-<section class="detail" id="detectanddecodecurved/2">
+<section class="detail" id="detectAndDecodeCurved/2">
 
   <div class="detail-header">
-    <a href="#detectanddecodecurved/2" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecodeCurved/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecodecurved(self, img)</h1>
+    <h1 class="signature" translate="no">detectAndDecodeCurved(self, img)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L204" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -540,14 +540,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="detectanddecodecurved/3">
+<section class="detail" id="detectAndDecodeCurved/3">
 
   <div class="detail-header">
-    <a href="#detectanddecodecurved/3" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecodeCurved/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecodecurved(self, img, opts)</h1>
+    <h1 class="signature" translate="no">detectAndDecodeCurved(self, img, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L197" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -559,17 +559,17 @@ cv
 
   <section class="docstring">
 
-<p>Both detects and decodes QR code on a curved surface</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecodeCurved</span><span class="p" data-group-id="2684136554-1">(</span><span class="n">img</span><span class="p" data-group-id="2684136554-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="2684136554-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="2684136554-3">]</span><span class="p" data-group-id="2684136554-2">]</span><span class="p" data-group-id="2684136554-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+<p>Both detects and decodes QR code on a curved surface</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecodeCurved</span><span class="p" data-group-id="5645075793-1">(</span><span class="n">img</span><span class="p" data-group-id="5645075793-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="5645075793-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="5645075793-3">]</span><span class="p" data-group-id="5645075793-2">]</span><span class="p" data-group-id="5645075793-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
-<section class="detail" id="detectanddecodemulti/2">
+<section class="detail" id="detectAndDecodeMulti/2">
 
   <div class="detail-header">
-    <a href="#detectanddecodemulti/2" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecodeMulti/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecodemulti(self, img)</h1>
+    <h1 class="signature" translate="no">detectAndDecodeMulti(self, img)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L240" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -584,14 +584,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="detectanddecodemulti/3">
+<section class="detail" id="detectAndDecodeMulti/3">
 
   <div class="detail-header">
-    <a href="#detectanddecodemulti/3" class="detail-link" title="Link to this function">
+    <a href="#detectAndDecodeMulti/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectanddecodemulti(self, img, opts)</h1>
+    <h1 class="signature" translate="no">detectAndDecodeMulti(self, img, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L233" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -603,17 +603,17 @@ cv
 
   <section class="docstring">
 
-<p>Both detects and decodes QR codes</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecodeMulti</span><span class="p" data-group-id="1609126232-1">(</span><span class="n">img</span><span class="p" data-group-id="1609126232-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="1609126232-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="1609126232-3">]</span><span class="p" data-group-id="1609126232-2">]</span><span class="p" data-group-id="1609126232-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
+<p>Both detects and decodes QR codes</p><ul><li><strong>img</strong>.</li><li><strong>decoded_info</strong>.</li><li><strong>points</strong>.</li><li><strong>straight_qrcode</strong>.</li><li><strong>points</strong> : UMat</li><li><strong>straight_qrcode</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndDecodeMulti</span><span class="p" data-group-id="0101263904-1">(</span><span class="n">img</span><span class="p" data-group-id="0101263904-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="0101263904-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span><span class="p" data-group-id="0101263904-3">]</span><span class="p" data-group-id="0101263904-2">]</span><span class="p" data-group-id="0101263904-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">decoded_info</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p">,</span><span class="w"> </span><span class="n">straight_qrcode</span></code></pre>
   </section>
 </section>
-<section class="detail" id="detectmulti/2">
+<section class="detail" id="detectMulti/2">
 
   <div class="detail-header">
-    <a href="#detectmulti/2" class="detail-link" title="Link to this function">
+    <a href="#detectMulti/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectmulti(self, img)</h1>
+    <h1 class="signature" translate="no">detectMulti(self, img)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L273" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -628,14 +628,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="detectmulti/3">
+<section class="detail" id="detectMulti/3">
 
   <div class="detail-header">
-    <a href="#detectmulti/3" class="detail-link" title="Link to this function">
+    <a href="#detectMulti/3" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectmulti(self, img, opts)</h1>
+    <h1 class="signature" translate="no">detectMulti(self, img, opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L266" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -647,17 +647,17 @@ cv
 
   <section class="docstring">
 
-<p>Detects QR codes in image and returns the vector of the quadrangles containing the codes.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectMulti</span><span class="p" data-group-id="0229208827-1">(</span><span class="n">img</span><span class="p" data-group-id="0229208827-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="0229208827-2">]</span><span class="p" data-group-id="0229208827-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
+<p>Detects QR codes in image and returns the vector of the quadrangles containing the codes.</p><ul><li><strong>img</strong>.</li><li><strong>points</strong>.</li><li><strong>points</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectMulti</span><span class="p" data-group-id="8217636973-1">(</span><span class="n">img</span><span class="p" data-group-id="8217636973-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">points</span><span class="p" data-group-id="8217636973-2">]</span><span class="p" data-group-id="8217636973-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">points</span></code></pre>
   </section>
 </section>
-<section class="detail" id="qrcodedetector/0">
+<section class="detail" id="qrCodeDetector/0">
 
   <div class="detail-header">
-    <a href="#qrcodedetector/0" class="detail-link" title="Link to this function">
+    <a href="#qrCodeDetector/0" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">qrcodedetector()</h1>
+    <h1 class="signature" translate="no">qrCodeDetector()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L3" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -672,14 +672,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setepsx/2">
+<section class="detail" id="setEpsX/2">
 
   <div class="detail-header">
-    <a href="#setepsx/2" class="detail-link" title="Link to this function">
+    <a href="#setEpsX/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setepsx(self, epsX)</h1>
+    <h1 class="signature" translate="no">setEpsX(self, epsX)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L287" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -694,14 +694,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setepsy/2">
+<section class="detail" id="setEpsY/2">
 
   <div class="detail-header">
-    <a href="#setepsy/2" class="detail-link" title="Link to this function">
+    <a href="#setEpsY/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setepsy(self, epsY)</h1>
+    <h1 class="signature" translate="no">setEpsY(self, epsY)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_qrcodedetector.ex#L295" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>

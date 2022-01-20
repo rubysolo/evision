@@ -10,7 +10,7 @@
     <title>OpenCV.MSER — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#detectregions/2" translate="no">detectregions(self, image)</a>
+          <a href="#detectRegions/2" translate="no">detectRegions(self, image)</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdefaultname/1" translate="no">getdefaultname(self)</a>
+          <a href="#getDefaultName/1" translate="no">getDefaultName(self)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdelta/1" translate="no">getdelta(self)</a>
+          <a href="#getDelta/1" translate="no">getDelta(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmaxarea/1" translate="no">getmaxarea(self)</a>
+          <a href="#getMaxArea/1" translate="no">getMaxArea(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getminarea/1" translate="no">getminarea(self)</a>
+          <a href="#getMinArea/1" translate="no">getMinArea(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getpass2only/1" translate="no">getpass2only(self)</a>
+          <a href="#getPass2Only/1" translate="no">getPass2Only(self)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdelta/2" translate="no">setdelta(self, delta)</a>
+          <a href="#setDelta/2" translate="no">setDelta(self, delta)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmaxarea/2" translate="no">setmaxarea(self, maxArea)</a>
+          <a href="#setMaxArea/2" translate="no">setMaxArea(self, maxArea)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setminarea/2" translate="no">setminarea(self, minArea)</a>
+          <a href="#setMinArea/2" translate="no">setMinArea(self, minArea)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setpass2only/2" translate="no">setpass2only(self, f)</a>
+          <a href="#setPass2Only/2" translate="no">setPass2Only(self, f)</a>
 
         </div>
 
@@ -265,17 +265,17 @@ cv
 
   <section class="docstring">
 
-<p>Full constructor for %MSER detector</p><ul><li><strong>delta</strong>.</li><li><strong>min_area</strong>.</li><li><strong>max_area</strong>.</li><li><strong>max_variation</strong>.</li><li><strong>min_diversity</strong>.</li><li><strong>max_evolution</strong>.</li><li><strong>area_threshold</strong>.</li><li><strong>min_margin</strong>.</li><li><strong>edge_blur_size</strong>.</li><li><strong>delta</strong> : int</li><li><strong>min_area</strong> : int</li><li><strong>max_area</strong> : int</li><li><strong>max_variation</strong> : double</li><li><strong>min_diversity</strong> : double</li><li><strong>max_evolution</strong> : int</li><li><strong>area_threshold</strong> : double</li><li><strong>min_margin</strong> : double</li><li><strong>edge_blur_size</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="5790042434-1">(</span><span class="p" data-group-id="5790042434-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">delta</span><span class="p" data-group-id="5790042434-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_area</span><span class="p" data-group-id="5790042434-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_area</span><span class="p" data-group-id="5790042434-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_variation</span><span class="p" data-group-id="5790042434-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_diversity</span><span class="p" data-group-id="5790042434-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_evolution</span><span class="p" data-group-id="5790042434-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">area_threshold</span><span class="p" data-group-id="5790042434-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_margin</span><span class="p" data-group-id="5790042434-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">edge_blur_size</span><span class="p" data-group-id="5790042434-10">]</span><span class="p" data-group-id="5790042434-9">]</span><span class="p" data-group-id="5790042434-8">]</span><span class="p" data-group-id="5790042434-7">]</span><span class="p" data-group-id="5790042434-6">]</span><span class="p" data-group-id="5790042434-5">]</span><span class="p" data-group-id="5790042434-4">]</span><span class="p" data-group-id="5790042434-3">]</span><span class="p" data-group-id="5790042434-2">]</span><span class="p" data-group-id="5790042434-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+<p>Full constructor for %MSER detector</p><ul><li><strong>delta</strong>.</li><li><strong>min_area</strong>.</li><li><strong>max_area</strong>.</li><li><strong>max_variation</strong>.</li><li><strong>min_diversity</strong>.</li><li><strong>max_evolution</strong>.</li><li><strong>area_threshold</strong>.</li><li><strong>min_margin</strong>.</li><li><strong>edge_blur_size</strong>.</li><li><strong>delta</strong> : int</li><li><strong>min_area</strong> : int</li><li><strong>max_area</strong> : int</li><li><strong>max_variation</strong> : double</li><li><strong>min_diversity</strong> : double</li><li><strong>max_evolution</strong> : int</li><li><strong>area_threshold</strong> : double</li><li><strong>min_margin</strong> : double</li><li><strong>edge_blur_size</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="4782128482-1">(</span><span class="p" data-group-id="4782128482-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">delta</span><span class="p" data-group-id="4782128482-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_area</span><span class="p" data-group-id="4782128482-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_area</span><span class="p" data-group-id="4782128482-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_variation</span><span class="p" data-group-id="4782128482-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_diversity</span><span class="p" data-group-id="4782128482-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">max_evolution</span><span class="p" data-group-id="4782128482-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">area_threshold</span><span class="p" data-group-id="4782128482-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">min_margin</span><span class="p" data-group-id="4782128482-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">edge_blur_size</span><span class="p" data-group-id="4782128482-10">]</span><span class="p" data-group-id="4782128482-9">]</span><span class="p" data-group-id="4782128482-8">]</span><span class="p" data-group-id="4782128482-7">]</span><span class="p" data-group-id="4782128482-6">]</span><span class="p" data-group-id="4782128482-5">]</span><span class="p" data-group-id="4782128482-4">]</span><span class="p" data-group-id="4782128482-3">]</span><span class="p" data-group-id="4782128482-2">]</span><span class="p" data-group-id="4782128482-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
-<section class="detail" id="detectregions/2">
+<section class="detail" id="detectRegions/2">
 
   <div class="detail-header">
-    <a href="#detectregions/2" class="detail-link" title="Link to this function">
+    <a href="#detectRegions/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">detectregions(self, image)</h1>
+    <h1 class="signature" translate="no">detectRegions(self, image)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L41" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -290,14 +290,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdefaultname/1">
+<section class="detail" id="getDefaultName/1">
 
   <div class="detail-header">
-    <a href="#getdefaultname/1" class="detail-link" title="Link to this function">
+    <a href="#getDefaultName/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdefaultname(self)</h1>
+    <h1 class="signature" translate="no">getDefaultName(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L51" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -312,14 +312,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdelta/1">
+<section class="detail" id="getDelta/1">
 
   <div class="detail-header">
-    <a href="#getdelta/1" class="detail-link" title="Link to this function">
+    <a href="#getDelta/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdelta(self)</h1>
+    <h1 class="signature" translate="no">getDelta(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L57" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -334,14 +334,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getmaxarea/1">
+<section class="detail" id="getMaxArea/1">
 
   <div class="detail-header">
-    <a href="#getmaxarea/1" class="detail-link" title="Link to this function">
+    <a href="#getMaxArea/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmaxarea(self)</h1>
+    <h1 class="signature" translate="no">getMaxArea(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L63" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -356,14 +356,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getminarea/1">
+<section class="detail" id="getMinArea/1">
 
   <div class="detail-header">
-    <a href="#getminarea/1" class="detail-link" title="Link to this function">
+    <a href="#getMinArea/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getminarea(self)</h1>
+    <h1 class="signature" translate="no">getMinArea(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L69" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -378,14 +378,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getpass2only/1">
+<section class="detail" id="getPass2Only/1">
 
   <div class="detail-header">
-    <a href="#getpass2only/1" class="detail-link" title="Link to this function">
+    <a href="#getPass2Only/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getpass2only(self)</h1>
+    <h1 class="signature" translate="no">getPass2Only(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L75" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -400,14 +400,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdelta/2">
+<section class="detail" id="setDelta/2">
 
   <div class="detail-header">
-    <a href="#setdelta/2" class="detail-link" title="Link to this function">
+    <a href="#setDelta/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdelta(self, delta)</h1>
+    <h1 class="signature" translate="no">setDelta(self, delta)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L81" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -422,14 +422,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setmaxarea/2">
+<section class="detail" id="setMaxArea/2">
 
   <div class="detail-header">
-    <a href="#setmaxarea/2" class="detail-link" title="Link to this function">
+    <a href="#setMaxArea/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmaxarea(self, maxArea)</h1>
+    <h1 class="signature" translate="no">setMaxArea(self, maxArea)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L89" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -444,14 +444,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setminarea/2">
+<section class="detail" id="setMinArea/2">
 
   <div class="detail-header">
-    <a href="#setminarea/2" class="detail-link" title="Link to this function">
+    <a href="#setMinArea/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setminarea(self, minArea)</h1>
+    <h1 class="signature" translate="no">setMinArea(self, minArea)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L97" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -466,14 +466,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setpass2only/2">
+<section class="detail" id="setPass2Only/2">
 
   <div class="detail-header">
-    <a href="#setpass2only/2" class="detail-link" title="Link to this function">
+    <a href="#setPass2Only/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setpass2only(self, f)</h1>
+    <h1 class="signature" translate="no">setPass2Only(self, f)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_mser.ex#L105" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>

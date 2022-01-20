@@ -10,7 +10,7 @@
     <title>OpenCV.StereoBM — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getprefiltercap/1" translate="no">getprefiltercap(self)</a>
+          <a href="#getPreFilterCap/1" translate="no">getPreFilterCap(self)</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getprefiltersize/1" translate="no">getprefiltersize(self)</a>
+          <a href="#getPreFilterSize/1" translate="no">getPreFilterSize(self)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getprefiltertype/1" translate="no">getprefiltertype(self)</a>
+          <a href="#getPreFilterType/1" translate="no">getPreFilterType(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getroi1/1" translate="no">getroi1(self)</a>
+          <a href="#getROI1/1" translate="no">getROI1(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getroi2/1" translate="no">getroi2(self)</a>
+          <a href="#getROI2/1" translate="no">getROI2(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getsmallerblocksize/1" translate="no">getsmallerblocksize(self)</a>
+          <a href="#getSmallerBlockSize/1" translate="no">getSmallerBlockSize(self)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#gettexturethreshold/1" translate="no">gettexturethreshold(self)</a>
+          <a href="#getTextureThreshold/1" translate="no">getTextureThreshold(self)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getuniquenessratio/1" translate="no">getuniquenessratio(self)</a>
+          <a href="#getUniquenessRatio/1" translate="no">getUniquenessRatio(self)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setprefiltercap/2" translate="no">setprefiltercap(self, preFilterCap)</a>
+          <a href="#setPreFilterCap/2" translate="no">setPreFilterCap(self, preFilterCap)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setprefiltersize/2" translate="no">setprefiltersize(self, preFilterSize)</a>
+          <a href="#setPreFilterSize/2" translate="no">setPreFilterSize(self, preFilterSize)</a>
 
         </div>
 
@@ -212,7 +212,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setprefiltertype/2" translate="no">setprefiltertype(self, preFilterType)</a>
+          <a href="#setPreFilterType/2" translate="no">setPreFilterType(self, preFilterType)</a>
 
         </div>
 
@@ -220,7 +220,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setroi1/2" translate="no">setroi1(self, roi1)</a>
+          <a href="#setROI1/2" translate="no">setROI1(self, roi1)</a>
 
         </div>
 
@@ -228,7 +228,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setroi2/2" translate="no">setroi2(self, roi2)</a>
+          <a href="#setROI2/2" translate="no">setROI2(self, roi2)</a>
 
         </div>
 
@@ -236,7 +236,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setsmallerblocksize/2" translate="no">setsmallerblocksize(self, blockSize)</a>
+          <a href="#setSmallerBlockSize/2" translate="no">setSmallerBlockSize(self, blockSize)</a>
 
         </div>
 
@@ -244,7 +244,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#settexturethreshold/2" translate="no">settexturethreshold(self, textureThreshold)</a>
+          <a href="#setTextureThreshold/2" translate="no">setTextureThreshold(self, textureThreshold)</a>
 
         </div>
 
@@ -252,7 +252,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setuniquenessratio/2" translate="no">setuniquenessratio(self, uniquenessRatio)</a>
+          <a href="#setUniquenessRatio/2" translate="no">setUniquenessRatio(self, uniquenessRatio)</a>
 
         </div>
 
@@ -320,17 +320,17 @@ cv
   accurate disparity map. Smaller block size gives more detailed disparity map, but there is higher
   chance for algorithm to find a wrong correspondence.
 The function create StereoBM object. You can then call StereoBM::compute() to compute disparity for
-a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><strong>blockSize</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="2228978960-1">(</span><span class="p" data-group-id="2228978960-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numDisparities</span><span class="p" data-group-id="2228978960-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p" data-group-id="2228978960-3">]</span><span class="p" data-group-id="2228978960-2">]</span><span class="p" data-group-id="2228978960-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><strong>blockSize</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="9212741031-1">(</span><span class="p" data-group-id="9212741031-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numDisparities</span><span class="p" data-group-id="9212741031-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p" data-group-id="9212741031-3">]</span><span class="p" data-group-id="9212741031-2">]</span><span class="p" data-group-id="9212741031-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
-<section class="detail" id="getprefiltercap/1">
+<section class="detail" id="getPreFilterCap/1">
 
   <div class="detail-header">
-    <a href="#getprefiltercap/1" class="detail-link" title="Link to this function">
+    <a href="#getPreFilterCap/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getprefiltercap(self)</h1>
+    <h1 class="signature" translate="no">getPreFilterCap(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L34" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -345,14 +345,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getprefiltersize/1">
+<section class="detail" id="getPreFilterSize/1">
 
   <div class="detail-header">
-    <a href="#getprefiltersize/1" class="detail-link" title="Link to this function">
+    <a href="#getPreFilterSize/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getprefiltersize(self)</h1>
+    <h1 class="signature" translate="no">getPreFilterSize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L40" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -367,14 +367,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getprefiltertype/1">
+<section class="detail" id="getPreFilterType/1">
 
   <div class="detail-header">
-    <a href="#getprefiltertype/1" class="detail-link" title="Link to this function">
+    <a href="#getPreFilterType/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getprefiltertype(self)</h1>
+    <h1 class="signature" translate="no">getPreFilterType(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L46" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -389,14 +389,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getroi1/1">
+<section class="detail" id="getROI1/1">
 
   <div class="detail-header">
-    <a href="#getroi1/1" class="detail-link" title="Link to this function">
+    <a href="#getROI1/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getroi1(self)</h1>
+    <h1 class="signature" translate="no">getROI1(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L52" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -411,14 +411,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getroi2/1">
+<section class="detail" id="getROI2/1">
 
   <div class="detail-header">
-    <a href="#getroi2/1" class="detail-link" title="Link to this function">
+    <a href="#getROI2/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getroi2(self)</h1>
+    <h1 class="signature" translate="no">getROI2(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L58" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -433,14 +433,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getsmallerblocksize/1">
+<section class="detail" id="getSmallerBlockSize/1">
 
   <div class="detail-header">
-    <a href="#getsmallerblocksize/1" class="detail-link" title="Link to this function">
+    <a href="#getSmallerBlockSize/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getsmallerblocksize(self)</h1>
+    <h1 class="signature" translate="no">getSmallerBlockSize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L64" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -455,14 +455,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="gettexturethreshold/1">
+<section class="detail" id="getTextureThreshold/1">
 
   <div class="detail-header">
-    <a href="#gettexturethreshold/1" class="detail-link" title="Link to this function">
+    <a href="#getTextureThreshold/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">gettexturethreshold(self)</h1>
+    <h1 class="signature" translate="no">getTextureThreshold(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L70" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -477,14 +477,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="getuniquenessratio/1">
+<section class="detail" id="getUniquenessRatio/1">
 
   <div class="detail-header">
-    <a href="#getuniquenessratio/1" class="detail-link" title="Link to this function">
+    <a href="#getUniquenessRatio/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getuniquenessratio(self)</h1>
+    <h1 class="signature" translate="no">getUniquenessRatio(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L76" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -499,14 +499,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setprefiltercap/2">
+<section class="detail" id="setPreFilterCap/2">
 
   <div class="detail-header">
-    <a href="#setprefiltercap/2" class="detail-link" title="Link to this function">
+    <a href="#setPreFilterCap/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setprefiltercap(self, preFilterCap)</h1>
+    <h1 class="signature" translate="no">setPreFilterCap(self, preFilterCap)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L82" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -521,14 +521,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setprefiltersize/2">
+<section class="detail" id="setPreFilterSize/2">
 
   <div class="detail-header">
-    <a href="#setprefiltersize/2" class="detail-link" title="Link to this function">
+    <a href="#setPreFilterSize/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setprefiltersize(self, preFilterSize)</h1>
+    <h1 class="signature" translate="no">setPreFilterSize(self, preFilterSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L90" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -543,14 +543,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setprefiltertype/2">
+<section class="detail" id="setPreFilterType/2">
 
   <div class="detail-header">
-    <a href="#setprefiltertype/2" class="detail-link" title="Link to this function">
+    <a href="#setPreFilterType/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setprefiltertype(self, preFilterType)</h1>
+    <h1 class="signature" translate="no">setPreFilterType(self, preFilterType)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L98" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -565,14 +565,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setroi1/2">
+<section class="detail" id="setROI1/2">
 
   <div class="detail-header">
-    <a href="#setroi1/2" class="detail-link" title="Link to this function">
+    <a href="#setROI1/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setroi1(self, roi1)</h1>
+    <h1 class="signature" translate="no">setROI1(self, roi1)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L106" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -587,14 +587,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setroi2/2">
+<section class="detail" id="setROI2/2">
 
   <div class="detail-header">
-    <a href="#setroi2/2" class="detail-link" title="Link to this function">
+    <a href="#setROI2/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setroi2(self, roi2)</h1>
+    <h1 class="signature" translate="no">setROI2(self, roi2)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L113" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -609,14 +609,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setsmallerblocksize/2">
+<section class="detail" id="setSmallerBlockSize/2">
 
   <div class="detail-header">
-    <a href="#setsmallerblocksize/2" class="detail-link" title="Link to this function">
+    <a href="#setSmallerBlockSize/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setsmallerblocksize(self, blockSize)</h1>
+    <h1 class="signature" translate="no">setSmallerBlockSize(self, blockSize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L120" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -631,14 +631,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="settexturethreshold/2">
+<section class="detail" id="setTextureThreshold/2">
 
   <div class="detail-header">
-    <a href="#settexturethreshold/2" class="detail-link" title="Link to this function">
+    <a href="#setTextureThreshold/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">settexturethreshold(self, textureThreshold)</h1>
+    <h1 class="signature" translate="no">setTextureThreshold(self, textureThreshold)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L128" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -653,14 +653,14 @@ a specific stereo pair.</li><li><strong>numDisparities</strong> : int</li><li><s
 
   </section>
 </section>
-<section class="detail" id="setuniquenessratio/2">
+<section class="detail" id="setUniquenessRatio/2">
 
   <div class="detail-header">
-    <a href="#setuniquenessratio/2" class="detail-link" title="Link to this function">
+    <a href="#setUniquenessRatio/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setuniquenessratio(self, uniquenessRatio)</h1>
+    <h1 class="signature" translate="no">setUniquenessRatio(self, uniquenessRatio)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereobm.ex#L136" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>

@@ -10,7 +10,7 @@
     <title>OpenCV.StereoSGBM — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getmode/1" translate="no">getmode(self)</a>
+          <a href="#getMode/1" translate="no">getMode(self)</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getp1/1" translate="no">getp1(self)</a>
+          <a href="#getP1/1" translate="no">getP1(self)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getp2/1" translate="no">getp2(self)</a>
+          <a href="#getP2/1" translate="no">getP2(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getprefiltercap/1" translate="no">getprefiltercap(self)</a>
+          <a href="#getPreFilterCap/1" translate="no">getPreFilterCap(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getuniquenessratio/1" translate="no">getuniquenessratio(self)</a>
+          <a href="#getUniquenessRatio/1" translate="no">getUniquenessRatio(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setmode/2" translate="no">setmode(self, mode)</a>
+          <a href="#setMode/2" translate="no">setMode(self, mode)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setp1/2" translate="no">setp1(self, p1)</a>
+          <a href="#setP1/2" translate="no">setP1(self, p1)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setp2/2" translate="no">setp2(self, p2)</a>
+          <a href="#setP2/2" translate="no">setP2(self, p2)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setprefiltercap/2" translate="no">setprefiltercap(self, preFilterCap)</a>
+          <a href="#setPreFilterCap/2" translate="no">setPreFilterCap(self, preFilterCap)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setuniquenessratio/2" translate="no">setuniquenessratio(self, uniquenessRatio)</a>
+          <a href="#setUniquenessRatio/2" translate="no">setUniquenessRatio(self, uniquenessRatio)</a>
 
         </div>
 
@@ -287,17 +287,17 @@ cv
   huge for HD-size pictures. By default, it is set to false .
 The first constructor initializes StereoSGBM with all the default parameters. So, you only have to
 set StereoSGBM::numDisparities at minimum. The second constructor enables you to set each parameter
-to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>numDisparities</strong> : int</li><li><strong>blockSize</strong> : int</li><li><strong>p1</strong> : int</li><li><strong>p2</strong> : int</li><li><strong>disp12MaxDiff</strong> : int</li><li><strong>preFilterCap</strong> : int</li><li><strong>uniquenessRatio</strong> : int</li><li><strong>speckleWindowSize</strong> : int</li><li><strong>speckleRange</strong> : int</li><li><strong>mode</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="5419597343-1">(</span><span class="p" data-group-id="5419597343-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">minDisparity</span><span class="p" data-group-id="5419597343-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">numDisparities</span><span class="p" data-group-id="5419597343-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p" data-group-id="5419597343-5">[</span><span class="p">,</span><span class="w"> </span><span class="nc">P1</span><span class="p" data-group-id="5419597343-6">[</span><span class="p">,</span><span class="w"> </span><span class="nc">P2</span><span class="p" data-group-id="5419597343-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">disp12MaxDiff</span><span class="p" data-group-id="5419597343-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">preFilterCap</span><span class="p" data-group-id="5419597343-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">uniquenessRatio</span><span class="p" data-group-id="5419597343-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">speckleWindowSize</span><span class="p" data-group-id="5419597343-11">[</span><span class="p">,</span><span class="w"> </span><span class="n">speckleRange</span><span class="p" data-group-id="5419597343-12">[</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p" data-group-id="5419597343-12">]</span><span class="p" data-group-id="5419597343-11">]</span><span class="p" data-group-id="5419597343-10">]</span><span class="p" data-group-id="5419597343-9">]</span><span class="p" data-group-id="5419597343-8">]</span><span class="p" data-group-id="5419597343-7">]</span><span class="p" data-group-id="5419597343-6">]</span><span class="p" data-group-id="5419597343-5">]</span><span class="p" data-group-id="5419597343-4">]</span><span class="p" data-group-id="5419597343-3">]</span><span class="p" data-group-id="5419597343-2">]</span><span class="p" data-group-id="5419597343-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>numDisparities</strong> : int</li><li><strong>blockSize</strong> : int</li><li><strong>p1</strong> : int</li><li><strong>p2</strong> : int</li><li><strong>disp12MaxDiff</strong> : int</li><li><strong>preFilterCap</strong> : int</li><li><strong>uniquenessRatio</strong> : int</li><li><strong>speckleWindowSize</strong> : int</li><li><strong>speckleRange</strong> : int</li><li><strong>mode</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="0726598785-1">(</span><span class="p" data-group-id="0726598785-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">minDisparity</span><span class="p" data-group-id="0726598785-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">numDisparities</span><span class="p" data-group-id="0726598785-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">blockSize</span><span class="p" data-group-id="0726598785-5">[</span><span class="p">,</span><span class="w"> </span><span class="nc">P1</span><span class="p" data-group-id="0726598785-6">[</span><span class="p">,</span><span class="w"> </span><span class="nc">P2</span><span class="p" data-group-id="0726598785-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">disp12MaxDiff</span><span class="p" data-group-id="0726598785-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">preFilterCap</span><span class="p" data-group-id="0726598785-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">uniquenessRatio</span><span class="p" data-group-id="0726598785-10">[</span><span class="p">,</span><span class="w"> </span><span class="n">speckleWindowSize</span><span class="p" data-group-id="0726598785-11">[</span><span class="p">,</span><span class="w"> </span><span class="n">speckleRange</span><span class="p" data-group-id="0726598785-12">[</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p" data-group-id="0726598785-12">]</span><span class="p" data-group-id="0726598785-11">]</span><span class="p" data-group-id="0726598785-10">]</span><span class="p" data-group-id="0726598785-9">]</span><span class="p" data-group-id="0726598785-8">]</span><span class="p" data-group-id="0726598785-7">]</span><span class="p" data-group-id="0726598785-6">]</span><span class="p" data-group-id="0726598785-5">]</span><span class="p" data-group-id="0726598785-4">]</span><span class="p" data-group-id="0726598785-3">]</span><span class="p" data-group-id="0726598785-2">]</span><span class="p" data-group-id="0726598785-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
-<section class="detail" id="getmode/1">
+<section class="detail" id="getMode/1">
 
   <div class="detail-header">
-    <a href="#getmode/1" class="detail-link" title="Link to this function">
+    <a href="#getMode/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getmode(self)</h1>
+    <h1 class="signature" translate="no">getMode(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L67" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -312,14 +312,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="getp1/1">
+<section class="detail" id="getP1/1">
 
   <div class="detail-header">
-    <a href="#getp1/1" class="detail-link" title="Link to this function">
+    <a href="#getP1/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getp1(self)</h1>
+    <h1 class="signature" translate="no">getP1(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L73" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -334,14 +334,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="getp2/1">
+<section class="detail" id="getP2/1">
 
   <div class="detail-header">
-    <a href="#getp2/1" class="detail-link" title="Link to this function">
+    <a href="#getP2/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getp2(self)</h1>
+    <h1 class="signature" translate="no">getP2(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L79" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -356,14 +356,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="getprefiltercap/1">
+<section class="detail" id="getPreFilterCap/1">
 
   <div class="detail-header">
-    <a href="#getprefiltercap/1" class="detail-link" title="Link to this function">
+    <a href="#getPreFilterCap/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getprefiltercap(self)</h1>
+    <h1 class="signature" translate="no">getPreFilterCap(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L85" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -378,14 +378,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="getuniquenessratio/1">
+<section class="detail" id="getUniquenessRatio/1">
 
   <div class="detail-header">
-    <a href="#getuniquenessratio/1" class="detail-link" title="Link to this function">
+    <a href="#getUniquenessRatio/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getuniquenessratio(self)</h1>
+    <h1 class="signature" translate="no">getUniquenessRatio(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L91" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -400,14 +400,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="setmode/2">
+<section class="detail" id="setMode/2">
 
   <div class="detail-header">
-    <a href="#setmode/2" class="detail-link" title="Link to this function">
+    <a href="#setMode/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setmode(self, mode)</h1>
+    <h1 class="signature" translate="no">setMode(self, mode)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L97" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -422,14 +422,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="setp1/2">
+<section class="detail" id="setP1/2">
 
   <div class="detail-header">
-    <a href="#setp1/2" class="detail-link" title="Link to this function">
+    <a href="#setP1/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setp1(self, p1)</h1>
+    <h1 class="signature" translate="no">setP1(self, p1)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L105" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -444,14 +444,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="setp2/2">
+<section class="detail" id="setP2/2">
 
   <div class="detail-header">
-    <a href="#setp2/2" class="detail-link" title="Link to this function">
+    <a href="#setP2/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setp2(self, p2)</h1>
+    <h1 class="signature" translate="no">setP2(self, p2)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L113" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -466,14 +466,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="setprefiltercap/2">
+<section class="detail" id="setPreFilterCap/2">
 
   <div class="detail-header">
-    <a href="#setprefiltercap/2" class="detail-link" title="Link to this function">
+    <a href="#setPreFilterCap/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setprefiltercap(self, preFilterCap)</h1>
+    <h1 class="signature" translate="no">setPreFilterCap(self, preFilterCap)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L121" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -488,14 +488,14 @@ to a custom value.</li><li><strong>minDisparity</strong> : int</li><li><strong>n
 
   </section>
 </section>
-<section class="detail" id="setuniquenessratio/2">
+<section class="detail" id="setUniquenessRatio/2">
 
   <div class="detail-header">
-    <a href="#setuniquenessratio/2" class="detail-link" title="Link to this function">
+    <a href="#setUniquenessRatio/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setuniquenessratio(self, uniquenessRatio)</h1>
+    <h1 class="signature" translate="no">setUniquenessRatio(self, uniquenessRatio)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_stereosgbm.ex#L129" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>

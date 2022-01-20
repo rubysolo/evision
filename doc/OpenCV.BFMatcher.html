@@ -10,7 +10,7 @@
     <title>OpenCV.BFMatcher — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -114,7 +114,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#bfmatcher/0" translate="no">bfmatcher()</a>
+          <a href="#bfMatcher/0" translate="no">bfMatcher()</a>
 
         </div>
 
@@ -122,7 +122,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#bfmatcher/1" translate="no">bfmatcher(opts)</a>
+          <a href="#bfMatcher/1" translate="no">bfMatcher(opts)</a>
 
         </div>
 
@@ -162,14 +162,14 @@ Evision
 cv
     </h1>
     <div class="cv-list">
-<section class="detail" id="bfmatcher/0">
+<section class="detail" id="bfMatcher/0">
 
   <div class="detail-header">
-    <a href="#bfmatcher/0" class="detail-link" title="Link to this function">
+    <a href="#bfMatcher/0" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">bfmatcher()</h1>
+    <h1 class="signature" translate="no">bfMatcher()</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_bfmatcher.ex#L19" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -184,14 +184,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="bfmatcher/1">
+<section class="detail" id="bfMatcher/1">
 
   <div class="detail-header">
-    <a href="#bfmatcher/1" class="detail-link" title="Link to this function">
+    <a href="#bfMatcher/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">bfmatcher(opts)</h1>
+    <h1 class="signature" translate="no">bfMatcher(opts)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_bfmatcher.ex#L13" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -203,7 +203,7 @@ cv
 
   <section class="docstring">
 
-<p>Brute-force matcher constructor (obsolete). Please use BFMatcher.create()</p><ul><li><strong>normType</strong> : int</li><li><strong>crossCheck</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">BFMatcher</span><span class="p" data-group-id="2015396446-1">(</span><span class="p" data-group-id="2015396446-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">normType</span><span class="p" data-group-id="2015396446-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">crossCheck</span><span class="p" data-group-id="2015396446-3">]</span><span class="p" data-group-id="2015396446-2">]</span><span class="p" data-group-id="2015396446-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">BFMatcher</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
+<p>Brute-force matcher constructor (obsolete). Please use BFMatcher.create()</p><ul><li><strong>normType</strong> : int</li><li><strong>crossCheck</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">BFMatcher</span><span class="p" data-group-id="6064039281-1">(</span><span class="p" data-group-id="6064039281-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">normType</span><span class="p" data-group-id="6064039281-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">crossCheck</span><span class="p" data-group-id="6064039281-3">]</span><span class="p" data-group-id="6064039281-2">]</span><span class="p" data-group-id="6064039281-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">BFMatcher</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
   </section>
 </section>
 <section class="detail" id="create/0">
@@ -255,7 +255,7 @@ cv
   k=1 will only return pairs (i,j) such that for i-th query descriptor the j-th descriptor in the
   matcher's collection is the nearest and vice versa, i.e. the BFMatcher will only return consistent
   pairs. Such technique usually produces best results with minimal number of outliers when there are
-  enough matches. This is alternative to the ratio test, used by D. Lowe in SIFT paper.</li><li><strong>normType</strong> : int</li><li><strong>crossCheck</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="0412322033-1">(</span><span class="p" data-group-id="0412322033-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">normType</span><span class="p" data-group-id="0412322033-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">crossCheck</span><span class="p" data-group-id="0412322033-3">]</span><span class="p" data-group-id="0412322033-2">]</span><span class="p" data-group-id="0412322033-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  enough matches. This is alternative to the ratio test, used by D. Lowe in SIFT paper.</li><li><strong>normType</strong> : int</li><li><strong>crossCheck</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="3107718569-1">(</span><span class="p" data-group-id="3107718569-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">normType</span><span class="p" data-group-id="3107718569-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">crossCheck</span><span class="p" data-group-id="3107718569-3">]</span><span class="p" data-group-id="3107718569-2">]</span><span class="p" data-group-id="3107718569-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 

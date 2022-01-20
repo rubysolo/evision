@@ -10,7 +10,7 @@
     <title>OpenCV.AKAZE — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-68211e39e6.js"></script>
+    <script src="dist/sidebar_items-e08ffeba92.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,7 +132,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdefaultname/1" translate="no">getdefaultname(self)</a>
+          <a href="#getDefaultName/1" translate="no">getDefaultName(self)</a>
 
         </div>
 
@@ -140,7 +140,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdescriptorchannels/1" translate="no">getdescriptorchannels(self)</a>
+          <a href="#getDescriptorChannels/1" translate="no">getDescriptorChannels(self)</a>
 
         </div>
 
@@ -148,7 +148,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdescriptorsize/1" translate="no">getdescriptorsize(self)</a>
+          <a href="#getDescriptorSize/1" translate="no">getDescriptorSize(self)</a>
 
         </div>
 
@@ -156,7 +156,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdescriptortype/1" translate="no">getdescriptortype(self)</a>
+          <a href="#getDescriptorType/1" translate="no">getDescriptorType(self)</a>
 
         </div>
 
@@ -164,7 +164,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getdiffusivity/1" translate="no">getdiffusivity(self)</a>
+          <a href="#getDiffusivity/1" translate="no">getDiffusivity(self)</a>
 
         </div>
 
@@ -172,7 +172,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getnoctavelayers/1" translate="no">getnoctavelayers(self)</a>
+          <a href="#getNOctaveLayers/1" translate="no">getNOctaveLayers(self)</a>
 
         </div>
 
@@ -180,7 +180,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getnoctaves/1" translate="no">getnoctaves(self)</a>
+          <a href="#getNOctaves/1" translate="no">getNOctaves(self)</a>
 
         </div>
 
@@ -188,7 +188,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#getthreshold/1" translate="no">getthreshold(self)</a>
+          <a href="#getThreshold/1" translate="no">getThreshold(self)</a>
 
         </div>
 
@@ -196,7 +196,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdescriptorchannels/2" translate="no">setdescriptorchannels(self, dch)</a>
+          <a href="#setDescriptorChannels/2" translate="no">setDescriptorChannels(self, dch)</a>
 
         </div>
 
@@ -204,7 +204,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdescriptorsize/2" translate="no">setdescriptorsize(self, dsize)</a>
+          <a href="#setDescriptorSize/2" translate="no">setDescriptorSize(self, dsize)</a>
 
         </div>
 
@@ -212,7 +212,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdescriptortype/2" translate="no">setdescriptortype(self, dtype)</a>
+          <a href="#setDescriptorType/2" translate="no">setDescriptorType(self, dtype)</a>
 
         </div>
 
@@ -220,7 +220,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setdiffusivity/2" translate="no">setdiffusivity(self, diff)</a>
+          <a href="#setDiffusivity/2" translate="no">setDiffusivity(self, diff)</a>
 
         </div>
 
@@ -228,7 +228,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setnoctavelayers/2" translate="no">setnoctavelayers(self, octaveLayers)</a>
+          <a href="#setNOctaveLayers/2" translate="no">setNOctaveLayers(self, octaveLayers)</a>
 
         </div>
 
@@ -236,7 +236,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setnoctaves/2" translate="no">setnoctaves(self, octaves)</a>
+          <a href="#setNOctaves/2" translate="no">setNOctaves(self, octaves)</a>
 
         </div>
 
@@ -244,7 +244,7 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#setthreshold/2" translate="no">setthreshold(self, threshold)</a>
+          <a href="#setThreshold/2" translate="no">setThreshold(self, threshold)</a>
 
         </div>
 
@@ -307,17 +307,17 @@ cv
 
 <p>The AKAZE constructor</p><ul><li><strong>descriptor_type</strong>.
   DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.</li><li><strong>descriptor_size</strong>.</li><li><strong>descriptor_channels</strong>.</li><li><strong>threshold</strong>.</li><li><strong>nOctaves</strong>.</li><li><strong>nOctaveLayers</strong>.</li><li><strong>diffusivity</strong>.
-  DIFF_CHARBONNIER</li><li><strong>descriptor_type</strong> : AKAZE_DescriptorType</li><li><strong>descriptor_size</strong> : int</li><li><strong>descriptor_channels</strong> : int</li><li><strong>threshold</strong> : float</li><li><strong>nOctaves</strong> : int</li><li><strong>nOctaveLayers</strong> : int</li><li><strong>diffusivity</strong> : KAZE_DiffusivityType</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="9615679324-1">(</span><span class="p" data-group-id="9615679324-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_type</span><span class="p" data-group-id="9615679324-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_size</span><span class="p" data-group-id="9615679324-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_channels</span><span class="p" data-group-id="9615679324-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">threshold</span><span class="p" data-group-id="9615679324-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">nOctaves</span><span class="p" data-group-id="9615679324-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">nOctaveLayers</span><span class="p" data-group-id="9615679324-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">diffusivity</span><span class="p" data-group-id="9615679324-8">]</span><span class="p" data-group-id="9615679324-7">]</span><span class="p" data-group-id="9615679324-6">]</span><span class="p" data-group-id="9615679324-5">]</span><span class="p" data-group-id="9615679324-4">]</span><span class="p" data-group-id="9615679324-3">]</span><span class="p" data-group-id="9615679324-2">]</span><span class="p" data-group-id="9615679324-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  DIFF_CHARBONNIER</li><li><strong>descriptor_type</strong> : AKAZE_DescriptorType</li><li><strong>descriptor_size</strong> : int</li><li><strong>descriptor_channels</strong> : int</li><li><strong>threshold</strong> : float</li><li><strong>nOctaves</strong> : int</li><li><strong>nOctaveLayers</strong> : int</li><li><strong>diffusivity</strong> : KAZE_DiffusivityType</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="7266894888-1">(</span><span class="p" data-group-id="7266894888-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_type</span><span class="p" data-group-id="7266894888-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_size</span><span class="p" data-group-id="7266894888-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_channels</span><span class="p" data-group-id="7266894888-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">threshold</span><span class="p" data-group-id="7266894888-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">nOctaves</span><span class="p" data-group-id="7266894888-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">nOctaveLayers</span><span class="p" data-group-id="7266894888-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">diffusivity</span><span class="p" data-group-id="7266894888-8">]</span><span class="p" data-group-id="7266894888-7">]</span><span class="p" data-group-id="7266894888-6">]</span><span class="p" data-group-id="7266894888-5">]</span><span class="p" data-group-id="7266894888-4">]</span><span class="p" data-group-id="7266894888-3">]</span><span class="p" data-group-id="7266894888-2">]</span><span class="p" data-group-id="7266894888-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
-<section class="detail" id="getdefaultname/1">
+<section class="detail" id="getDefaultName/1">
 
   <div class="detail-header">
-    <a href="#getdefaultname/1" class="detail-link" title="Link to this function">
+    <a href="#getDefaultName/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdefaultname(self)</h1>
+    <h1 class="signature" translate="no">getDefaultName(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L39" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -332,14 +332,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdescriptorchannels/1">
+<section class="detail" id="getDescriptorChannels/1">
 
   <div class="detail-header">
-    <a href="#getdescriptorchannels/1" class="detail-link" title="Link to this function">
+    <a href="#getDescriptorChannels/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdescriptorchannels(self)</h1>
+    <h1 class="signature" translate="no">getDescriptorChannels(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L45" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -354,14 +354,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdescriptorsize/1">
+<section class="detail" id="getDescriptorSize/1">
 
   <div class="detail-header">
-    <a href="#getdescriptorsize/1" class="detail-link" title="Link to this function">
+    <a href="#getDescriptorSize/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdescriptorsize(self)</h1>
+    <h1 class="signature" translate="no">getDescriptorSize(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L51" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -376,14 +376,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdescriptortype/1">
+<section class="detail" id="getDescriptorType/1">
 
   <div class="detail-header">
-    <a href="#getdescriptortype/1" class="detail-link" title="Link to this function">
+    <a href="#getDescriptorType/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdescriptortype(self)</h1>
+    <h1 class="signature" translate="no">getDescriptorType(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L57" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -398,14 +398,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getdiffusivity/1">
+<section class="detail" id="getDiffusivity/1">
 
   <div class="detail-header">
-    <a href="#getdiffusivity/1" class="detail-link" title="Link to this function">
+    <a href="#getDiffusivity/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getdiffusivity(self)</h1>
+    <h1 class="signature" translate="no">getDiffusivity(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L63" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -420,14 +420,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getnoctavelayers/1">
+<section class="detail" id="getNOctaveLayers/1">
 
   <div class="detail-header">
-    <a href="#getnoctavelayers/1" class="detail-link" title="Link to this function">
+    <a href="#getNOctaveLayers/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getnoctavelayers(self)</h1>
+    <h1 class="signature" translate="no">getNOctaveLayers(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L69" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -442,14 +442,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getnoctaves/1">
+<section class="detail" id="getNOctaves/1">
 
   <div class="detail-header">
-    <a href="#getnoctaves/1" class="detail-link" title="Link to this function">
+    <a href="#getNOctaves/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getnoctaves(self)</h1>
+    <h1 class="signature" translate="no">getNOctaves(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L75" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -464,14 +464,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="getthreshold/1">
+<section class="detail" id="getThreshold/1">
 
   <div class="detail-header">
-    <a href="#getthreshold/1" class="detail-link" title="Link to this function">
+    <a href="#getThreshold/1" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">getthreshold(self)</h1>
+    <h1 class="signature" translate="no">getThreshold(self)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L81" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -486,14 +486,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdescriptorchannels/2">
+<section class="detail" id="setDescriptorChannels/2">
 
   <div class="detail-header">
-    <a href="#setdescriptorchannels/2" class="detail-link" title="Link to this function">
+    <a href="#setDescriptorChannels/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdescriptorchannels(self, dch)</h1>
+    <h1 class="signature" translate="no">setDescriptorChannels(self, dch)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L87" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -508,14 +508,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdescriptorsize/2">
+<section class="detail" id="setDescriptorSize/2">
 
   <div class="detail-header">
-    <a href="#setdescriptorsize/2" class="detail-link" title="Link to this function">
+    <a href="#setDescriptorSize/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdescriptorsize(self, dsize)</h1>
+    <h1 class="signature" translate="no">setDescriptorSize(self, dsize)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L95" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -530,14 +530,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdescriptortype/2">
+<section class="detail" id="setDescriptorType/2">
 
   <div class="detail-header">
-    <a href="#setdescriptortype/2" class="detail-link" title="Link to this function">
+    <a href="#setDescriptorType/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdescriptortype(self, dtype)</h1>
+    <h1 class="signature" translate="no">setDescriptorType(self, dtype)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L103" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -552,14 +552,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setdiffusivity/2">
+<section class="detail" id="setDiffusivity/2">
 
   <div class="detail-header">
-    <a href="#setdiffusivity/2" class="detail-link" title="Link to this function">
+    <a href="#setDiffusivity/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setdiffusivity(self, diff)</h1>
+    <h1 class="signature" translate="no">setDiffusivity(self, diff)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L110" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -574,14 +574,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setnoctavelayers/2">
+<section class="detail" id="setNOctaveLayers/2">
 
   <div class="detail-header">
-    <a href="#setnoctavelayers/2" class="detail-link" title="Link to this function">
+    <a href="#setNOctaveLayers/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setnoctavelayers(self, octaveLayers)</h1>
+    <h1 class="signature" translate="no">setNOctaveLayers(self, octaveLayers)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L117" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -596,14 +596,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setnoctaves/2">
+<section class="detail" id="setNOctaves/2">
 
   <div class="detail-header">
-    <a href="#setnoctaves/2" class="detail-link" title="Link to this function">
+    <a href="#setNOctaves/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setnoctaves(self, octaves)</h1>
+    <h1 class="signature" translate="no">setNOctaves(self, octaves)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L125" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
@@ -618,14 +618,14 @@ cv
 
   </section>
 </section>
-<section class="detail" id="setthreshold/2">
+<section class="detail" id="setThreshold/2">
 
   <div class="detail-header">
-    <a href="#setthreshold/2" class="detail-link" title="Link to this function">
+    <a href="#setThreshold/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">setthreshold(self, threshold)</h1>
+    <h1 class="signature" translate="no">setThreshold(self, threshold)</h1>
 
       <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_akaze.ex#L133" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
