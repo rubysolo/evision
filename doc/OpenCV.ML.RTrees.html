@@ -10,7 +10,7 @@
     <title>OpenCV.ML.RTrees — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e08ffeba92.js"></script>
+    <script src="dist/sidebar_items-e397f91a40.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -418,7 +418,7 @@ cv.ml
   In case the model is a regression problem, the method will return each of the trees'
   results for each of the sample cases. If the model is a classifier, it will return
   a Mat with samples + 1 rows, where the first row gives the class number and the
-  following rows return the votes each class had for each sample.</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getVotes</span><span class="p" data-group-id="0870856345-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="0870856345-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="0870856345-2">]</span><span class="p" data-group-id="0870856345-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">results</span></code></pre>
+  following rows return the votes each class had for each sample.</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getVotes</span><span class="p" data-group-id="0560469482-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="0560469482-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="0560469482-2">]</span><span class="p" data-group-id="0560469482-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">results</span></code></pre>
   </section>
 </section>
 <section class="detail" id="load/1">
@@ -465,7 +465,7 @@ cv.ml
 <p>Loads and creates a serialized RTree from a file
    Use RTree::save to serialize and store an RTree to disk.
    Load the RTree from this file again, by calling this function with the path to the file.
-   Optionally specify the node for the file containing the classifier</p><ul><li><strong>filepath</strong>.</li><li><strong>nodeName</strong>.</li><li><strong>nodeName</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">load</span><span class="p" data-group-id="8221471949-1">(</span><span class="n">filepath</span><span class="p" data-group-id="8221471949-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">nodeName</span><span class="p" data-group-id="8221471949-2">]</span><span class="p" data-group-id="8221471949-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+   Optionally specify the node for the file containing the classifier</p><ul><li><strong>filepath</strong>.</li><li><strong>nodeName</strong>.</li><li><strong>nodeName</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">load</span><span class="p" data-group-id="5689944854-1">(</span><span class="n">filepath</span><span class="p" data-group-id="5689944854-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">nodeName</span><span class="p" data-group-id="5689944854-2">]</span><span class="p" data-group-id="5689944854-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="setActiveVarCount/2">

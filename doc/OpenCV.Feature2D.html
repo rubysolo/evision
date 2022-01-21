@@ -10,7 +10,7 @@
     <title>OpenCV.Feature2D — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e08ffeba92.js"></script>
+    <script src="dist/sidebar_items-e397f91a40.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -289,7 +289,7 @@ cv
   computed are removed. Sometimes new keypoints can be added, for example: SIFT duplicates keypoint
   with several dominant orientations (for each orientation).</li><li><strong>descriptors</strong>.
   descriptors computed for a keypoints[i]. Row j is the keypoints (or keypoints[i]) is the
-  descriptor for keypoint j-th keypoint.</li><li><strong>descriptors</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">compute</span><span class="p" data-group-id="1032043800-1">(</span><span class="n">images</span><span class="p">,</span><span class="w"> </span><span class="n">keypoints</span><span class="p" data-group-id="1032043800-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span><span class="p" data-group-id="1032043800-2">]</span><span class="p" data-group-id="1032043800-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span></code></pre>
+  descriptor for keypoint j-th keypoint.</li><li><strong>descriptors</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">compute</span><span class="p" data-group-id="9928852531-1">(</span><span class="n">images</span><span class="p">,</span><span class="w"> </span><span class="n">keypoints</span><span class="p" data-group-id="9928852531-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span><span class="p" data-group-id="9928852531-2">]</span><span class="p" data-group-id="9928852531-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span></code></pre>
   </section>
 </section>
 <section class="detail" id="defaultNorm/1">
@@ -401,7 +401,7 @@ cv
 
 <p>Has overloading in C++</p><ul><li><strong>images</strong>.</li><li><strong>keypoints</strong>.
   of keypoints detected in images[i] .</li><li><strong>masks</strong>.
-  masks[i] is a mask for images[i].</li><li><strong>masks</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="0200223875-1">(</span><span class="n">images</span><span class="p" data-group-id="0200223875-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="0200223875-2">]</span><span class="p" data-group-id="0200223875-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span></code></pre>
+  masks[i] is a mask for images[i].</li><li><strong>masks</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="9774432657-1">(</span><span class="n">images</span><span class="p" data-group-id="9774432657-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="9774432657-2">]</span><span class="p" data-group-id="9774432657-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span></code></pre>
   </section>
 </section>
 <section class="detail" id="detectAndCompute/3">
@@ -445,7 +445,7 @@ cv
 
   <section class="docstring">
 
-<p>  Detects keypoints and computes the descriptors</p><ul><li><strong>descriptors</strong> : UMat</li><li><strong>useProvidedKeypoints</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndCompute</span><span class="p" data-group-id="3277414688-1">(</span><span class="n">image</span><span class="p">,</span><span class="w"> </span><span class="n">mask</span><span class="p" data-group-id="3277414688-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span><span class="p" data-group-id="3277414688-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">useProvidedKeypoints</span><span class="p" data-group-id="3277414688-3">]</span><span class="p" data-group-id="3277414688-2">]</span><span class="p" data-group-id="3277414688-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span></code></pre>
+<p>  Detects keypoints and computes the descriptors</p><ul><li><strong>descriptors</strong> : UMat</li><li><strong>useProvidedKeypoints</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detectAndCompute</span><span class="p" data-group-id="5646204977-1">(</span><span class="n">image</span><span class="p">,</span><span class="w"> </span><span class="n">mask</span><span class="p" data-group-id="5646204977-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span><span class="p" data-group-id="5646204977-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">useProvidedKeypoints</span><span class="p" data-group-id="5646204977-3">]</span><span class="p" data-group-id="5646204977-2">]</span><span class="p" data-group-id="5646204977-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">keypoints</span><span class="p">,</span><span class="w"> </span><span class="n">descriptors</span></code></pre>
   </section>
 </section>
 <section class="detail" id="empty/1">

@@ -10,7 +10,7 @@
     <title>OpenCV.Nx — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e08ffeba92.js"></script>
+    <script src="dist/sidebar_items-e397f91a40.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -99,7 +99,7 @@ Evision
 
   <section id="moduledoc">
 <p>OpenCV mat to Nx tensor. </p><p><code class="inline">:nx</code> is an optional dependency, so if you want to use
-<a href="#to_nx/1"><code class="inline">OpenCV.Nx.to_nx/1</code></a>, you need to add it to the dependency
+functions in <a href="OpenCV.Nx.html#content"><code class="inline">OpenCV.Nx</code></a>, you need to add it to the dependency
 list.</p>
   </section>
 
@@ -113,10 +113,20 @@ list.</p>
       Summary
     </h1>
 
-  <div class="summary-external-nx summary">
+  <div class="summary-external summary">
     <h2>
-      <a href="#external-nx">external.Nx</a>
+      <a href="#external">external</a>
     </h2>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#to_mat/2" translate="no">to_mat(atom, _)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Converts a tensor of <code class="inline">Nx</code> to <code class="inline">Mat</code> of evision (OpenCV).</p></div>
+
+      </div>
 
       <div class="summary-row">
         <div class="summary-signature">
@@ -130,18 +140,55 @@ list.</p>
 
   </div>
 
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#to_mat/1" translate="no">to_mat(t)</a>
+
+        </div>
+
+      </div>
+
+  </div>
+
   </section>
 
 
-  <section id="external-nx" class="details-list">
+  <section id="external" class="details-list">
     <h1 class="section-heading">
-      <a class="hover-link" href="#external-nx">
+      <a class="hover-link" href="#external">
         <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
-external.Nx
+external
     </h1>
-    <div class="external-nx-list">
+    <div class="external-list">
+<section class="detail" id="to_mat/2">
+
+  <div class="detail-header">
+    <a href="#to_mat/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">to_mat(atom, _)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/opencv_nx.ex#L51" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Converts a tensor of <code class="inline">Nx</code> to <code class="inline">Mat</code> of evision (OpenCV).</p>
+  </section>
+</section>
 <section class="detail" id="to_nx/1">
 
   <div class="detail-header">
@@ -151,7 +198,7 @@ external.Nx
     </a>
     <h1 class="signature" translate="no">to_nx(mat)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/opencv_nx.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/opencv_nx.ex#L24" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -165,12 +212,56 @@ external.Nx
   <a href="#to_nx/1-example" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Example
 </h3>
-<pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="8640420628-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">mat</span><span class="p" data-group-id="8640420628-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV</span><span class="o">.</span><span class="n">imread</span><span class="p" data-group-id="8640420628-2">(</span><span class="s">&quot;/path/to/exist/img.png&quot;</span><span class="p" data-group-id="8640420628-2">)</span><span class="w">
-</span><span class="n">nx_tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV.Nx</span><span class="o">.</span><span class="n">to_nx</span><span class="p" data-group-id="8640420628-3">(</span><span class="n">mat</span><span class="p" data-group-id="8640420628-3">)</span><span class="w">
- </span><span class="p" data-group-id="8640420628-4">#</span><span class="nc" data-group-id="8640420628-4">Nx.Tensor</span><span class="p" data-group-id="8640420628-4">&lt;</span><span class="w">
-    </span><span class="n">u8</span><span class="p" data-group-id="8640420628-5">[</span><span class="mi">1080</span><span class="p" data-group-id="8640420628-5">]</span><span class="p" data-group-id="8640420628-6">[</span><span class="mi">1920</span><span class="p" data-group-id="8640420628-6">]</span><span class="p" data-group-id="8640420628-7">[</span><span class="mi">3</span><span class="p" data-group-id="8640420628-7">]</span><span class="w">
-    </span><span class="p" data-group-id="8640420628-8">[</span><span class="p" data-group-id="8640420628-9">[</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="p" data-group-id="8640420628-9">]</span><span class="p" data-group-id="8640420628-8">]</span><span class="w">
- </span><span class="p" data-group-id="8640420628-4">&gt;</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="7394141666-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">mat</span><span class="p" data-group-id="7394141666-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV</span><span class="o">.</span><span class="n">imread</span><span class="p" data-group-id="7394141666-2">(</span><span class="s">&quot;/path/to/exist/img.png&quot;</span><span class="p" data-group-id="7394141666-2">)</span><span class="w">
+</span><span class="n">nx_tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV.Nx</span><span class="o">.</span><span class="n">to_nx</span><span class="p" data-group-id="7394141666-3">(</span><span class="n">mat</span><span class="p" data-group-id="7394141666-3">)</span><span class="w">
+ </span><span class="p" data-group-id="7394141666-4">#</span><span class="nc" data-group-id="7394141666-4">Nx.Tensor</span><span class="p" data-group-id="7394141666-4">&lt;</span><span class="w">
+    </span><span class="n">u8</span><span class="p" data-group-id="7394141666-5">[</span><span class="mi">1080</span><span class="p" data-group-id="7394141666-5">]</span><span class="p" data-group-id="7394141666-6">[</span><span class="mi">1920</span><span class="p" data-group-id="7394141666-6">]</span><span class="p" data-group-id="7394141666-7">[</span><span class="mi">3</span><span class="p" data-group-id="7394141666-7">]</span><span class="w">
+    </span><span class="p" data-group-id="7394141666-8">[</span><span class="p" data-group-id="7394141666-9">[</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="p" data-group-id="7394141666-9">]</span><span class="p" data-group-id="7394141666-8">]</span><span class="w">
+ </span><span class="p" data-group-id="7394141666-4">&gt;</span></code></pre>
+  </section>
+</section>
+
+    </div>
+  </section>
+
+  <section id="functions" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#functions">
+        <i class="ri-link-m" aria-hidden="true"></i>
+        <span class="sr-only">Link to this section</span>
+      </a>
+Functions
+    </h1>
+    <div class="functions-list">
+<section class="detail" id="to_mat/1">
+
+  <div class="detail-header">
+    <a href="#to_mat/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">to_mat(t)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/opencv_nx.ex#L53" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre translate="no">to_mat(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
+
+          <pre translate="no">to_mat(Nx.t()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
+
+      </div>
+
+
   </section>
 </section>
 

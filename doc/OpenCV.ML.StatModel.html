@@ -10,7 +10,7 @@
     <title>OpenCV.ML.StatModel — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e08ffeba92.js"></script>
+    <script src="dist/sidebar_items-e397f91a40.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -265,7 +265,7 @@ cv.ml
   the test subset at all with TrainData::setTrainTestSplitRatio and specify test=false, so
   that the error is computed for the whole new set. Yes, this sounds a bit confusing.</li><li><strong>resp</strong>.
 The method uses StatModel::predict to compute the error. For regression models the error is
-computed as RMS, for classifiers - as a percent of missclassified samples (0%-100%).</li><li><strong>resp</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">calcError</span><span class="p" data-group-id="6239991085-1">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">test</span><span class="p" data-group-id="6239991085-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span><span class="p" data-group-id="6239991085-2">]</span><span class="p" data-group-id="6239991085-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span></code></pre>
+computed as RMS, for classifiers - as a percent of missclassified samples (0%-100%).</li><li><strong>resp</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">calcError</span><span class="p" data-group-id="1590371202-1">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">test</span><span class="p" data-group-id="1590371202-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span><span class="p" data-group-id="1590371202-2">]</span><span class="p" data-group-id="1590371202-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span></code></pre>
   </section>
 </section>
 <section class="detail" id="empty/1">
@@ -397,7 +397,7 @@ computed as RMS, for classifiers - as a percent of missclassified samples (0%-10
 
   <section class="docstring">
 
-<p>Predicts response(s) for the provided sample(s)</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">predict</span><span class="p" data-group-id="3488695039-1">(</span><span class="n">samples</span><span class="p" data-group-id="3488695039-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="3488695039-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="3488695039-3">]</span><span class="p" data-group-id="3488695039-2">]</span><span class="p" data-group-id="3488695039-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">results</span></code></pre>
+<p>Predicts response(s) for the provided sample(s)</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">predict</span><span class="p" data-group-id="7570601967-1">(</span><span class="n">samples</span><span class="p" data-group-id="7570601967-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="7570601967-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="7570601967-3">]</span><span class="p" data-group-id="7570601967-2">]</span><span class="p" data-group-id="7570601967-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">results</span></code></pre>
   </section>
 </section>
 <section class="detail" id="train/2">

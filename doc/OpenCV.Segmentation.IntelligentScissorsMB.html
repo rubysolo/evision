@@ -10,7 +10,7 @@
     <title>OpenCV.Segmentation.IntelligentScissorsMB — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e08ffeba92.js"></script>
+    <script src="dist/sidebar_items-e397f91a40.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -296,7 +296,7 @@ cv.segmentation
   <section class="docstring">
 
 <p>Specify custom features of imput image
-   Customized advanced variant of applyImage() call.</p><ul><li><strong>non_edge</strong>.</li><li><strong>gradient_direction</strong>.</li><li><strong>gradient_magnitude</strong>.</li><li><strong>image</strong>.</li><li><strong>image</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">applyImageFeatures</span><span class="p" data-group-id="7831053625-1">(</span><span class="n">non_edge</span><span class="p">,</span><span class="w"> </span><span class="n">gradient_direction</span><span class="p">,</span><span class="w"> </span><span class="n">gradient_magnitude</span><span class="p" data-group-id="7831053625-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">image</span><span class="p" data-group-id="7831053625-2">]</span><span class="p" data-group-id="7831053625-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+   Customized advanced variant of applyImage() call.</p><ul><li><strong>non_edge</strong>.</li><li><strong>gradient_direction</strong>.</li><li><strong>gradient_magnitude</strong>.</li><li><strong>image</strong>.</li><li><strong>image</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">applyImageFeatures</span><span class="p" data-group-id="2194775949-1">(</span><span class="n">non_edge</span><span class="p">,</span><span class="w"> </span><span class="n">gradient_direction</span><span class="p">,</span><span class="w"> </span><span class="n">gradient_magnitude</span><span class="p" data-group-id="2194775949-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">image</span><span class="p" data-group-id="2194775949-2">]</span><span class="p" data-group-id="2194775949-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="buildMap/2">
@@ -363,7 +363,7 @@ cv.segmentation
   <section class="docstring">
 
 <p>Extracts optimal contour for the given target point on the image
-<strong>Note</strong>: buildMap() must be called before this call</p><ul><li><strong>targetPt</strong>.</li><li><strong>contour</strong>.</li><li><strong>backward</strong>.</li><li><strong>contour</strong> : UMat</li><li><strong>backward</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getContour</span><span class="p" data-group-id="6822858527-1">(</span><span class="n">targetPt</span><span class="p" data-group-id="6822858527-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">contour</span><span class="p" data-group-id="6822858527-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">backward</span><span class="p" data-group-id="6822858527-3">]</span><span class="p" data-group-id="6822858527-2">]</span><span class="p" data-group-id="6822858527-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">contour</span></code></pre>
+<strong>Note</strong>: buildMap() must be called before this call</p><ul><li><strong>targetPt</strong>.</li><li><strong>contour</strong>.</li><li><strong>backward</strong>.</li><li><strong>contour</strong> : UMat</li><li><strong>backward</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getContour</span><span class="p" data-group-id="1363494195-1">(</span><span class="n">targetPt</span><span class="p" data-group-id="1363494195-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">contour</span><span class="p" data-group-id="1363494195-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">backward</span><span class="p" data-group-id="1363494195-3">]</span><span class="p" data-group-id="1363494195-2">]</span><span class="p" data-group-id="1363494195-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">contour</span></code></pre>
   </section>
 </section>
 <section class="detail" id="intelligentScissorsMB/0">
@@ -431,7 +431,7 @@ cv.segmentation
 
 <p>Switch edge feature extractor to use Canny edge detector
 <strong>Note</strong>: &quot;Laplacian Zero-Crossing&quot; feature extractor is used by default (following to original article)
-@sa Canny</p><ul><li><strong>apertureSize</strong> : int</li><li><strong>l2gradient</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setEdgeFeatureCannyParameters</span><span class="p" data-group-id="8272073901-1">(</span><span class="n">threshold1</span><span class="p">,</span><span class="w"> </span><span class="n">threshold2</span><span class="p" data-group-id="8272073901-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">apertureSize</span><span class="p" data-group-id="8272073901-3">[</span><span class="p">,</span><span class="w"> </span><span class="nc">L2gradient</span><span class="p" data-group-id="8272073901-3">]</span><span class="p" data-group-id="8272073901-2">]</span><span class="p" data-group-id="8272073901-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+@sa Canny</p><ul><li><strong>apertureSize</strong> : int</li><li><strong>l2gradient</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setEdgeFeatureCannyParameters</span><span class="p" data-group-id="2398760421-1">(</span><span class="n">threshold1</span><span class="p">,</span><span class="w"> </span><span class="n">threshold2</span><span class="p" data-group-id="2398760421-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">apertureSize</span><span class="p" data-group-id="2398760421-3">[</span><span class="p">,</span><span class="w"> </span><span class="nc">L2gradient</span><span class="p" data-group-id="2398760421-3">]</span><span class="p" data-group-id="2398760421-2">]</span><span class="p" data-group-id="2398760421-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="setEdgeFeatureZeroCrossingParameters/1">
