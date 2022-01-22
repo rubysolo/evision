@@ -10,7 +10,7 @@
     <title>OpenCV.DNN.Net — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -559,7 +559,7 @@ Functions
 
   <section class="docstring">
 
-<p>Runs forward pass to compute outputs of layers listed in @p outBlobNames.</p><ul><li><strong>outputBlobs</strong>.</li><li><strong>outBlobNames</strong>.</li><li><strong>outputBlobs</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">forward</span><span class="p" data-group-id="0728305364-1">(</span><span class="n">outBlobNames</span><span class="p" data-group-id="0728305364-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">outputBlobs</span><span class="p" data-group-id="0728305364-2">]</span><span class="p" data-group-id="0728305364-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">outputBlobs</span></code></pre>
+<p>Runs forward pass to compute outputs of layers listed in @p outBlobNames.</p><ul><li><strong>outputBlobs</strong>.</li><li><strong>outBlobNames</strong>.</li><li><strong>outputBlobs</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">forward</span><span class="p" data-group-id="5453262903-1">(</span><span class="n">outBlobNames</span><span class="p" data-group-id="5453262903-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">outputBlobs</span><span class="p" data-group-id="5453262903-2">]</span><span class="p" data-group-id="5453262903-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">outputBlobs</span></code></pre>
   </section>
 </section>
 <section class="detail" id="forwardAndRetrieve/2">
@@ -934,7 +934,7 @@ Functions
   <section class="docstring">
 
 <p>Returns parameter blob of the layer.</p><ul><li><strong>layer</strong>.</li><li><strong>numParam</strong>.
-@see Layer::blobs</li><li><strong>numParam</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getParam</span><span class="p" data-group-id="2086463984-1">(</span><span class="n">layer</span><span class="p" data-group-id="2086463984-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numParam</span><span class="p" data-group-id="2086463984-2">]</span><span class="p" data-group-id="2086463984-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+@see Layer::blobs</li><li><strong>numParam</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getParam</span><span class="p" data-group-id="4872295321-1">(</span><span class="n">layer</span><span class="p" data-group-id="4872295321-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">numParam</span><span class="p" data-group-id="4872295321-2">]</span><span class="p" data-group-id="4872295321-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getPerfProfile/1">
@@ -1136,7 +1136,7 @@ Functions
 @see connect(String, String) to know format of the descriptor.
   If scale or mean values are specified, a final input blob is computed
   as:
- \f[input(n,c,h,w) = scalefactor \times (blob(n,c,h,w) - mean_c)\f]</li><li><strong>name</strong> : String</li><li><strong>scalefactor</strong> : double</li><li><strong>mean</strong> : Scalar</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setInput</span><span class="p" data-group-id="2645724283-1">(</span><span class="n">blob</span><span class="p" data-group-id="2645724283-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p" data-group-id="2645724283-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">scalefactor</span><span class="p" data-group-id="2645724283-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p" data-group-id="2645724283-4">]</span><span class="p" data-group-id="2645724283-3">]</span><span class="p" data-group-id="2645724283-2">]</span><span class="p" data-group-id="2645724283-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+ \f[input(n,c,h,w) = scalefactor \times (blob(n,c,h,w) - mean_c)\f]</li><li><strong>name</strong> : String</li><li><strong>scalefactor</strong> : double</li><li><strong>mean</strong> : Scalar</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setInput</span><span class="p" data-group-id="2243554330-1">(</span><span class="n">blob</span><span class="p" data-group-id="2243554330-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p" data-group-id="2243554330-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">scalefactor</span><span class="p" data-group-id="2243554330-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p" data-group-id="2243554330-4">]</span><span class="p" data-group-id="2243554330-3">]</span><span class="p" data-group-id="2243554330-2">]</span><span class="p" data-group-id="2243554330-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
   </section>
 </section>
 <section class="detail" id="setInputShape/3">

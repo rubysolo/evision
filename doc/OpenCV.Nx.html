@@ -10,7 +10,7 @@
     <title>OpenCV.Nx — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -124,7 +124,7 @@ list.</p>
 
         </div>
 
-          <div class="summary-synopsis"><p>Converts a tensor of <code class="inline">Nx</code> to <code class="inline">Mat</code> of evision (OpenCV).</p></div>
+          <div class="summary-synopsis"><p>Converts a tensor of <a href="https://hexdocs.pm/nx/0.1.0/Nx.html"><code class="inline">Nx</code></a> to <code class="inline">Mat</code> of evision (OpenCV).</p></div>
 
       </div>
 
@@ -186,7 +186,7 @@ external
 
   <section class="docstring">
 
-<p>Converts a tensor of <code class="inline">Nx</code> to <code class="inline">Mat</code> of evision (OpenCV).</p>
+<p>Converts a tensor of <a href="https://hexdocs.pm/nx/0.1.0/Nx.html"><code class="inline">Nx</code></a> to <code class="inline">Mat</code> of evision (OpenCV).</p>
   </section>
 </section>
 <section class="detail" id="to_nx/1">
@@ -212,12 +212,12 @@ external
   <a href="#to_nx/1-example" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Example
 </h3>
-<pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="7394141666-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">mat</span><span class="p" data-group-id="7394141666-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV</span><span class="o">.</span><span class="n">imread</span><span class="p" data-group-id="7394141666-2">(</span><span class="s">&quot;/path/to/exist/img.png&quot;</span><span class="p" data-group-id="7394141666-2">)</span><span class="w">
-</span><span class="n">nx_tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV.Nx</span><span class="o">.</span><span class="n">to_nx</span><span class="p" data-group-id="7394141666-3">(</span><span class="n">mat</span><span class="p" data-group-id="7394141666-3">)</span><span class="w">
- </span><span class="p" data-group-id="7394141666-4">#</span><span class="nc" data-group-id="7394141666-4">Nx.Tensor</span><span class="p" data-group-id="7394141666-4">&lt;</span><span class="w">
-    </span><span class="n">u8</span><span class="p" data-group-id="7394141666-5">[</span><span class="mi">1080</span><span class="p" data-group-id="7394141666-5">]</span><span class="p" data-group-id="7394141666-6">[</span><span class="mi">1920</span><span class="p" data-group-id="7394141666-6">]</span><span class="p" data-group-id="7394141666-7">[</span><span class="mi">3</span><span class="p" data-group-id="7394141666-7">]</span><span class="w">
-    </span><span class="p" data-group-id="7394141666-8">[</span><span class="p" data-group-id="7394141666-9">[</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="p" data-group-id="7394141666-9">]</span><span class="p" data-group-id="7394141666-8">]</span><span class="w">
- </span><span class="p" data-group-id="7394141666-4">&gt;</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="7443935758-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">mat</span><span class="p" data-group-id="7443935758-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV</span><span class="o">.</span><span class="n">imread</span><span class="p" data-group-id="7443935758-2">(</span><span class="s">&quot;/path/to/exist/img.png&quot;</span><span class="p" data-group-id="7443935758-2">)</span><span class="w">
+</span><span class="n">nx_tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">OpenCV.Nx</span><span class="o">.</span><span class="n">to_nx</span><span class="p" data-group-id="7443935758-3">(</span><span class="n">mat</span><span class="p" data-group-id="7443935758-3">)</span><span class="w">
+ </span><span class="p" data-group-id="7443935758-4">#</span><span class="nc" data-group-id="7443935758-4">Nx.Tensor</span><span class="p" data-group-id="7443935758-4">&lt;</span><span class="w">
+    </span><span class="n">u8</span><span class="p" data-group-id="7443935758-5">[</span><span class="mi">1080</span><span class="p" data-group-id="7443935758-5">]</span><span class="p" data-group-id="7443935758-6">[</span><span class="mi">1920</span><span class="p" data-group-id="7443935758-6">]</span><span class="p" data-group-id="7443935758-7">[</span><span class="mi">3</span><span class="p" data-group-id="7443935758-7">]</span><span class="w">
+    </span><span class="p" data-group-id="7443935758-8">[</span><span class="p" data-group-id="7443935758-9">[</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">...</span><span class="w"> </span><span class="p" data-group-id="7443935758-9">]</span><span class="p" data-group-id="7443935758-8">]</span><span class="w">
+ </span><span class="p" data-group-id="7443935758-4">&gt;</span></code></pre>
   </section>
 </section>
 
@@ -257,7 +257,7 @@ Functions
 
           <pre translate="no">to_mat(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
 
-          <pre translate="no">to_mat(Nx.t()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
+          <pre translate="no">to_mat(<a href="https://hexdocs.pm/nx/0.1.0/Nx.html#t:t/0">Nx.t</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">reference</a>()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
 
       </div>
 

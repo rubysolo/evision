@@ -10,7 +10,7 @@
     <title>OpenCV.CUDA.GpuMat — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -572,7 +572,7 @@ cv.cuda
 
   <section class="docstring">
 
-<ul><li><strong>type</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">assignTo</span><span class="p" data-group-id="8014607621-1">(</span><span class="n">m</span><span class="p" data-group-id="8014607621-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p" data-group-id="8014607621-2">]</span><span class="p" data-group-id="8014607621-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+<ul><li><strong>type</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">assignTo</span><span class="p" data-group-id="5010513996-1">(</span><span class="n">m</span><span class="p" data-group-id="5010513996-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p" data-group-id="5010513996-2">]</span><span class="p" data-group-id="5010513996-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
   </section>
 </section>
 <section class="detail" id="channels/1">
@@ -770,7 +770,7 @@ cv.cuda
 
   <section class="docstring">
 
-<ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">convertTo</span><span class="p" data-group-id="8842967266-1">(</span><span class="n">rtype</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="p" data-group-id="8842967266-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="8842967266-2">]</span><span class="p" data-group-id="8842967266-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
+<ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">convertTo</span><span class="p" data-group-id="8878725382-1">(</span><span class="n">rtype</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="p" data-group-id="8878725382-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="8878725382-2">]</span><span class="p" data-group-id="8878725382-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
   </section>
 </section>
 <section class="detail" id="copyTo/3">
@@ -814,7 +814,7 @@ cv.cuda
 
   <section class="docstring">
 
-<ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">copyTo</span><span class="p" data-group-id="7853117347-1">(</span><span class="n">mask</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="p" data-group-id="7853117347-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="7853117347-2">]</span><span class="p" data-group-id="7853117347-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
+<ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">copyTo</span><span class="p" data-group-id="8817654369-1">(</span><span class="n">mask</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="p" data-group-id="8817654369-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="8817654369-2">]</span><span class="p" data-group-id="8817654369-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
   </section>
 </section>
 <section class="detail" id="create/3">
@@ -972,7 +972,7 @@ cv.cuda
   This function copies data from device memory to host memory. As being a non-blocking call, this
   function may return even if the copy operation is not finished.
   The copy operation may be overlapped with operations in other non-default streams if \p stream is
-  not the default stream and \p dst is HostMem allocated with HostMem::PAGE_LOCKED option.</p><ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">download</span><span class="p" data-group-id="8284886139-1">(</span><span class="n">stream</span><span class="p" data-group-id="8284886139-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="8284886139-2">]</span><span class="p" data-group-id="8284886139-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
+  not the default stream and \p dst is HostMem allocated with HostMem::PAGE_LOCKED option.</p><ul><li><strong>dst</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">download</span><span class="p" data-group-id="0566568818-1">(</span><span class="n">stream</span><span class="p" data-group-id="0566568818-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="0566568818-2">]</span><span class="p" data-group-id="0566568818-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">dst</span></code></pre>
   </section>
 </section>
 <section class="detail" id="elemSize/1">
@@ -1148,7 +1148,7 @@ cv.cuda
 
   <section class="docstring">
 
-<ul><li><strong>allocator</strong> : GpuMat_Allocator*</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">GpuMat</span><span class="p" data-group-id="4233117238-1">(</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p" data-group-id="4233117238-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">allocator</span><span class="p" data-group-id="4233117238-2">]</span><span class="p" data-group-id="4233117238-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cuda_GpuMat</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
+<ul><li><strong>allocator</strong> : GpuMat_Allocator*</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">GpuMat</span><span class="p" data-group-id="2710693719-1">(</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p" data-group-id="2710693719-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">allocator</span><span class="p" data-group-id="2710693719-2">]</span><span class="p" data-group-id="2710693719-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cuda_GpuMat</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
   </section>
 </section>
 <section class="detail" id="isContinuous/1">
@@ -1236,7 +1236,7 @@ cv.cuda
 
   <section class="docstring">
 
-<ul><li><strong>rows</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">reshape</span><span class="p" data-group-id="7096140857-1">(</span><span class="n">cn</span><span class="p" data-group-id="7096140857-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">rows</span><span class="p" data-group-id="7096140857-2">]</span><span class="p" data-group-id="7096140857-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+<ul><li><strong>rows</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">reshape</span><span class="p" data-group-id="6127178515-1">(</span><span class="n">cn</span><span class="p" data-group-id="6127178515-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">rows</span><span class="p" data-group-id="6127178515-2">]</span><span class="p" data-group-id="6127178515-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="row/2">

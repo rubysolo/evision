@@ -10,7 +10,7 @@
     <title>OpenCV.DNN.DetectionModel — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -220,7 +220,7 @@ Functions
 
   <section class="docstring">
 
-<p>Given the @p input frame, create input blob, run net and return result detections.</p><ul><li><em>**</em>.</li><li><strong>classIds</strong>.</li><li><strong>confidences</strong>.</li><li><strong>boxes</strong>.</li><li><strong>confThreshold</strong>.</li><li><strong>nmsThreshold</strong>.</li><li><strong>confThreshold</strong> : float</li><li><strong>nmsThreshold</strong> : float</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="2759607056-1">(</span><span class="n">frame</span><span class="p" data-group-id="2759607056-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">confThreshold</span><span class="p" data-group-id="2759607056-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">nmsThreshold</span><span class="p" data-group-id="2759607056-3">]</span><span class="p" data-group-id="2759607056-2">]</span><span class="p" data-group-id="2759607056-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">classIds</span><span class="p">,</span><span class="w"> </span><span class="n">confidences</span><span class="p">,</span><span class="w"> </span><span class="n">boxes</span></code></pre>
+<p>Given the @p input frame, create input blob, run net and return result detections.</p><ul><li><em>**</em>.</li><li><strong>classIds</strong>.</li><li><strong>confidences</strong>.</li><li><strong>boxes</strong>.</li><li><strong>confThreshold</strong>.</li><li><strong>nmsThreshold</strong>.</li><li><strong>confThreshold</strong> : float</li><li><strong>nmsThreshold</strong> : float</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">detect</span><span class="p" data-group-id="6342435743-1">(</span><span class="n">frame</span><span class="p" data-group-id="6342435743-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">confThreshold</span><span class="p" data-group-id="6342435743-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">nmsThreshold</span><span class="p" data-group-id="6342435743-3">]</span><span class="p" data-group-id="6342435743-2">]</span><span class="p" data-group-id="6342435743-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">classIds</span><span class="p">,</span><span class="w"> </span><span class="n">confidences</span><span class="p">,</span><span class="w"> </span><span class="n">boxes</span></code></pre>
   </section>
 </section>
 <section class="detail" id="detectionModel/1">
@@ -265,7 +265,7 @@ Functions
   <section class="docstring">
 
 <p>Create detection model from network represented in one of the supported formats.
-   An order of @p model and @p config arguments does not matter.</p><ul><li><strong>model</strong>.</li><li><strong>config</strong>.</li><li><strong>config</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">DetectionModel</span><span class="p" data-group-id="7540176720-1">(</span><span class="n">model</span><span class="p" data-group-id="7540176720-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="p" data-group-id="7540176720-2">]</span><span class="p" data-group-id="7540176720-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="n">dnn_DetectionModel</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
+   An order of @p model and @p config arguments does not matter.</p><ul><li><strong>model</strong>.</li><li><strong>config</strong>.</li><li><strong>config</strong> : String</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="nc">DetectionModel</span><span class="p" data-group-id="3033586888-1">(</span><span class="n">model</span><span class="p" data-group-id="3033586888-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="p" data-group-id="3033586888-2">]</span><span class="p" data-group-id="3033586888-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="n">dnn_DetectionModel</span><span class="w"> </span><span class="n">object</span><span class="o">&gt;</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getNmsAcrossClasses/1">

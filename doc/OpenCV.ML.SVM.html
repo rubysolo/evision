@@ -10,7 +10,7 @@
     <title>OpenCV.ML.SVM — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -114,7 +114,33 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
+          <a href="#calcError/3" translate="no">calcError(self, data, test)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#calcError/4" translate="no">calcError(self, data, test, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Computes error on the training or test dataset</p></div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
           <a href="#create/0" translate="no">create()</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#empty/1" translate="no">empty(self)</a>
 
         </div>
 
@@ -244,9 +270,51 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
+          <a href="#getVarCount/1" translate="no">getVarCount(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#isClassifier/1" translate="no">isClassifier(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#isTrained/1" translate="no">isTrained(self)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
           <a href="#load/1" translate="no">load(filepath)</a>
 
         </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#predict/2" translate="no">predict(self, samples)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#predict/3" translate="no">predict(self, samples, opts)</a>
+
+        </div>
+
+          <div class="summary-synopsis"><p>Predicts response(s) for the provided sample(s)</p></div>
 
       </div>
 
@@ -332,6 +400,30 @@ Evision
 
       <div class="summary-row">
         <div class="summary-signature">
+          <a href="#train/2" translate="no">train(self, trainData)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#train/3" translate="no">train(self, trainData, opts)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#train/4" translate="no">train(self, samples, layout, responses)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
           <a href="#trainAuto/4" translate="no">trainAuto(self, samples, layout, responses)</a>
 
         </div>
@@ -362,6 +454,56 @@ Evision
 cv.ml
     </h1>
     <div class="cv-ml-list">
+<section class="detail" id="calcError/3">
+
+  <div class="detail-header">
+    <a href="#calcError/3" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">calcError(self, data, test)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L30" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="calcError/4">
+
+  <div class="detail-header">
+    <a href="#calcError/4" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">calcError(self, data, test, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L21" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Computes error on the training or test dataset</p><ul><li><strong>data</strong>.</li><li><strong>test</strong>.
+  computed over the training subset of the data. Please note that if you loaded a completely
+  different dataset to evaluate already trained classifier, you will probably want not to set
+  the test subset at all with TrainData::setTrainTestSplitRatio and specify test=false, so
+  that the error is computed for the whole new set. Yes, this sounds a bit confusing.</li><li><strong>resp</strong>.
+The method uses StatModel::predict to compute the error. For regression models the error is
+computed as RMS, for classifiers - as a percent of missclassified samples (0%-100%).</li><li><strong>resp</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">calcError</span><span class="p" data-group-id="8684215837-1">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">test</span><span class="p" data-group-id="8684215837-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span><span class="p" data-group-id="8684215837-2">]</span><span class="p" data-group-id="8684215837-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">resp</span></code></pre>
+  </section>
+</section>
 <section class="detail" id="create/0">
 
   <div class="detail-header">
@@ -371,7 +513,29 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">create()</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L3" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L46" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="empty/1">
+
+  <div class="detail-header">
+    <a href="#empty/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">empty(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L52" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -393,7 +557,7 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">getC(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L9" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L58" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -415,7 +579,7 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">getClassWeights(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L15" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L64" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -437,7 +601,7 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">getCoef0(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L21" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L70" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -459,7 +623,7 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">getDecisionFunction(self, i)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L56" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L105" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -481,7 +645,7 @@ cv.ml
     </a>
     <h1 class="signature" translate="no">getDecisionFunction(self, i, opts)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L48" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L97" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -499,7 +663,7 @@ cv.ml
   support vectors (which can be retrieved by SVM::getSupportVectors). In the case of linear
   %SVM each decision function consists of a single &quot;compressed&quot; support vector.
 The method returns rho parameter of the decision function, a scalar subtracted from the weighted
-sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>svidx</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getDecisionFunction</span><span class="p" data-group-id="6067209450-1">(</span><span class="n">i</span><span class="p" data-group-id="6067209450-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p" data-group-id="6067209450-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">svidx</span><span class="p" data-group-id="6067209450-3">]</span><span class="p" data-group-id="6067209450-2">]</span><span class="p" data-group-id="6067209450-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p">,</span><span class="w"> </span><span class="n">svidx</span></code></pre>
+sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>svidx</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">getDecisionFunction</span><span class="p" data-group-id="0034576593-1">(</span><span class="n">i</span><span class="p" data-group-id="0034576593-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p" data-group-id="0034576593-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">svidx</span><span class="p" data-group-id="0034576593-3">]</span><span class="p" data-group-id="0034576593-2">]</span><span class="p" data-group-id="0034576593-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p">,</span><span class="w"> </span><span class="n">svidx</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getDefaultGridPtr/1">
@@ -511,7 +675,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getDefaultGridPtr(param_id)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L72" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L121" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -533,7 +697,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getDegree(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L80" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L129" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -555,7 +719,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getGamma(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L86" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L135" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -577,7 +741,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getKernelType(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L92" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L141" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -599,7 +763,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getNu(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L98" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L147" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -621,7 +785,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getP(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L104" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L153" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -643,7 +807,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getSupportVectors(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L110" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L159" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -665,7 +829,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getTermCriteria(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L116" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L165" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -687,7 +851,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getType(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L122" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L171" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -709,7 +873,73 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">getUncompressedSupportVectors(self)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L128" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L177" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="getVarCount/1">
+
+  <div class="detail-header">
+    <a href="#getVarCount/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">getVarCount(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L183" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="isClassifier/1">
+
+  <div class="detail-header">
+    <a href="#isClassifier/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">isClassifier(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L189" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="isTrained/1">
+
+  <div class="detail-header">
+    <a href="#isTrained/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">isTrained(self)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L195" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -731,7 +961,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">load(filepath)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L134" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L201" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -744,6 +974,50 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
 
   </section>
 </section>
+<section class="detail" id="predict/2">
+
+  <div class="detail-header">
+    <a href="#predict/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">predict(self, samples)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L229" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="predict/3">
+
+  <div class="detail-header">
+    <a href="#predict/3" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">predict(self, samples, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L222" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Predicts response(s) for the provided sample(s)</p><ul><li><strong>samples</strong>.</li><li><strong>results</strong>.</li><li><strong>flags</strong>.</li><li><strong>results</strong> : UMat</li><li><strong>flags</strong> : int</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">predict</span><span class="p" data-group-id="1771251268-1">(</span><span class="n">samples</span><span class="p" data-group-id="1771251268-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p" data-group-id="1771251268-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">flags</span><span class="p" data-group-id="1771251268-3">]</span><span class="p" data-group-id="1771251268-2">]</span><span class="p" data-group-id="1771251268-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">results</span></code></pre>
+  </section>
+</section>
 <section class="detail" id="setC/2">
 
   <div class="detail-header">
@@ -753,7 +1027,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setC(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L142" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L244" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -775,7 +1049,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setClassWeights(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L150" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L252" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -797,7 +1071,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setCoef0(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L157" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L259" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -819,7 +1093,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setDegree(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L165" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L267" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -841,7 +1115,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setGamma(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L173" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L275" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -863,7 +1137,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setKernel(self, kernelType)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L181" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L283" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -885,7 +1159,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setNu(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L189" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L291" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -907,7 +1181,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setP(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L197" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L299" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -929,7 +1203,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setTermCriteria(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L205" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L307" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -951,7 +1225,73 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">setType(self, val)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L212" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L314" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="train/2">
+
+  <div class="detail-header">
+    <a href="#train/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">train(self, trainData)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L353" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="train/3">
+
+  <div class="detail-header">
+    <a href="#train/3" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">train(self, trainData, opts)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L346" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="train/4">
+
+  <div class="detail-header">
+    <a href="#train/4" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">train(self, samples, layout, responses)</h1>
+
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L322" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -973,7 +1313,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">trainAuto(self, samples, layout, responses)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L268" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L408" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -995,7 +1335,7 @@ sum of kernel responses.</li><li><strong>alpha</strong> : UMat</li><li><strong>s
     </a>
     <h1 class="signature" translate="no">trainAuto(self, samples, layout, responses, opts)</h1>
 
-      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L258" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/cocox-xu/evision/blob/v0.1.0-dev/lib/generated/opencv_ml_svm.ex#L398" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1016,7 +1356,7 @@ This function only makes use of SVM::getDefaultGrid for parameter optimization a
 offers rudimentary parameter options.
 This function works for the classification (SVM::C_SVC or SVM::NU_SVC) as well as for the
 regression (SVM::EPS_SVR or SVM::NU_SVR). If it is SVM::ONE_CLASS, no optimization is made and
-the usual %SVM with parameters specified in params is executed.</li><li><strong>kFold</strong> : int</li><li><strong>cgrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>gammaGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>pGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>nuGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>coeffGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>degreeGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>balanced</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">trainAuto</span><span class="p" data-group-id="3956652131-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="p">,</span><span class="w"> </span><span class="n">responses</span><span class="p" data-group-id="3956652131-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">kFold</span><span class="p" data-group-id="3956652131-3">[</span><span class="p">,</span><span class="w"> </span><span class="nc">Cgrid</span><span class="p" data-group-id="3956652131-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">gammaGrid</span><span class="p" data-group-id="3956652131-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">pGrid</span><span class="p" data-group-id="3956652131-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">nuGrid</span><span class="p" data-group-id="3956652131-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">coeffGrid</span><span class="p" data-group-id="3956652131-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">degreeGrid</span><span class="p" data-group-id="3956652131-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">balanced</span><span class="p" data-group-id="3956652131-9">]</span><span class="p" data-group-id="3956652131-8">]</span><span class="p" data-group-id="3956652131-7">]</span><span class="p" data-group-id="3956652131-6">]</span><span class="p" data-group-id="3956652131-5">]</span><span class="p" data-group-id="3956652131-4">]</span><span class="p" data-group-id="3956652131-3">]</span><span class="p" data-group-id="3956652131-2">]</span><span class="p" data-group-id="3956652131-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+the usual %SVM with parameters specified in params is executed.</li><li><strong>kFold</strong> : int</li><li><strong>cgrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>gammaGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>pGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>nuGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>coeffGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>degreeGrid</strong> : Ptr&lt;ParamGrid&gt;</li><li><strong>balanced</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">trainAuto</span><span class="p" data-group-id="0499583686-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="p">,</span><span class="w"> </span><span class="n">responses</span><span class="p" data-group-id="0499583686-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">kFold</span><span class="p" data-group-id="0499583686-3">[</span><span class="p">,</span><span class="w"> </span><span class="nc">Cgrid</span><span class="p" data-group-id="0499583686-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">gammaGrid</span><span class="p" data-group-id="0499583686-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">pGrid</span><span class="p" data-group-id="0499583686-6">[</span><span class="p">,</span><span class="w"> </span><span class="n">nuGrid</span><span class="p" data-group-id="0499583686-7">[</span><span class="p">,</span><span class="w"> </span><span class="n">coeffGrid</span><span class="p" data-group-id="0499583686-8">[</span><span class="p">,</span><span class="w"> </span><span class="n">degreeGrid</span><span class="p" data-group-id="0499583686-9">[</span><span class="p">,</span><span class="w"> </span><span class="n">balanced</span><span class="p" data-group-id="0499583686-9">]</span><span class="p" data-group-id="0499583686-8">]</span><span class="p" data-group-id="0499583686-7">]</span><span class="p" data-group-id="0499583686-6">]</span><span class="p" data-group-id="0499583686-5">]</span><span class="p" data-group-id="0499583686-4">]</span><span class="p" data-group-id="0499583686-3">]</span><span class="p" data-group-id="0499583686-2">]</span><span class="p" data-group-id="0499583686-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 

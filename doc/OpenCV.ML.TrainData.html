@@ -10,7 +10,7 @@
     <title>OpenCV.ML.TrainData — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -524,7 +524,7 @@ cv.ml
   vector (CV_32S) containing 0-based sample indices or byte vector (CV_8U) containing a mask
   of training samples.</li><li><strong>sampleWeights</strong>.</li><li><strong>varType</strong>.
   &lt;number_of_variables_in_responses&gt;`, containing types of each input and output variable. See
-  ml::VariableTypes.</li><li><strong>varIdx</strong> : UMat</li><li><strong>sampleIdx</strong> : UMat</li><li><strong>sampleWeights</strong> : UMat</li><li><strong>varType</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="0014407811-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="p">,</span><span class="w"> </span><span class="n">responses</span><span class="p" data-group-id="0014407811-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">varIdx</span><span class="p" data-group-id="0014407811-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">sampleIdx</span><span class="p" data-group-id="0014407811-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">sampleWeights</span><span class="p" data-group-id="0014407811-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">varType</span><span class="p" data-group-id="0014407811-5">]</span><span class="p" data-group-id="0014407811-4">]</span><span class="p" data-group-id="0014407811-3">]</span><span class="p" data-group-id="0014407811-2">]</span><span class="p" data-group-id="0014407811-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+  ml::VariableTypes.</li><li><strong>varIdx</strong> : UMat</li><li><strong>sampleIdx</strong> : UMat</li><li><strong>sampleWeights</strong> : UMat</li><li><strong>varType</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="4695233129-1">(</span><span class="n">samples</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="p">,</span><span class="w"> </span><span class="n">responses</span><span class="p" data-group-id="4695233129-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">varIdx</span><span class="p" data-group-id="4695233129-3">[</span><span class="p">,</span><span class="w"> </span><span class="n">sampleIdx</span><span class="p" data-group-id="4695233129-4">[</span><span class="p">,</span><span class="w"> </span><span class="n">sampleWeights</span><span class="p" data-group-id="4695233129-5">[</span><span class="p">,</span><span class="w"> </span><span class="n">varType</span><span class="p" data-group-id="4695233129-5">]</span><span class="p" data-group-id="4695233129-4">]</span><span class="p" data-group-id="4695233129-3">]</span><span class="p" data-group-id="4695233129-2">]</span><span class="p" data-group-id="4695233129-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getCatCount/2">
@@ -1339,7 +1339,7 @@ cv.ml
   <section class="docstring">
 
 <p>Splits the training data into the training and test parts
-@sa TrainData::setTrainTestSplitRatio</p><ul><li><strong>shuffle</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTrainTestSplit</span><span class="p" data-group-id="0164767417-1">(</span><span class="n">count</span><span class="p" data-group-id="0164767417-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">shuffle</span><span class="p" data-group-id="0164767417-2">]</span><span class="p" data-group-id="0164767417-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+@sa TrainData::setTrainTestSplitRatio</p><ul><li><strong>shuffle</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTrainTestSplit</span><span class="p" data-group-id="6723373211-1">(</span><span class="n">count</span><span class="p" data-group-id="6723373211-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">shuffle</span><span class="p" data-group-id="6723373211-2">]</span><span class="p" data-group-id="6723373211-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
   </section>
 </section>
 <section class="detail" id="setTrainTestSplitRatio/2">
@@ -1388,7 +1388,7 @@ cv.ml
   set. If the function is not called, all the data is used for training. Please, note that for
   each of TrainData::getTrain* there is corresponding TrainData::getTest*, so that the test
   subset can be retrieved and processed as well.
-@sa TrainData::setTrainTestSplit</p><ul><li><strong>shuffle</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTrainTestSplitRatio</span><span class="p" data-group-id="4778777788-1">(</span><span class="n">ratio</span><span class="p" data-group-id="4778777788-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">shuffle</span><span class="p" data-group-id="4778777788-2">]</span><span class="p" data-group-id="4778777788-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
+@sa TrainData::setTrainTestSplit</p><ul><li><strong>shuffle</strong> : bool</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">setTrainTestSplitRatio</span><span class="p" data-group-id="2374531437-1">(</span><span class="n">ratio</span><span class="p" data-group-id="2374531437-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">shuffle</span><span class="p" data-group-id="2374531437-2">]</span><span class="p" data-group-id="2374531437-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">None</span></code></pre>
   </section>
 </section>
 <section class="detail" id="shuffleTrainTest/1">

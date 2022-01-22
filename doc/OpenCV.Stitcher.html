@@ -10,7 +10,7 @@
     <title>OpenCV.Stitcher — Evision v0.1.0-dev</title>
     <link rel="stylesheet" href="dist/elixir-784c12ef29cae13371ff.css" />
 
-    <script src="dist/sidebar_items-e397f91a40.js"></script>
+    <script src="dist/sidebar_items-754e5ab271.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -392,7 +392,7 @@ cv
   before.
 <strong>Note</strong>: Use the functions only if you're aware of the stitching pipeline, otherwise use
   Stitcher::stitch.</p><ul><li><strong>images</strong>.</li><li><strong>pano</strong>.
-@return Status code.</li><li><strong>pano</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">composePanorama</span><span class="p" data-group-id="6338029357-1">(</span><span class="n">images</span><span class="p" data-group-id="6338029357-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span><span class="p" data-group-id="6338029357-2">]</span><span class="p" data-group-id="6338029357-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span></code></pre>
+@return Status code.</li><li><strong>pano</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">composePanorama</span><span class="p" data-group-id="7825453105-1">(</span><span class="n">images</span><span class="p" data-group-id="7825453105-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span><span class="p" data-group-id="7825453105-2">]</span><span class="p" data-group-id="7825453105-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span></code></pre>
   </section>
 </section>
 <section class="detail" id="compositingResol/1">
@@ -461,7 +461,7 @@ cv
 <p>Creates a Stitcher configured in one of the stitching modes.</p><ul><li><strong>mode</strong>.
   to stitch and their transformation. Default parameters will be chosen for operation in given
   scenario.
-@return Stitcher class instance.</li><li><strong>mode</strong> : Mode</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="0876071005-1">(</span><span class="p" data-group-id="0876071005-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p" data-group-id="0876071005-2">]</span><span class="p" data-group-id="0876071005-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+@return Stitcher class instance.</li><li><strong>mode</strong> : Mode</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">create</span><span class="p" data-group-id="0030752001-1">(</span><span class="p" data-group-id="0030752001-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p" data-group-id="0030752001-2">]</span><span class="p" data-group-id="0030752001-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="estimateTransform/2">
@@ -508,7 +508,7 @@ cv
 <p>These functions try to match the given images and to estimate rotations of each camera.
 <strong>Note</strong>: Use the functions only if you're aware of the stitching pipeline, otherwise use
   Stitcher::stitch.</p><ul><li><strong>images</strong>.</li><li><strong>masks</strong>.
-@return Status code.</li><li><strong>masks</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">estimateTransform</span><span class="p" data-group-id="4513429920-1">(</span><span class="n">images</span><span class="p" data-group-id="4513429920-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="4513429920-2">]</span><span class="p" data-group-id="4513429920-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
+@return Status code.</li><li><strong>masks</strong> : vector_UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">estimateTransform</span><span class="p" data-group-id="6844832935-1">(</span><span class="n">images</span><span class="p" data-group-id="6844832935-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="6844832935-2">]</span><span class="p" data-group-id="6844832935-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span></code></pre>
   </section>
 </section>
 <section class="detail" id="interpolationFlags/1">
@@ -795,7 +795,7 @@ cv
   <section class="docstring">
 
 <p>These functions try to stitch the given images.</p><ul><li><strong>images</strong>.</li><li><strong>masks</strong>.</li><li><strong>pano</strong>.
-@return Status code.</li><li><strong>pano</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">stitch</span><span class="p" data-group-id="9480315144-1">(</span><span class="n">images</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="9480315144-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span><span class="p" data-group-id="9480315144-2">]</span><span class="p" data-group-id="9480315144-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span></code></pre>
+@return Status code.</li><li><strong>pano</strong> : UMat</li></ul><p>Python prototype (for reference): </p><pre><code class="makeup elixir" translate="no"><span class="n">stitch</span><span class="p" data-group-id="6696798874-1">(</span><span class="n">images</span><span class="p">,</span><span class="w"> </span><span class="n">masks</span><span class="p" data-group-id="6696798874-2">[</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span><span class="p" data-group-id="6696798874-2">]</span><span class="p" data-group-id="6696798874-1">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">retval</span><span class="p">,</span><span class="w"> </span><span class="n">pano</span></code></pre>
   </section>
 </section>
 <section class="detail" id="waveCorrection/1">
